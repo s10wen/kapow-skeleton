@@ -1,1 +1,1 @@
-# workflow-boilerplate
+# Kapow! Skeleton
