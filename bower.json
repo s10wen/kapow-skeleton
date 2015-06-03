@@ -19,9 +19,9 @@
     "jquery-ui": "latest",
     "normalize-scss": "latest",
     "fontawesome": "latest",
-    "bootstrap-sass#3.3.4",
-    "foundation#5.5.2",
-    "bourbon#4.2.3",
-    "neat#1.7.2"
+    "bootstrap-sass": "3.3.4",
+    "foundation": "5.5.2",
+    "bourbon": "4.2.3",
+    "neat: "1.7.2"
   }
 }
