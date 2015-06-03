@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "modernizr": "latest",
-    "respondJS": "latest"
+    "respondJS": "latest",
     "imagesloaded": "latest",
     "masonry": "latest",
     "jquery-ui": "latest",
