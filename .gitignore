@@ -1,0 +1,57 @@
+# Git Ignore
+# -----------------------------------------------------------------------------
+
+# OS Ignores
+# -------------------------------------
+.DS_Store
+
+# Assets
+# -------------------------------------
+assets/css/
+assets/js/lib/modernizr-custom.js
+
+# Build
+# -------------------------------------
+.sass-cache
+*.css.map
+
+# Dependencies
+# -------------------------------------
+bower_components
+node_modules
+
+# WordPress
+# -------------------------------------
+
+# Root
+htdocs/*
+!htdocs/polyfills
+!htdocs/wp-content
+!htdocs/robots.txt
+!htdocs/.htaccess
+
+# WP Content
+htdocs/wp-content/advanced-cache.php
+htdocs/wp-content/backup-db/
+htdocs/wp-content/backups/
+htdocs/wp-content/blogs.dir/
+htdocs/wp-content/cache/
+htdocs/wp-content/plugins/hello.php
+htdocs/wp-content/uploads
+htdocs/wp-content/upgrade
+htdocswp-content/wp-cache-config.php
+htdocswp-content/plugins/hello.php
+
+# Themes - Stock
+htdocs/wp-content/themes/twentyten/
+htdocs/wp-content/themes/twentyeleven/
+htdocs/wp-content/themes/twentytwelve/
+htdocs/wp-content/themes/twentythirteen/
+htdocs/wp-content/themes/twentyfourteen/
+htdocs/wp-content/themes/twentyfifteen/
+
+# Themes - Custom
+htdocs/wp-content/themes/your-theme/css/
+htdocs/wp-content/themes/your-theme/js/
+htdocs/wp-content/themes/your-theme/style.css
+htdocs/wp-content/themes/your-theme/style.css.map
