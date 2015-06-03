@@ -13,7 +13,6 @@ RewriteRule . /index.php [L]
 # http://css3pie.com/documentation/known-issues/#content-type
 AddType text/x-component .htc
 
-
 # BEGIN Compress text files
 <ifModule mod_deflate.c>
   <filesMatch "\.(css|js|x?html?|php|woff)$">
