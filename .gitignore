@@ -15,13 +15,19 @@ assets/js/lib/modernizr-custom.js
 bower_components
 node_modules
 
+# Documentation & Reports
+# -------------------------------------
+
+/documentation/
+/reports/
+
 # WordPress
 # -------------------------------------
 
 # Root
 htdocs/*
-!htdocs/polyfills
-!htdocs/wp-content
+!htdocs/polyfills/
+!htdocs/wp-content/
 !htdocs/robots.txt
 !htdocs/.htaccess
 
@@ -32,8 +38,8 @@ htdocs/wp-content/backups/
 htdocs/wp-content/blogs.dir/
 htdocs/wp-content/cache/
 htdocs/wp-content/plugins/hello.php
-htdocs/wp-content/uploads
-htdocs/wp-content/upgrade
+htdocs/wp-content/uploads/
+htdocs/wp-content/upgrade/
 htdocswp-content/wp-cache-config.php
 htdocswp-content/plugins/hello.php
 
