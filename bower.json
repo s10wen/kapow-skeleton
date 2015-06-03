@@ -1,0 +1,27 @@
+{
+  "name": "your-project",
+  "version": "1.0.0",
+  "authors": [
+    "Your Name <you@yourdomain.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "modernizr": "latest",
+    "respondJS": "latest"
+    "imagesloaded": "latest",
+    "masonry": "latest",
+    "jquery-ui": "latest",
+    "normalize-scss": "latest",
+    "fontawesome": "latest",
+    "bootstrap-sass#3.3.4",
+    "foundation#5.5.2",
+    "bourbon#4.2.3",
+    "neat#1.7.2"
+  }
+}
