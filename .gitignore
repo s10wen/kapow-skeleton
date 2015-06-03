@@ -10,11 +10,6 @@
 assets/css/
 assets/js/lib/modernizr-custom.js
 
-# Build
-# -------------------------------------
-.sass-cache
-*.css.map
-
 # Dependencies
 # -------------------------------------
 bower_components
