@@ -9,13 +9,13 @@ var yosay  = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
 
-  // Init
+  // Init tasks
   // -------------------------------------
-  init: function () {
+  initializing: function () {
     this.pkg = require('../package.json');
   },
 
-  // Prompting
+  // Ask our questions & save the answers
   // -------------------------------------
   prompting: function () {
     var done = this.async();
@@ -132,10 +132,20 @@ module.exports = yeoman.generators.Base.extend({
       },
     ];
 
-
-    // Set our options
+    // Ask our questions and save the answers
     this.prompt(questions, function (answers) {
 
+      // Map the answers to variables of the same name
+      this.projProperName = answers.projProperName;
+      this.projShortName  = answers.projShortName;
+      this.projAuthor     = answers.projAuthor;
+      this.projFramework  = answers.projFramework
+      this.projExtras     = answers.projExtras;
+      this.projDocs       = answers.projDocs;
+      this.projRespImages = answers.projRespImages;
+      this.projDBName     = answers.projDBName;
+      this.projDBEmail    = answers.projDBEmail;
+      this.projDomain     = answers.projDomain;
 
       // Congratulate the user
       this.log(yosay(chalk.yellow('## Well done Citizen! ##') + '\r' + 'You will now witness the almighty power of ' + chalk.red('Kapow!')));
@@ -146,10 +156,39 @@ module.exports = yeoman.generators.Base.extend({
 
   }, // prompting
 
-  // Debug
+  // Scaffold the project
   // -------------------------------------
-  debug: function() {
-    // console.log(this);
+  // Having to use bulkDirectory as using
+  // directory gives permission errors!
+  // -------------------------------------
+  writing: function () {
+
+    var shortName = this.projShortName;
+
+    // Get Kapow! repositories
+    // -------------------------------------
+    this.log(chalk.yellow('Pulling down a copy of Kapow! Grunt'));
+
+    // Grunt
+    this.remote('mkdo', 'kapow-grunt', 'master', function(err, remote) {
+      remote.bulkDirectory('grunt', 'grunt');
+    });
+
+    // Sass
+    this.remote('mkdo', 'kapow-sass', 'master', function(err, remote) {
+      remote.bulkDirectory('.', 'assets/sass');
+    });
+
+    // Theme
+    this.remote('mkdo', 'kapow-theme', 'master', function(err, remote) {
+      remote.bulkDirectory('.', 'htdocs/wp-content/themes/' + shortName);
+    });
   },
+
+  // Install required dependencies
+  // -------------------------------------
+  install: function () {
+    // this.installDependencies();
+  }
 
 });
