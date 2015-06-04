@@ -1,4 +1,4 @@
-# Git Ignore for "Your Project"
+# Git Ignore for My Project
 # -----------------------------------------------------------------------------
 
 # OS Ignores
@@ -52,7 +52,7 @@ htdocs/wp-content/themes/twentyfourteen/
 htdocs/wp-content/themes/twentyfifteen/
 
 # Themes - Custom
-htdocs/wp-content/themes/your-project/css/
-htdocs/wp-content/themes/your-project/js/
-htdocs/wp-content/themes/your-project/style.css
-htdocs/wp-content/themes/your-project/style.css.map
+htdocs/wp-content/themes/my-project/css/
+htdocs/wp-content/themes/my-project/js/
+htdocs/wp-content/themes/my-project/style.css
+htdocs/wp-content/themes/my-project/style.css.map
