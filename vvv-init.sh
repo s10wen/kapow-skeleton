@@ -20,7 +20,7 @@ then
 	cd htdocs
 	wp core download --allow-root
 	wp core config --dbname="my-project" --dbuser=wp --dbpass=wp --dbhost="localhost" --allow-root
-	wp core install --url="my-project.dev" --title="My Project" --admin_user=admin --admin_password=password --admin_email="hello@myproject.com" --allow-root
+	wp core install --url="my-project.dev" --title="My Project" --admin_user=admin --admin_password=password --admin_email="hello@my-project.com" --allow-root
 	cd ..
 fi
 
