@@ -3,7 +3,7 @@
 
 # Begin set-up
 # -------------------------------------
-echo "Commencing Your Project Setup"
+echo "Commencing My Project Setup"
 
 # Make a database, unless we already
 # have one set-up
@@ -19,12 +19,12 @@ then
 	echo "Installing WordPress using WP CLI"
 	cd htdocs
 	wp core download --allow-root
-	wp core config --dbname="your-project" --dbuser=wp --dbpass=wp --dbhost="localhost" --allow-root
-	wp core install --url=your-project.dev --title="Your Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root
+	wp core config --dbname="my-project" --dbuser=wp --dbpass=wp --dbhost="localhost" --allow-root
+	wp core install --url=your-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root
 	cd ..
 fi
 
-# The Vagrant site setup script will 
+# The Vagrant site setup script will
 # restart Nginx for us
 # -------------------------------------
-echo "Your Project site now installed";
+echo "My Project site now installed";
