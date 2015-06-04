@@ -162,105 +162,108 @@ module.exports = yeoman.generators.Base.extend({
   // Having to use bulkDirectory as using
   // directory gives permission errors!
   // -------------------------------------
-  writing: function () {
-
-    var shortName = this.projShortName;
+  writing: {
 
     // Pull down Kapow! repositories
     // -------------------------------------
+    repos: function () {
 
-    this.log(chalk.yellow('Pulling down the Kapow! repositories'));
+      var shortName = this.projShortName;
 
-    // Grunt
-    this.remote('mkdo', 'kapow-grunt', 'master', function(err, remote) {
-      remote.bulkDirectory('grunt', 'grunt');
-    });
+      this.log(chalk.yellow('Pulling down the Kapow! repositories'));
 
-    // Sass
-    this.remote('mkdo', 'kapow-sass', 'master', function(err, remote) {
-      remote.bulkDirectory('.', 'assets/sass');
-    });
+      // Grunt
+      this.remote('mkdo', 'kapow-grunt', 'master', function(err, remote) {
+        remote.bulkDirectory('grunt', 'grunt');
+      });
 
-    // Theme
-    this.remote('mkdo', 'kapow-theme', 'master', function(err, remote) {
-      remote.bulkDirectory('.', 'htdocs/wp-content/themes/' + shortName);
-    });
+      // Sass
+      this.remote('mkdo', 'kapow-sass', 'master', function(err, remote) {
+        remote.bulkDirectory('.', 'assets/sass');
+      });
+
+      // Theme
+      this.remote('mkdo', 'kapow-theme', 'master', function(err, remote) {
+        remote.bulkDirectory('.', 'htdocs/wp-content/themes/' + shortName);
+      });
+
+    },
 
     // Update strings in project files
     // -------------------------------------
+    updates:  function () {
 
-    this.log(chalk.yellow('Updating project files'));
+      this.log(chalk.yellow('Updating project files'));
 
-    var properRegex = /(My Project)/mg;
-    var shortRegex  = /(my-project)/mg;
-    var domainRegex = /(my-project.dev)/mg;
-    var dbnameRegex = /(my-project-db)/mg;
-    var emailRegex  = /(hello@my-project.com)/mg;
+      var properRegex = /(My Project)/mg;
+      var shortRegex  = /(my-project)/mg;
+      var domainRegex = /(my-project.dev)/mg;
+      var dbnameRegex = /(my-project-db)/mg;
+      var emailRegex  = /(hello@my-project.com)/mg;
 
-    // .gitignore
-    var gitignorePath = ".gitignore",
-        gitignoreFile = wiring.readFileAsString(gitignorePath);
+      // .gitignore
+      var gitignorePath = ".gitignore",
+          gitignoreFile = wiring.readFileAsString(gitignorePath);
 
-    gitignoreFile = gitignoreFile.replace(properRegex, this.projProperName);
-    gitignoreFile = gitignoreFile.replace(shortRegex, this.projShortName);
+      gitignoreFile = gitignoreFile.replace(properRegex, this.projProperName);
+      gitignoreFile = gitignoreFile.replace(shortRegex, this.projShortName);
 
-    wiring.writeFileFromString(gitignoreFile, gitignorePath);
+      wiring.writeFileFromString(gitignoreFile, gitignorePath);
 
-    // bower.json
-    var bowerPath = "bower.json",
-        bowerFile = wiring.readFileAsString(bowerPath);
+      // bower.json
+      var bowerPath = "bower.json",
+          bowerFile = wiring.readFileAsString(bowerPath);
 
-    bowerFile = bowerFile.replace(shortRegex, this.projShortName);
-    bowerFile = bowerFile.replace('Author Name', this.projAuthor);
+      bowerFile = bowerFile.replace(shortRegex, this.projShortName);
+      bowerFile = bowerFile.replace('Author Name', this.projAuthor);
 
-    wiring.writeFileFromString(bowerFile, bowerPath);
+      wiring.writeFileFromString(bowerFile, bowerPath);
 
-    // gruntfile.js
-    var gruntfilePath = "gruntfile.js",
-        gruntfileFile = wiring.readFileAsString(gruntfilePath);
+      // gruntfile.js
+      var gruntfilePath = "gruntfile.js",
+          gruntfileFile = wiring.readFileAsString(gruntfilePath);
 
-    gruntfileFile = gruntfileFile.replace(properRegex, this.projProperName);
-    gruntfileFile = gruntfileFile.replace(shortRegex, this.projShortName);
+      gruntfileFile = gruntfileFile.replace(properRegex, this.projProperName);
+      gruntfileFile = gruntfileFile.replace(shortRegex, this.projShortName);
 
-    wiring.writeFileFromString(gruntfileFile, gruntfilePath);
+      wiring.writeFileFromString(gruntfileFile, gruntfilePath);
 
-    // package.json
-    var packagePath = "package.json",
-        packageFile = wiring.readFileAsString(packagePath);
+      // package.json
+      var packagePath = "package.json",
+          packageFile = wiring.readFileAsString(packagePath);
 
-    packageFile = packageFile.replace(shortRegex, this.projShortName);
+      packageFile = packageFile.replace(shortRegex, this.projShortName);
 
-    wiring.writeFileFromString(packageFile, packagePath);
+      wiring.writeFileFromString(packageFile, packagePath);
 
-    // vvv-hosts
-    var vvvhostsPath = "vvv-hosts",
-        vvvhostsFile = wiring.readFileAsString(vvvhostsPath);
+      // vvv-hosts
+      var vvvhostsPath = "vvv-hosts",
+          vvvhostsFile = wiring.readFileAsString(vvvhostsPath);
 
-    vvvhostsFile = vvvhostsFile.replace(domainRegex, this.projDomain + ".dev");
+      vvvhostsFile = vvvhostsFile.replace(domainRegex, this.projDomain + ".dev");
 
-    wiring.writeFileFromString(vvvhostsFile, vvvhostsPath);
+      wiring.writeFileFromString(vvvhostsFile, vvvhostsPath);
 
-    // vvv-init.sh
-    var vvvinitPath = "vvv-init.sh",
-        vvvinitFile = wiring.readFileAsString(vvvinitPath);
+      // vvv-init.sh
+      var vvvinitPath = "vvv-init.sh",
+          vvvinitFile = wiring.readFileAsString(vvvinitPath);
 
-    vvvinitFile = vvvinitFile.replace(properRegex, this.projProperName);
-    vvvinitFile = vvvinitFile.replace(domainRegex, this.projDomain + ".dev");
-    vvvinitFile = vvvinitFile.replace(dbnameRegex, this.projDBName);
-    vvvinitFile = vvvinitFile.replace(emailRegex, this.projAdminEmail);
-    vvvinitFile = vvvinitFile.replace(shortRegex, this.projShortName);
+      vvvinitFile = vvvinitFile.replace(properRegex, this.projProperName);
+      vvvinitFile = vvvinitFile.replace(domainRegex, this.projDomain + ".dev");
+      vvvinitFile = vvvinitFile.replace(dbnameRegex, this.projDBName);
+      vvvinitFile = vvvinitFile.replace(emailRegex, this.projAdminEmail);
+      vvvinitFile = vvvinitFile.replace(shortRegex, this.projShortName);
 
-    wiring.writeFileFromString(vvvinitFile, vvvinitPath);
+      wiring.writeFileFromString(vvvinitFile, vvvinitPath);
 
-    // vvv-nginx.conf
-    var vvvnginxPath = "vvv-nginx.conf",
-        vvvnginxFile = wiring.readFileAsString(vvvnginxPath);
+      // vvv-nginx.conf
+      var vvvnginxPath = "vvv-nginx.conf",
+          vvvnginxFile = wiring.readFileAsString(vvvnginxPath);
 
-    vvvnginxFile = vvvnginxFile.replace(domainRegex, this.projDomain + ".dev");
+      vvvnginxFile = vvvnginxFile.replace(domainRegex, this.projDomain + ".dev");
 
-    wiring.writeFileFromString(vvvnginxFile, vvvnginxPath);
-
-
+      wiring.writeFileFromString(vvvnginxFile, vvvnginxPath);
+    }
   },
 
   // Install required dependencies
