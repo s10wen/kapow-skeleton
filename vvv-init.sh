@@ -1,4 +1,4 @@
-# Init script for Your Project
+# Init script for My Project
 # -----------------------------------------------------------------------------
 
 # Begin set-up
