@@ -10,7 +10,7 @@ echo "Commencing My Project Setup"
 # -------------------------------------
 echo "Creating database (if it's not already there)"
 mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS your-project"
-mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON your-project.* TO wp@localhost IDENTIFIED BY 'wp';"
+mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my-project.* TO wp@localhost IDENTIFIED BY 'wp';"
 
 # Download WordPress
 # -------------------------------------
@@ -20,7 +20,7 @@ then
 	cd htdocs
 	wp core download --allow-root
 	wp core config --dbname="my-project" --dbuser=wp --dbpass=wp --dbhost="localhost" --allow-root
-	wp core install --url=your-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root
+	wp core install --url=your-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@myproject.com --allow-root
 	cd ..
 fi
 
