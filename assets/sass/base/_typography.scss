@@ -1,0 +1,138 @@
+// Typographic styles
+// --------------------------------------------------------------------------
+// NOTE: The goal is to control as much of the typography as possible from
+// within this file e.g. family/size/weight/style, line-height, colour etc
+// --------------------------------------------------------------------------
+
+a {
+  color: $kp-colour-content--link;
+
+  @include kp-on-event {
+    color: $kp-colour-content--link-hover;
+  }
+
+  &:visited {
+    color: $kp-colour-content--link-visited;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+b,
+dt,
+strong {
+  font-weight: $kp-font-weight--bold;
+}
+
+blockquote {
+  p {
+    @include kp-font-size($kp-font-size--large);
+    font-style: italic;
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  @include kp-font-size($kp-font-size--medium);
+  color: $kp-colour-content--copy;
+  font-family: $kp-font-stack--copy;
+  line-height: $kp-line-height--copy;
+}
+
+code,
+kbd,
+pre,
+tt,
+var {
+  @include kp-font-size($kp-font-size--medium);
+  font-family: $kp-font-stack--code;
+  line-height: $kp-line-height--code;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+figcaption,
+small {
+  @include kp-font-size($kp-font-size--small);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $kp-colour-content--heading;
+  font-family: $kp-font-stack--heading;
+  font-weight: $kp-font-weight--bold;
+  line-height: $kp-line-height--heading;
+
+  a {
+    color: $kp-colour-content--heading;
+  }
+}
+
+h1 {
+  @include kp-font-size($kp-font-size--h1);
+}
+
+h2 {
+  @include kp-font-size($kp-font-size--h2);
+}
+
+h3 {
+  @include kp-font-size($kp-font-size--h3);
+}
+
+h4 {
+  @include kp-font-size($kp-font-size--h4);
+}
+
+h5 {
+  @include kp-font-size($kp-font-size--h5);
+}
+
+h6 {
+  @include kp-font-size($kp-font-size--h6);
+}
+
+html {
+  @include kp-font-size($kp-font-size--large);
+  text-rendering: optimizeLegibility;
+
+  @include kp-mq(md) {
+    @include kp-font-size($kp-font-size--medium);
+  }
+}
+
+ins,
+mark {
+  text-decoration: none;
+}
+
+li,
+p {
+  @include kp-font-size($kp-font-size--medium);
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+pre {
+  color: $kp-colour-content--pre;
+}

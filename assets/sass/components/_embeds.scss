@@ -1,0 +1,24 @@
+// Embedded content styles e.g YouTube, Google Maps, Twitter etc
+// --------------------------------------------------------------------------
+
+// Makes the embed responsive
+// -------------------------------------
+.embed-wrapper {
+  height: 0;
+  margin: 1.5em 0;
+  padding-bottom: 50%; // aspect ratio
+  position: relative;
+  overflow: hidden;
+
+  > div,
+  > iframe,
+  > object {
+    bottom: 0;
+    height: 100% !important;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100% !important;
+  }
+}

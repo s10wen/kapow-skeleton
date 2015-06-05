@@ -1,0 +1,56 @@
+// Bootstrap (3.3.4)
+// --------------------------------------------------------------------------
+
+@if $kp-framework == "bootstrap" {
+  // Set the base font size
+  $font-size-base: $kp-base--font-size;
+  // Sets the total number of columns in the grid.
+  $grid-columns: $kp-base--columns;
+  // Override Bootstrap's breakpoints
+  $screen-xs: $kp-mq--xs;
+  $screen-sm: $kp-mq--sm;
+  $screen-md: $kp-mq--md;
+  $screen-lg: $kp-mq--lg;
+  // Set the container widths to our own row width
+  $container-tablet: $kp-base--row-width;
+  $container-desktop: $kp-base--row-width;
+  $container-large-desktop: $kp-base--row-width;
+  // Point at which the navbar becomes uncollapsed.
+  $grid-float-breakpoint: $kp-mq--sm;
+  // Point at which the navbar begins collapsing.
+  $grid-float-breakpoint-max: $kp-mq--sm - 1;
+}
+
+// Foundation (5.5.2)
+// --------------------------------------------------------------------------
+
+@if $kp-framework == "foundation" {
+  // Set the base font size
+  $base-font-size: $kp-base--font-size;
+  // Sets the total number of columns in the grid.
+  $total-columns: $kp-base--columns;
+  // Sets the maximum row width
+  $row-width: $kp-base--row-width;
+  // Override Foundation's breakpoints
+  $small-breakpoint: em-calc($kp-mq--sm);
+  $medium-breakpoint: em-calc($kp-mq--md);
+  $large-breakpoint: em-calc($kp-mq--lg);
+  $xlarge-breakpoint: em-calc($kp-mq--xl);
+  // Topbar breakpoint
+  $topbar-breakpoint: $kp-mq--sm;
+  // Turn off default typography classes
+  $include-html-type-classes: false;
+}
+
+// Bourbon (4.2.3) + Neat (1.7.2)
+// NOTE: Is it worth adding Bitters as well?!
+// --------------------------------------------------------------------------
+
+@if $kp-framework == "bourbon" {
+  // Bourbon - Sets the base font size
+  $em-base: $kp-base--font-size;
+  // Neat - Sets the total number of columns in the grid.
+  $grid-columns: $kp-base--columns;
+  // Neat - Sets the maximum row width
+  $max-width: $kp-base--row-width;
+}

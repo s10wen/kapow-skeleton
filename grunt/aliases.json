@@ -1,0 +1,22 @@
+{
+  "build": [
+    "default",
+    "watch"
+  ],
+  "docs": [
+    "jsdoc",
+    "phpdoc:all",
+    "sassdoc"
+  ],
+  "lint": [
+    "jshint",
+    "phplint:all",
+    "scsslint"
+  ],
+  "respimages": [
+    "responsive_images"
+  ],
+  "spritesmith": [
+    "sprite"
+  ]
+}

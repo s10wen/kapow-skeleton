@@ -1,0 +1,53 @@
+// Form styles
+// --------------------------------------------------------------------------
+
+// Form fields
+// -------------------------------------
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea {
+  color: $kp-colour-form--input;
+  border: 1px solid $kp-colour-form--input-border;
+  padding: .313em;
+
+  &:focus {
+    border-color: $kp-colour-form--input-focus-border;
+    color: $kp-colour-form--input-focus;
+  }
+}
+
+select {
+  color: $kp-colour-form--input;
+  border: 1px solid $kp-colour-form--input-border;
+  padding: .313em;
+}
+
+// Submit buttons
+// -------------------------------------
+button,
+input[type="reset"],
+input[type="submit"] {
+  background-color: $kp-colour-form--input-submit-bg;
+  border: 0;
+  color: $kp-colour-form--input-submit;
+  padding: .313em;
+
+  @include kp-on-event {
+    background-color: darken($kp-colour-form--input-submit-bg, 20%);
+  }
+}
+
+// Placeholder styles
+// -------------------------------------
+input {
+  @include kp-placeholder-styles($kp-ph-styles);
+}
+
+textarea {
+  @include kp-placeholder-styles($kp-ph-styles);
+}

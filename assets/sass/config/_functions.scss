@@ -1,0 +1,39 @@
+// Custom Sass functions for use throughout the project
+// --------------------------------------------------------------------------
+
+// Colours
+// -------------------------------------
+
+/// Black with opacity
+/// @param {Number} $opacity - Opacity value
+/// @group colours
+@function kp-black($opacity) {
+  @return rgba(0, 0, 0, $opacity);
+}
+
+/// White with opacity
+/// @param {Number} $opacity - Opacity value
+/// @group colours
+@function kp-white($opacity) {
+  @return rgba(255, 255, 255, $opacity);
+}
+
+// Sizing
+// -------------------------------------
+
+/// Calculate REM size using PX value
+/// @param {Number} $px-size - Size (PX)
+/// @group sizing
+@function kp-rem($px-size) {
+  $rem-size: $px-size / $kp-base--font-size;
+  @return #{$rem-size}rem;
+}
+
+// Utilities
+// -------------------------------------
+/// Strip the unit from a value
+/// @param {Number} $value - Pixel value
+/// @group helpers
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}

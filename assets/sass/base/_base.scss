@@ -1,0 +1,30 @@
+// Miscellaneous base styles e.g. box-sizing, psuedos, anchor styles etc
+// -----------------------------------------------------------------------------
+
+// Make all elements inherit from <html>
+// -------------------------------------
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Selection highlighting
+// -------------------------------------
+::-moz-selection {
+  background: $kp-colour-branding--primary;
+  color: $kp-colour--white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $kp-colour-branding--primary;
+  color: $kp-colour--white;
+  text-shadow: none;
+}
+
+// Outer container width
+// -------------------------------------
+.site {
+  max-width: $kp-base--container-width;
+}

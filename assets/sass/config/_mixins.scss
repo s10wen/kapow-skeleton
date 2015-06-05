@@ -1,0 +1,347 @@
+// Custom Sass mixins for use throughout the project
+// --------------------------------------------------------------------------
+
+// Cross Browser
+// -------------------------------------
+
+/// Background size that is IE friendly
+/// @param {String} $type - Type
+/// @group cross-browser
+@mixin kp-bg-size($type) {
+  background-size: $type;
+
+  .lt-ie9 & {
+    -ms-behavior: url(/polyfills/backgroundsize.htc);
+  }
+}
+
+/// Opacity that is IE friendly
+/// @param {Number} $opacity - Opacity
+/// @group cross-browser
+@mixin kp-opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity-ie})";
+}
+
+// CSS3
+// -------------------------------------
+
+/// Animations
+/// @param {String} $animation - Animation
+/// @group css3
+@mixin kp-animation($animation) {
+  -webkit-animation: #{$animation};
+  -moz-animation: #{$animation};
+  -ms-animation: #{$animation};
+  -o-animation: #{$animation};
+  animation: #{$animation};
+}
+
+/// Background gradients
+/// @param {Color} $start - Colour at the beginning
+/// @param {Color} $end - Colour at the end
+/// @param {String} $direction - Gradient type -  `vertical`, `horizontal` or `radial`
+/// @group css3
+@mixin kp-bg-gradient($start, $end, $direction) {
+  background: $start-color;
+
+  @if $direction == "vertical" {
+    background: linear-gradient(to bottom, $start, $end);
+  }
+
+  @else if $direction == "horizontal" {
+    background: linear-gradient(to right, $start, $end);
+  }
+
+  @else {
+    background: radial-gradient(ellipse at center, $start, $end);
+  }
+}
+
+/// Border radius for all four corners
+/// @param {Length} $top-left - Top Left Corner
+/// @param {Length} $top-right - Top Right Corner
+/// @param {Length} $bottom-right - Bottom Right Corner
+/// @param {Length} $bottom-left - Bottom Left Corner
+/// @group css3
+@mixin kp-border-radius($top-left, $top-right, $bottom-right, $bottom-left) {
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-right-radius: $bottom-right;
+  border-bottom-left-radius: $bottom-left;
+}
+
+/// Keyframes
+/// @param {String} $name - Name
+/// @group css3
+@mixin kp-keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+
+  @-o-keyframes #{$name} {
+    @content;
+  }
+
+  @-keyframes #{$name} {
+    @content;
+  }
+}
+
+/// Transitions
+/// @param {String} $transition - Transition
+/// @group css3
+@mixin kp-transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// Events
+// -------------------------------------
+
+/// Event wrapper for anchors/buttons
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @group events
+/// @link https:///twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin kp-on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+
+  @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+// Forms
+// -------------------------------------
+
+/// Input placeholder styling
+/// @param {List} $styles - Styles
+/// @requires $kp-ph--prefixes
+/// @group forms
+@mixin kp-placeholder-styles($styles) {
+  @each $pseudo in $kp-ph--prefixes {
+    @at-root #{&}#{$pseudo} {
+
+      @each $key, $value in $styles {
+        #{$key}: #{$value};
+      }
+    }
+
+    @at-root #{&}:focus#{$pseudo} {
+      color: transparent;
+    }
+  }
+}
+
+// Helpers
+// -------------------------------------
+
+/// Center block
+/// @group helpers
+@mixin kp-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/// Horizontally and vertically centers block elements
+/// Important: you must have a parent element with `position: relative`.
+/// @group helpers
+@mixin kp-center-both {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/// Clearfix
+/// @group helpers
+@mixin kp-clearfix {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+/// Hide text
+/// @group helpers
+@mixin kp-hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+/// No horizontal margin
+/// @group helpers
+@mixin kp-no-hmargin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/// No horizontal padding
+/// @group helpers
+@mixin kp-no-hmargin {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/// No vertical margin
+/// @group helpers
+@mixin kp-no-vmargin {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/// No vertical padding
+/// @group helpers
+@mixin kp-no-vpadding {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+/// Shorthand for element positioning
+/// @param {String} $type - Either absolute, fixed or relative
+/// @param {Length} $top [null] - Top
+/// @param {Length} $right [null] - Right
+/// @param {Length} $bottom [null] - Bottom
+/// @param {Length} $left [null] - Left
+/// @group helpers
+@mixin kp-position($type, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $type;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/// Visually hidden
+/// @group helpers
+@mixin kp-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  // Allow the element to be focusable
+  // when navigated to via the keyboard
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+// Responsive
+// -------------------------------------
+
+/// Media queries
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $kp-breakpoints
+/// @group responsive
+/// @link http:///sass-guidelin.es/#breakpoint-manager
+@mixin kp-mq($breakpoint) {
+  $query: map-get($kp-breakpoints, $breakpoint);
+
+  @if not $query {
+    @error "No value found for `#{$breakpoint}`. Please make sure it is defined in `$kp-breakpoints` map.";
+  }
+
+  @media screen and #{if(type-of($query) == "string", unquote($query), inspect($query))} {
+    @content;
+  }
+}
+
+// Sizing
+// -------------------------------------
+
+/// Responsive property sizes with fallback
+/// @param {String} $property - Property
+/// @param {Number | List} $px-values - PX Values
+/// @requires $kp-base--font-size
+/// @group sizing
+/// @link https:///github.com/bitmanic/rem
+
+@mixin kp-rem-size($property, $px-values) {
+  // Convert the baseline into rems
+  $baseline-rem: $kp-base--font-size / 1rem * 1;
+  // Print the first line in pixel values
+  #{$property}: $px-values;
+
+  // If there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  }
+
+  @else {
+    // Create an empty list that we can dump values into
+    $rem-values: ();
+
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value);
+      }
+
+      @else {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+/// REM font size with fallback
+/// @param {Number} $px-value - PX Value
+/// @requires $kp-base--font-size
+/// @group sizing
+@mixin kp-font-size($px-value) {
+  // Convert the baseline into rems
+  $baseline-rem: $kp-base--font-size / 1rem * 1;
+  // Print the first line in pixel values
+  font-size: $px-value;
+
+  @if type-of($px-value) == "number" {
+    font-size: $px-value / $baseline-rem;
+  }
+}

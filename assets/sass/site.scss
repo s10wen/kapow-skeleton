@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*!
+Theme Name: My Project
+Author: Author Name
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-project
+*/
+
+// Sass partial imports - uncomment where appropriate
+// -----------------------------------------------------------------------------
+
+// Config
+// -------------------------------------
+@import "config/variables";
+@import "config/settings";
+@import "config/functions";
+@import "config/mixins";
+
+// Normalize
+// -------------------------------------
+@import "../../bower_components/normalize-scss/normalize";
+
+// Font Awesome
+// -------------------------------------
+// @import "../../bower_components/fontawesome/scss/font-awesome";
+
+// Framework
+// -------------------------------------
+// @import "config/settings/bootstrap-custom";
+// @import "config/settings/foundation-custom";
+// @import "config/settings/bourbon-custom";
+
+// Base
+// -------------------------------------
+@import "base/helpers";
+@import "base/base";
+@import "base/elements";
+@import "base/fonts";
+@import "base/iconography";
+@import "base/sprites";
+@import "base/typography";
+
+// Layouts
+// -------------------------------------
+@import "layouts/header";
+@import "layouts/aside";
+@import "layouts/main";
+@import "layouts/footer";
+
+// Components
+// -------------------------------------
+@import "components/accordions";
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/carousels";
+@import "components/content";
+@import "components/embeds";
+@import "components/forms";
+@import "components/images";
+@import "components/modals";
+@import "components/navigation";
+@import "components/pagination";
+@import "components/sliders";
+@import "components/tabs";
+@import "components/widgets";
+
+// Pages
+// -------------------------------------
+@import "pages/home";
+
+// Themes
+// -------------------------------------
+@import "themes/sections";
+
+// States
+// -------------------------------------
+@import "states/js";
+
+// Vendors
+// -------------------------------------
+@import "vendors/wordpress";
+
+// Shame
+// -------------------------------------
+@import "shame/shame";
+@import "shame/ie";
+@import "shame/ios";
+
+// Print
+// -------------------------------------
+@import "print/print";
+
+// Hacks
+// -------------------------------------
+@import "hacks";

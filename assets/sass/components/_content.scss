@@ -1,0 +1,43 @@
+// Entry header, content and footer styles
+// NOTE: Should this really be in components?! Perhaps move to base/ ?!
+// --------------------------------------------------------------------------
+
+// Entry/Page Header
+// -------------------------------------
+
+.entry-header,
+.page-header {}
+
+.entry-title,
+.page-title {}
+
+.entry-meta {}
+
+// Entry/Page Content
+// -------------------------------------
+
+.entry-content,
+.page-content {
+  blockquote {
+    border-left: 4px solid $kp-colour-content--copy;
+    padding-left: 1.5em;
+  }
+
+  dl {
+    padding-left: 1.5em;
+  }
+
+  li {
+    margin-bottom: .875em;
+  }
+}
+
+// Entry Summary
+// -------------------------------------
+
+.entry-summary {}
+
+// Entry Footer
+// -------------------------------------
+
+.entry-footer {}

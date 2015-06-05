@@ -1,0 +1,67 @@
+// Helper classes for things such as clearfix, containers, visibility
+// --------------------------------------------------------------------------
+// NOTE: All helper classes that are greater than one declaration should also
+// be defined as a mixin in config/_mixins
+// --------------------------------------------------------------------------
+
+// Clearfix
+// -------------------------------------
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+// Hide text while making it readable
+// for screen readers
+// -------------------------------------
+
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+// Hide visually and from screen readers
+// -------------------------------------
+.hidden {
+  display: none !important;
+}
+
+// Hide only visually, but have it
+// available for screen readers:
+// -------------------------------------
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  // Allow the element to be focusable
+  // when navigated to via the keyboard
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+// Hide visually and from screen readers,
+// but maintain layout
+// -------------------------------------
+.invisible {
+  visibility: hidden;
+}

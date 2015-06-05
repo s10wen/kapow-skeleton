@@ -1,0 +1,319 @@
+f
+a {
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  img {
+    // Death to anchor borders in IE
+    border: 0;
+  }
+}
+
+a,
+button,
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  transition: background-color ease-in-out .3s, color ease-in-out .3s;
+}
+
+abbr {}
+
+abbr,
+acronym {
+  cursor: help;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+article {}
+
+audio {}
+
+// Prevents gap at the bottom of the element
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+b {}
+
+blockquote {
+  margin: 0 1.5em;
+
+  p + p {
+    margin-top: 0;
+  }
+}
+
+// Set sensible quotation marks
+blockquote,
+q {
+  quotes: "" "";
+
+  &:before,
+  &:after {
+    content: "";
+  }
+}
+
+br {}
+
+button {}
+
+caption {}
+
+cite {}
+
+code {}
+
+col {}
+
+colgroup {}
+
+datalist {}
+
+dd {
+  margin: 0 0 .875em;
+}
+
+del {}
+
+dfn {}
+
+div {}
+
+dl {}
+
+dl,
+ol,
+ul {
+  margin: 1.5em 0;
+}
+
+dt {}
+
+em {}
+
+embed {}
+
+embed,
+iframe,
+object,
+pre {
+  // Keep the contents inside the container
+  max-width: 100%;
+  margin: 1.5em auto;
+}
+
+fieldset {
+  // Reset spacing
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {}
+
+figure {
+  margin: .5em 0;
+  padding: .5em;
+}
+
+footer {}
+
+form {
+  margin: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  margin: .5em 0 1em;
+}
+
+header {}
+
+hr {
+  // Make the HR look better by default
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+html {
+  // Everything inherits from <html>
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+i {}
+
+iframe {}
+
+img {
+  // Make responsive
+  height: auto;
+  max-width: 100%;
+
+  figure & {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+input {}
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea {
+  transition: border-color ease-in-out .3s, color ease-in-out .3s;
+}
+
+input,
+textarea {
+  margin-bottom: .313em;
+  margin-top: .313em;
+}
+
+ins {}
+
+kbd {}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  padding: 0;
+}
+
+li {
+  > ol,
+  > ul {
+    margin-bottom: 0;
+    margin-left: .875em;
+  }
+}
+
+main {}
+
+mark {}
+
+nav {}
+
+object {}
+
+ol {
+  list-style: decimal;
+
+  ol, ul {
+    margin-bottom: .625em;
+    margin-top: .625em;
+  }
+}
+
+optgroup {}
+
+option {}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+q {}
+
+param {}
+
+pre {
+  background-color: $kp-colour-content--pre-bg;
+  margin: 1.5em;
+  overflow: auto;
+  padding: 1.5em;
+}
+
+s {}
+
+section {}
+
+select {
+  max-width: 100%;
+}
+
+small {}
+
+source {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+svg {}
+
+table {
+  margin: 1.5em;
+  max-width: 100%;
+  width: 100%;
+}
+
+tbody {}
+
+td {}
+
+textarea {
+  // Allow vertical resizing only
+  resize: vertical;
+  width: 100%;
+}
+
+tfoot {}
+
+th {}
+
+thead {}
+
+time {}
+
+tr {}
+
+tt {}
+
+u {}
+
+ul {
+  list-style-type: square;
+
+  ol, ul {
+    margin-bottom: .625em;
+    margin-top: .625em;
+  }
+}
+
+var {}
+
+video {}

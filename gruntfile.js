@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         // Site specific settings
         // -------------------------------------
         siteInfo: {
-          fancy_name: 'My Project',       // The 'fancy' name for your project e.g. 'My First Website'
+          fancy_name: 'Avengers Initiative',       // The 'fancy' name for your project e.g. 'My First Website'
           docs_path: 'documentation',       // Documentation path relative to the project root - NO trailing slash
           reports_path: 'reports',          // Reports path relative to the project root - NO trailing slash
           assets_path: 'assets',            // Assets path relative to the project root - NO trailing slash
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
         // -------------------------------------
         wpInfo: {
           wp_content: 'htdocs/wp-content',  // Path to wp-content relative to the project root
-          theme_name: 'my-project',         // WordPress theme directory name
+          theme_name: 'avengers-int',         // WordPress theme directory name
           img_dir: 'img',                   // Directory containing theme images
           js_dir: 'js',                     // Directory containing theme Javascript
         },
