@@ -29,25 +29,25 @@ module.exports = yeoman.generators.Base.extend({
       {
         type: 'input',
         name: 'projProperName',
-        message: chalk.yellow('(1/10)') + ' What is the "proper" name of this project? ' + chalk.red('e.g. Gotham Enterprises'),
+        message: chalk.yellow('(1/10)') + ' What is the "proper" name of this project? ' + '\n' + chalk.red('e.g. Gotham Enterprises'),
         default: 'My Project'
       },
       {
         type: 'input',
         name: 'projShortName',
-        message: chalk.yellow('(2/10)') + ' What is the "short" name of this project? ' + chalk.red('e.g. gotham-ent'),
+        message: chalk.yellow('(2/10)') + ' What is the "short" name of this project? ' + '\n' + chalk.red('e.g. gotham-ent (no spaces!'),
         default: 'my-project'
       },
       {
         type: 'input',
         name: 'projAuthor',
-        message: chalk.yellow('(3/10)') + ' Who is the author of this project? ' + chalk.red('e.g. Bruce Wayne <bruce@gotham-ent.com>'),
+        message: chalk.yellow('(3/10)') + ' Who is the author of this project? ' + '\n' + chalk.red('e.g. Bruce Wayne <bruce@gotham-ent.com>'),
         default: 'Author Name'
       },
       {
         type: 'list',
         name: 'projFramework',
-        message: chalk.yellow('(4/10)') + ' Which of these front-end frameworks do you require?',
+        message: chalk.yellow('(4/10)') + ' Which of these frameworks do you wish to use?',
         choices: [
           {
             name: 'Bootstrap',
@@ -70,7 +70,7 @@ module.exports = yeoman.generators.Base.extend({
       {
         type: 'checkbox',
         name: 'projExtras',
-        message: chalk.yellow('(5/10)') + ' Which of these front-end extras do you require?',
+        message: chalk.yellow('(5/10)') + ' Which of these extras do you require?',
         choices: [
           {
             name: 'Font Awesome',
@@ -90,19 +90,19 @@ module.exports = yeoman.generators.Base.extend({
       {
         type: 'checkbox',
         name: 'projDocs',
-        message: chalk.yellow('(6/10)') + ' Which of these documentation systems do you require?',
+        message: chalk.yellow('(6/10)') + ' What documentation to you wish to generate?',
         choices: [
           {
             name: 'JSDoc',
-            value: 'jsdoc'
+            value: 'js'
           },
           {
             name: 'phpDocumentor',
-            value: 'phpdoc'
+            value: 'php'
           },
           {
             name: 'SassDoc',
-            value: 'sassdoc'
+            value: 'sass'
           }
         ],
         default: 'all'
@@ -110,25 +110,25 @@ module.exports = yeoman.generators.Base.extend({
       {
         type: 'confirm',
         name: 'projRespImages',
-        message: chalk.yellow('(7/10)') + ' Would you like to generate responsive sizes for .jpg images in your theme?',
+        message: chalk.yellow('(7/10)') + ' Would you like to generate responsive sizes for '  + '\n' +  '.jpg images in your theme?',
         default: 'true'
       },
       {
         type: 'input',
         name: 'projDBName',
-        message: chalk.yellow('(8/10)') + ' What should I call the WordPress database? ' + chalk.red('e.g. gotham_ent'),
+        message: chalk.yellow('(8/10)') + ' What should the WordPress database be called? '  + '\n' + chalk.red('e.g. gotham_ent (no spaces!)'),
         default: "my-project-db"
       },
       {
         type: 'input',
         name: 'projAdminEmail',
-        message: chalk.yellow('(9/10)') + ' What is the email address for the WordPress administrator?',
+        message: chalk.yellow('(9/10)') + ' What should the WordPress admin email address be?' + '\n',
         default: "hello@my-project.com"
       },
       {
         type: 'input',
         name: 'projDomain',
-        message: chalk.yellow('(10/10)') + ' What name (without any suffix) do you prefer for the Vagrant \'.dev\' domain? ' + chalk.red('e.g. gotham-ent'),
+        message: chalk.yellow('(10/10)') + ' What should the Vagrant \'.dev\' domain be? ' + '\n' + chalk.red('e.g. gotham-ent (no suffix!)'),
         default: "my-project"
       },
     ];
@@ -191,15 +191,26 @@ module.exports = yeoman.generators.Base.extend({
 
     // Update strings in project files
     // -------------------------------------
-    updates:  function () {
+    updates: function () {
 
       this.log(chalk.yellow('Updating project files'));
 
       var properRegex = /(My Project)/mg;
       var shortRegex  = /(my-project)/mg;
-      var domainRegex = /(my-project.dev)/mg;
+      var authorRegex  = /(Author Name)/mg;
       var dbnameRegex = /(my-project-db)/mg;
       var emailRegex  = /(hello@my-project.com)/mg;
+      var domainRegex = /(my-project.dev)/mg;
+
+      // assets/sass/site.scss
+      var sitescssPath = "assets/sass/site.scss",
+          sitescssFile = wiring.readFileAsString(sitescssPath);
+
+      sitescssFile = sitescssFile.replace(properRegex, this.projProperName);
+      sitescssFile = sitescssFile.replace(authorRegex, this.projShortName);
+      sitescssFile = sitescssFile.replace(shortRegex, this.projShortName);
+
+      wiring.writeFileFromString(sitescssFile, sitescssPath);
 
       // .gitignore
       var gitignorePath = ".gitignore",
@@ -215,7 +226,7 @@ module.exports = yeoman.generators.Base.extend({
           bowerFile = wiring.readFileAsString(bowerPath);
 
       bowerFile = bowerFile.replace(shortRegex, this.projShortName);
-      bowerFile = bowerFile.replace('Author Name', this.projAuthor);
+      bowerFile = bowerFile.replace(authorRegex, this.projAuthor);
 
       wiring.writeFileFromString(bowerFile, bowerPath);
 
