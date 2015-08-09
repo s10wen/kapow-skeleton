@@ -1,3 +1,3 @@
 [submodule "htdocs/wordpress"]
-  path = htdocs/wordpress
-  url = git@github.com:WordPress/WordPress.git
+	path = htdocs/wordpress
+	url = git://github.com/WordPress/WordPress.git
