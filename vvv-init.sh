@@ -18,11 +18,14 @@ if [ ! -d htdocs/wp-admin ]
 then
 	echo "Installing WordPress using WP CLI"
 	cd htdocs
-  mkdir wordpress
+  mv wp-config.php wp-config-bak.php
   cd wordpress
-	wp core download --allow-root
+  wp core config --dbname="my_project_db" --dbuser=wp --dbpass=wp --allow-root
 	wp core install --url="my-project.dev" --title="My Project" --admin_user=admin --admin_password=password --admin_email="hello@my-project.com" --allow-root
-	cd ../..
+  rm wp-config.php
+  cd ..
+  mv wp-config-bak.php wp-config.php
+	cd ..
 fi
 
 # The Vagrant site setup script will
