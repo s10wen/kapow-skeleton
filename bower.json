@@ -1,8 +1,8 @@
 {
-  "name": "avengers-int",
+  "name": "my-project",
   "version": "1.0.0",
   "authors": [
-    "Nick Fury"
+    "Author Name"
   ],
   "license": "MIT",
   "private": true,
