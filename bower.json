@@ -12,18 +12,20 @@
     "bower_components"
   ],
   "dependencies": {
-    "modernizr": "latest",
+    "html5shiv": "latest",
     "respondJS": "latest",
-    "imagesloaded": "latest",
-    "masonry": "latest",
-    "jquery-ui": "latest",
+    "selectivizr": "latest",
+    "modernizr": "latest",
     "normalize-scss": "latest",
     "fontawesome": "latest",
     "bootstrap-sass": "3.3.4",
     "foundation": "5.5.2",
     "bourbon": "4.2.3",
     "neat": "1.7.2",
-    "selectivizr": "~1.0.2",
-    "html5shiv": "~3.7.3"
+    "jquery-ui": "latest",
+    "imagesloaded": "latest",
+    "masonry": "latest",
+    "matchHeight": "latest",
+    "underscore": "latest"
   }
 }
