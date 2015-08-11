@@ -2,8 +2,11 @@
   "name": "my-project",
   "version": "1.0.0",
   "private": "true",
-  "stylesheets": "assets/sass",
-  "javascripts": "assets/js",
+  "frontend": {
+    "name": "My Project",
+    "stylesheets": "assets/sass",
+    "javascripts": "assets/js"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "glob": "^5.0.14",
