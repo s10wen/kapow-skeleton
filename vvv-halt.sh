@@ -25,5 +25,3 @@ if [ -f $dbfile ]
   else
     echo "No My Project database file available for backup!"
 fi
-
-
