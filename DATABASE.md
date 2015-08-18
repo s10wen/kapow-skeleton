@@ -39,6 +39,7 @@ end
     config.trigger.before :destroy, :stdout => true do
       run "vagrant ssh -c 'vagrant_destroy'"
     end
+    # START NEW CODE
     config.trigger.after :halt, :stdout => true do
       # Iterate through hosts and fire the vvv-halt.sh script
       # NOTE: The script must be executable (chmod +x <script>)
@@ -47,6 +48,7 @@ end
           run path
       end
     end
+    # END NEW CODE
   end
 end
 ````
