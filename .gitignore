@@ -40,8 +40,8 @@ htdocs/wp-content/cache/
 htdocs/wp-content/plugins/hello.php
 htdocs/wp-content/uploads/
 htdocs/wp-content/upgrade/
-htdocswp-content/wp-cache-config.php
-htdocswp-content/plugins/hello.php
+htdocs/wp-content/wp-cache-config.php
+htdocs/wp-content/plugins/hello.php
 
 # Themes - Stock
 htdocs/wp-content/themes/twentyten/
