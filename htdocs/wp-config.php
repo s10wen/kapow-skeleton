@@ -86,7 +86,6 @@ define( 'WP_DEFAULT_THEME', 'my-project' );
 
 // Prevent editing of files through the admin.
 define( 'DISALLOW_FILE_EDIT', true );
-define( 'DISALLOW_FILE_MODS', true );
 
 /* That's all, stop editing! Happy blogging. */
 
