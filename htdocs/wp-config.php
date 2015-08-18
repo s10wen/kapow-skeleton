@@ -82,7 +82,7 @@ define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/mu-plugins' );
 define( 'WPMU_PLUGIN_URL', WP_HOME . '/wp-content/mu-plugins' );
 
 // Set default theme.
-define( 'WP_DEFAULT_THEME', 'meetup' );
+define( 'WP_DEFAULT_THEME', 'my-project' );
 
 // Prevent editing of files through the admin.
 define( 'DISALLOW_FILE_EDIT', true );
