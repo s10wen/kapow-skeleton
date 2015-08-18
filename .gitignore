@@ -28,7 +28,10 @@ node_modules
 htdocs/*
 !htdocs/polyfills/
 !htdocs/wp-content/
+!htdocs/index.php
+!htdocs/local-config-sample.php
 !htdocs/robots.txt
+!htdocs/wp-config.php
 !htdocs/.htaccess
 
 # WP Content
