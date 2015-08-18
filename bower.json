@@ -26,6 +26,6 @@
     "jquery-ui": "latest",
     "masonry": "latest",
     "imagesloaded": "latest",
-    "matchHeight": "latest",
+    "matchHeight": "latest"
   }
 }
