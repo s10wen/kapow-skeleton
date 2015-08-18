@@ -55,4 +55,4 @@ end
 
 Save the file and then bring Vagrant up as normal. 
 
-The next time you run `vagrant halt` Vagrant will execute the `vvv-halt.sh` shell script which will move a namespaced (using your system username) copy of the database dump into the `/database` directory in the repo e.g. `my_project-brucewayne.sql`.
+The next time you run `vagrant halt` Vagrant will execute the `vvv-halt.sh` shell script which will move a namespaced (using your system username) database dump into the `/database` directory e.g. `my_project-brucewayne.sql`.
