@@ -28,7 +28,10 @@ node_modules
 htdocs/*
 !htdocs/polyfills/
 !htdocs/wp-content/
+!htdocs/index.php
+!htdocs/local-config-sample.php
 !htdocs/robots.txt
+!htdocs/wp-config.php
 !htdocs/.htaccess
 
 # WP Content
@@ -40,8 +43,8 @@ htdocs/wp-content/cache/
 htdocs/wp-content/plugins/hello.php
 htdocs/wp-content/uploads/
 htdocs/wp-content/upgrade/
-htdocswp-content/wp-cache-config.php
-htdocswp-content/plugins/hello.php
+htdocs/wp-content/wp-cache-config.php
+htdocs/wp-content/plugins/hello.php
 
 # Themes - Stock
 htdocs/wp-content/themes/twentyten/
