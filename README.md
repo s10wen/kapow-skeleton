@@ -57,9 +57,9 @@ Once WordPress has been downloaded, navigate to `htdocs` and rename `local-confi
 
 ## Usage
 
-Once you've completed the installation steps you're ready to login to WordPress (admin / password) and can start developing the site locally!
+Once you've completed the installation steps you're ready to login to WordPress (*admin* / *password*) and can start developing the site locally!
 
-If you wish to use a particular front-end framework or otherwise configure your Sass set-up you should take a look at the following files:
+If you wish to use one of the available front-end frameworks (Foundation / Bootstrap / Bourbon + Neat) or otherwise configure your Sass set-up you should take a look at the following files:
 
 - `assets/sass/config/_settings.scss` to pick a Sass framework
 - `assets/sass/config/_vars-default.scss` to alter the default variables to suit your needs
@@ -83,4 +83,4 @@ Several Grunt commands are at your disposal:
 
 ## Changelog
 
-0.1.0 - 27.05.2015 - Initial release.
+0.1.0 - 27.05.2015 - Initial release along with documentation.
