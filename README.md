@@ -57,7 +57,9 @@ For each of the Kapow! components you can either download and extract the archiv
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
-**6)** Before you add WordPress as a sub-module, you need to initialize this project as a git repository using `git init`. Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
+**6)** Before you add WordPress as a sub-module, you need to initialize this project as a git repository using `git init`. 
+
+Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
 
 Once WordPress has been cloned, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
 
