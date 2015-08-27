@@ -65,7 +65,7 @@ Once WordPress has been cloned, navigate to `htdocs` and rename `local-config-sa
 
 **8)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
 
-**9)** When you're ready, you'll need to configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
+**9)** When you're ready, you'll need to configure the repo so that you can push these local files up to your remote repo once you've added and committed them. That's beyond the scope of this guide so I'll leave that up to you. :)
 
 **10)** Make a nice hot cup of tea/coffee and bask in your magnificence!
 
