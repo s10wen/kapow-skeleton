@@ -27,7 +27,7 @@ For each of the Kapow! components you can either download and extract the archiv
 - my_project = the database name 
 - hello@my-project.com = your email address
 
-4) Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower dependencies for concatenation, paths to plugins to be linted etc. the `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
+4) Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. the `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
 5) Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
