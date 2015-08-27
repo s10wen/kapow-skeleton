@@ -25,7 +25,7 @@
     "grunt-notify": "~0.4.1",
     "grunt-phpdoc": "^0.1.1",
     "grunt-phplint": "0.0.5",
-    "grunt-postcss": "^0.5.5",
+    "grunt-postcss": "^0.6.0",
     "grunt-responsive-images": "^0.1.6",
     "grunt-sass": "^1.0.0",
     "grunt-sassdoc": "^2.0.1",
