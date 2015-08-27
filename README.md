@@ -59,7 +59,7 @@ Once WordPress has been downloaded, navigate to `htdocs` and rename `local-confi
 
 Once you've completed the installation steps you're ready to login to WordPress (admin / password) and can start developing the site locally!
 
-If you wish to use a particular front-end framework or otherwise configure your Sass set-up you should take a look at and edit the following files:
+If you wish to use a particular front-end framework or otherwise configure your Sass set-up you should take a look at the following files:
 
 - `assets/sass/config/_settings.scss` to pick a Sass framework
 - `assets/sass/config/_vars-default.scss` to alter the default variables to suit your needs
