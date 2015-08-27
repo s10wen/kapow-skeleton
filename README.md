@@ -20,9 +20,9 @@ On it's own, the Skeleton isn't a lot of use unless you've already got your own 
 
 **NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.**
 
-1) Create a directory for your project and extract the contents of the the Kapow! Skeleton archive into it. Alternatively you could do `git clone git@github.com:mkdo/kapow-skeleton.git your-project-folder`, navigate to the project folder and then delete the `.git` directory with `sudo rm -rf .git`
+**1)** Create a directory for your project and extract the contents of the the Kapow! Skeleton archive into it. Alternatively you could do `git clone git@github.com:mkdo/kapow-skeleton.git your-project-folder`, navigate to the project folder and then delete the `.git` directory with `sudo rm -rf .git`
 
-2) Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)) as required to the relevant locations:
+**2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)) as required to the relevant locations:
 
 - Sass files go in `assets/sass`
 - Grunt files/folder go directly into the project root: *the package.json is identical so you can overwite it!*
@@ -30,28 +30,28 @@ On it's own, the Skeleton isn't a lot of use unless you've already got your own 
 
 For each of the Kapow! components you can either download and extract the archive or clone the repo straight into the relevant folder, making sure you remove the `.git` folder each time as detailed above.
 
-3) Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
+**3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
 
 - My Project = the "proper" name 
 - my-project = the "slug" name
 - my_project = the database name 
 - hello@<span></span>my-project.com = your email address
 
-4) Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
+**4)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
-5) Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
+**5)** Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
-6) WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress`. Then you need to update your sub-modules in order to fetch the WordPress repo using `git submodule update --init --recursive`.
+**6)** WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress`. Then you need to update your sub-modules in order to fetch the WordPress repo using `git submodule update --init --recursive`.
 
 Once WordPress has been downloaded, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`.
 
-7) Run `vagrant root` followed by `vagrant up --provision`. It is important that you ensure step #6 has been completed before provisioning Vagrant! :)
+**7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you ensure step #6 has been completed before provisioning Vagrant! :)
 
-8) Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
+**8)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
 
-9) When you're ready, you'll need to initialize this as a new Git repo, or configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
+**9)** When you're ready, you'll need to initialize this as a new Git repo, or configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
 
-10) Make a nice hot cup of tea/coffee and bask in your magnificence!
+**10)** Make a nice hot cup of tea/coffee and bask in your magnificence!
 
 ## Usage
 
