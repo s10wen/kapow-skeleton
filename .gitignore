@@ -7,8 +7,9 @@
 
 # Assets
 # -------------------------------------
-assets/css/
+assets/css/*
 assets/js/lib/modernizr-custom.js
+assets/sass/base/_sprites.scss
 
 # Dependencies
 # -------------------------------------
