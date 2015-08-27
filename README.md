@@ -61,6 +61,8 @@ Several Grunt commands are at your disposal:
 - `grunt docs` generates Sass, Javascript and PHP documentation
 - `grunt lint` lint your Sass, Javascript and PHP for errors
 
+**NB:** The last two commands assume you have the required dependencies installed as detailed earlier.
+
 ## Changelog
 
 0.1.0 - 27.05.2015 - Initial release.
