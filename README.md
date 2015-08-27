@@ -57,15 +57,15 @@ For each of the Kapow! components you can either download and extract the archiv
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
-**6)** WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress`. Then you need to update your sub-modules in order to fetch the WordPress repo using `git submodule update --init --recursive`.
+**6)** Before you add WordPress as a sub-module, you need to initialize this project as a git repository using `git init`. Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
 
-Once WordPress has been downloaded, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`.
+Once WordPress has been cloned, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
 
 **7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #6 before you provision Vagrant! :)
 
 **8)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
 
-**9)** When you're ready, you'll need to initialize this as a new Git repo, or configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
+**9)** When you're ready, you'll need to configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
 
 **10)** Make a nice hot cup of tea/coffee and bask in your magnificence!
 
