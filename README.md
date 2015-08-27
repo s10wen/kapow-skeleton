@@ -1,10 +1,19 @@
 # Kapow! Skeleton
 
-The skeleton component of the Kapow! framework/boilerplate for WordPress builds.
+The Skeleton component of the Kapow! framework/boilerplate for WordPress builds.
 
 ## About
 
+The Kapow! Skeleton consists of the following:
 
+- A basic folder structure
+- A comprehensive .gitignore file
+- Useful front-end polyfills
+- NPM, Bower and Gem dependency manifests
+- Plumbing for a WordPress installation
+- Vagrant configuration files
+
+On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme modules to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme)) modules.
 
 ## Installation
 
