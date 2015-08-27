@@ -1,6 +1,6 @@
 # Kapow! Skeleton
 
-The Skeleton component of the Kapow! framework/boilerplate for WordPress builds.
+The Skeleton component of the Kapow! framework/boilerplate for WordPress site development.
 
 ## About
 
