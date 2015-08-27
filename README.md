@@ -4,7 +4,7 @@ The Skeleton component of the Kapow! framework/boilerplate for WordPress builds.
 
 ## About
 
-The Kapow! Skeleton empowers you to get up and running with WordPress development using Vagrant, whilst taking advantage of the front-end, tooling and theme goodness that the other modules have to offer.
+The Kapow! Skeleton empowers you to get up and running with WordPress development using Vagrant + VVV, whilst taking advantage of the front-end, tooling and theme goodness that the other modules have to offer.
 
 The Skeleton consists of the following:
 
