@@ -18,7 +18,7 @@ On it's own, the Skeleton isn't a lot of use unless you've already got your own 
 
 ## Installation
 
-NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.
+**NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.**
 
 1) Create a directory for your project and extract the contents of the the Kapow! Skeleton archive into it. Alternatively you could do `git clone git@github.com:mkdo/kapow-skeleton.git your-project-folder`, navigate to the project folder and then delete the `.git` directory with `sudo rm -rf .git`
 
