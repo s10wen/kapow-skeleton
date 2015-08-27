@@ -6,7 +6,7 @@ The Skeleton component of the Kapow! framework/boilerplate for WordPress builds.
 
 The Kapow! Skeleton consists of the following:
 
-- A basic folder structure
+- A clearly defined folder structure
 - A comprehensive .gitignore file
 - Useful front-end polyfills
 - NPM, Bower and Gem dependency manifests
