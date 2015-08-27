@@ -8,7 +8,7 @@ The skeleton component of the Kapow! framework/boilerplate for WordPress builds.
 
 ## Installation
 
-NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project.
+NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.
 
 1) Create a directory for your project and extract the contents of the the Kapow! Skeleton archive into it. Alternatively you could do `git clone git@github.com:mkdo/kapow-skeleton.git your-project-folder`, navigate to the project folder and then delete the `.git` directory with `sudo rm -rf .git`
 
@@ -31,11 +31,17 @@ For each of the Kapow! components you can either download and extract the archiv
 
 5) Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
-6) WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add git://github.com/WordPress/WordPress.git htdocs/wordpress`. 
+6) WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress`. Then you need to update your sub-modules in order to fetch the WordPress repo using `git submodule update --init --recursive`.
 
-7) Run `vagrant root` followed by `vagrant up --provision`. It is important that you ensure step #7 has been completed before provisioning Vagrant! :)
+Once WordPress has been downloaded, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`.
+
+7) Run `vagrant root` followed by `vagrant up --provision`. It is important that you ensure step #6 has been completed before provisioning Vagrant! :)
 
 8) Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
+
+9) When you're ready, you'll need to initialize this as a new Git repo, or configure it so you can push these files to an existing repo. That's beyond the scope of this guide so I'll leave that up to you. :)
+
+10) Make a nice hot cup of tea/coffee and bask in your magnificence!
 
 ## Usage
 
@@ -58,10 +64,10 @@ Several Grunt commands are at your disposal:
 
 - `grunt` builds the project
 - `grunt build` builds and then watches for changes
-- `grunt docs` generates Sass, Javascript and PHP documentation
-- `grunt lint` lint your Sass, Javascript and PHP for errors
+- `grunt docs` generates Sass, Javascript and PHP documentation *
+- `grunt lint` lint your Sass, Javascript and PHP for errors *
 
-**NB:** The last two commands assume you have the required dependencies installed as detailed earlier.
+* These commands assume you have the required dependencies installed as detailed earlier.
 
 ## Changelog
 
