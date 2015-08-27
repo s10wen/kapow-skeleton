@@ -25,7 +25,7 @@ For each of the Kapow! components you can either download and extract the archiv
 - My Project = the "proper" name 
 - my-project = the "slug" name
 - my_project = the database name 
-- hello@my-project.com = your email address
+- hello@<span></span>my-project.com = your email address
 
 4) Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. the `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
