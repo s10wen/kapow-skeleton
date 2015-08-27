@@ -4,7 +4,9 @@ The Skeleton component of the Kapow! framework/boilerplate for WordPress builds.
 
 ## About
 
-The Kapow! Skeleton consists of the following:
+The Kapow! Skeleton empowers you to get up and running with WordPress development using Vagrant, whilst taking advantage of the front-end, tooling and theme goodness that the other modules have to offer.
+
+The Skeleton consists of the following:
 
 - A clearly defined folder structure
 - A comprehensive .gitignore file
@@ -15,6 +17,18 @@ The Kapow! Skeleton consists of the following:
 - A Vagrant database backup script
 
 On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme) components.
+
+## Requirements
+
+You will need the following installed on your system before attempting to set-up a Kapow! project using this guide.
+
+- [VirtualBox](http://www.virtualbox.org/) (or another virtual machine app such as Paralells)
+- [Vagrant](https://www.vagrantup.com/)
+- [VVV a.k.a Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [NodeJS](https://nodejs.org/)
+- [Bower](http://bower.io/#install-bower)
+- [Grunt](http://gruntjs.com/installing-grunt)
 
 ## Installation
 
