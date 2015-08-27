@@ -20,26 +20,47 @@ NB: A Yeoman generator is currently being developed to automate the creation of 
 
 For each of the Kapow! components you can either download and extract the archive or clone the repo straight into the relevant folder, making sure you remove the `.git` folder each time as detailed above.
 
-3) Open your project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
+3) Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
 
-- My Project = the 'proper' name 
-- my-project = the 'slug' name
+- My Project = the "proper" name 
+- my-project = the "slug" name
 - my_project = the database name 
+- hello@my-project.com = your email address
 
-4) Open `gruntfile.js` and configure your Grunt settings accordingly. Then open
+4) Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower dependencies for concatenation, paths to plugins to be linted etc. the `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
-5) Run `npm install` and `bower install` to get all the required dependencies
+5) Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
-6)
+6) WordPress needs adding as a sub-module, so make sure you're in the root of the project and run `git submodule add git://github.com/WordPress/WordPress.git htdocs/wordpress`. 
 
-7) Run `vagrant root` followed by `vagrant up --provision
+7) Run `vagrant root` followed by `vagrant up --provision`
 
-8) Grunt `grunt build` to generate your front-end assets
+8) Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
 
-## Useage
+## Usage
 
 Once you've completed the installation steps you're ready to login to WordPress (admin / password) and can start developing the site locally!
 
+If you wish to use a particular front-end framework or otherwise configure your Sass set-up you should take a look at and edit the following files:
+
+- `assets/sass/config/_settings.scss` to pick a Sass framework
+- `assets/sass/config/_vars-default.scss` to alter the default variables to suit your needs
+- `assets/sass/config/_vars-custom.scss` to add your own project specific variables
+- `assets/sass/site.scss` to choose your Sass imports
+
+Out of the box Kapow!'s Grunt set-up has several features commented out such as linting and documentation generation. Take a look at the following files to:
+
+- `gruntfile.js` alter the main configuration
+- `grunt/default.js` choose what runs as part of the main build task
+- `grunt/watch.js` change what happens when certain files change
+
+Several Grunt commands are at your disposal:
+
+- `grunt` builds the project
+- `grunt build` builds and then watches for changes
+- `grunt docs` generates Sass, Javascript and PHP documentation
+- `grunt lint` lint your Sass, Javascript and PHP for errors
+
 ## Changelog
 
-0.1.0 - 27.08.2015 - Initial release.
+0.1.0 - 27.05.2015 - Initial release.
