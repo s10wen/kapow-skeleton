@@ -48,7 +48,7 @@ If you wish to use a particular front-end framework or otherwise configure your 
 - `assets/sass/config/_vars-custom.scss` to add your own project specific variables
 - `assets/sass/site.scss` to choose your Sass imports
 
-Out of the box Kapow!'s Grunt set-up has several features commented out such as linting and documentation generation. Take a look at the following files to:
+Out of the box Kapow!'s Grunt set-up has several features commented out such as code linting and documentation generation. Take a look at the following files to:
 
 - `gruntfile.js` alter the main configuration
 - `grunt/default.js` choose what runs as part of the main build task
