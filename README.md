@@ -14,7 +14,7 @@ The Kapow! Skeleton consists of the following:
 - Vagrant configuration files
 - A Vagrant database backup script
 
-On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme modules to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme) modules.
+On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme) components.
 
 ## Installation
 
