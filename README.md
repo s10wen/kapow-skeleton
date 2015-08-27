@@ -47,7 +47,7 @@ If you run into trouble with permissions, you may need to prefix the above with 
 
 Once WordPress has been downloaded, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`.
 
-**7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you ensure step #6 has been completed before provisioning Vagrant! :)
+**7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #6 before you provision Vagrant! :)
 
 **8)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start developing.
 
