@@ -32,7 +32,7 @@ jQuery( function( $ ) {
       }
     }, false );
 
-  } )();
+  }
 
 }( jQuery ) );
 
