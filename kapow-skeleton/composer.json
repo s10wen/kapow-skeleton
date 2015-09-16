@@ -1,0 +1,8 @@
+{
+  "config": {
+    "vendor-dir": "htdocs/wp-content/themes/my-project/inc/vendor"
+  },
+  "require": {
+    "humanmade/custom-meta-boxes": "^1.0.2"
+  }
+}
