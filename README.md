@@ -97,4 +97,6 @@ Several Grunt commands are at your disposal:
 
 ## Changelog
 
-0.1.0 - 27.05.2015 - Initial release along with documentation.
+**1.1.0** - *17.09.2015* Added grunt-parker to NPM manifest.
+
+**1.0.0** - *27.05.2015* - Initial release along with documentation.
