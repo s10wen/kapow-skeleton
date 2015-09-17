@@ -2,7 +2,11 @@
   "config": {
     "vendor-dir": "htdocs/wp-content/themes/my-project/inc/vendor"
   },
+  "repositories": [ {
+    "type": "git",
+    "url": "https://github.com/humanmade/Custom-Meta-Boxes"
+  } ],
   "require": {
-    "humanmade/custom-meta-boxes": "^1.0.2"
+    "humanmade/custom-meta-boxes": "dev-master"
   }
 }
