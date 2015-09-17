@@ -14,10 +14,10 @@ mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project_db.* TO wp@
 
 # Download WordPress
 # -------------------------------------
-if [ ! -d htdocs/wp-admin ]
+if [ ! -d build/wp-admin ]
 then
 	echo "Installing WordPress using WP CLI"
-	cd htdocs
+	cd build
   mv wp-config.php wp-config-bak.php
   cd wordpress
   wp core config --dbname="my_project_db" --dbuser=wp --dbpass=wp --allow-root

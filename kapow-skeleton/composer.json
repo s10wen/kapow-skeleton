@@ -1,6 +1,6 @@
 {
   "config": {
-    "vendor-dir": "htdocs/wp-content/themes/my-project/inc/vendor"
+    "vendor-dir": "build/wp-content/themes/my-project/inc/vendor"
   },
   "repositories": [ {
     "type": "git",

@@ -38,7 +38,7 @@ You will need the following installed on your system before attempting to set-up
 
 - Sass files go in `assets/sass`
 - Grunt files/folder go directly into the project root: *the package.json is identical so you can overwite it!*
-- Theme files should go into `htdocs/wp-content/themes/your-theme-name`
+- Theme files should go into `build/wp-content/themes/your-theme-name`
 
 For each of the Kapow! components you can either download and extract the archive or clone the repo straight into the relevant folder, making sure you remove the `.git` folder each time as detailed above.
 
@@ -57,9 +57,9 @@ If you run into trouble with permissions, you may need to prefix the above with 
 
 **6)** Before you add WordPress as a sub-module, you need to initialize this project as a git repository using `git init`. 
 
-Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git htdocs/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
+Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git build/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
 
-Once WordPress has been cloned, navigate to `htdocs` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
+Once WordPress has been cloned, navigate to `build` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
 
 **7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #6 before you provision Vagrant! :)
 

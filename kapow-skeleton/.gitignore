@@ -26,37 +26,37 @@ node_modules
 # -------------------------------------
 
 # Root
-htdocs/*
-!htdocs/polyfills/
-!htdocs/wp-content/
-!htdocs/index.php
-!htdocs/local-config-sample.php
-!htdocs/robots.txt
-!htdocs/wp-config.php
-!htdocs/.htaccess
+build/*
+!build/polyfills/
+!build/wp-content/
+!build/index.php
+!build/local-config-sample.php
+!build/robots.txt
+!build/wp-config.php
+!build/.htaccess
 
 # WP Content
-htdocs/wp-content/advanced-cache.php
-htdocs/wp-content/backup-db/
-htdocs/wp-content/backups/
-htdocs/wp-content/blogs.dir/
-htdocs/wp-content/cache/
-htdocs/wp-content/plugins/hello.php
-htdocs/wp-content/uploads/
-htdocs/wp-content/upgrade/
-htdocs/wp-content/wp-cache-config.php
-htdocs/wp-content/plugins/hello.php
+build/wp-content/advanced-cache.php
+build/wp-content/backup-db/
+build/wp-content/backups/
+build/wp-content/blogs.dir/
+build/wp-content/cache/
+build/wp-content/plugins/hello.php
+build/wp-content/uploads/
+build/wp-content/upgrade/
+build/wp-content/wp-cache-config.php
+build/wp-content/plugins/hello.php
 
 # Themes - Stock
-htdocs/wp-content/themes/twentyten/
-htdocs/wp-content/themes/twentyeleven/
-htdocs/wp-content/themes/twentytwelve/
-htdocs/wp-content/themes/twentythirteen/
-htdocs/wp-content/themes/twentyfourteen/
-htdocs/wp-content/themes/twentyfifteen/
+build/wp-content/themes/twentyten/
+build/wp-content/themes/twentyeleven/
+build/wp-content/themes/twentytwelve/
+build/wp-content/themes/twentythirteen/
+build/wp-content/themes/twentyfourteen/
+build/wp-content/themes/twentyfifteen/
 
 # Themes - Custom
-htdocs/wp-content/themes/my-project/css/
-htdocs/wp-content/themes/my-project/js/
-htdocs/wp-content/themes/my-project/style.css
-htdocs/wp-content/themes/my-project/style.css.map
+build/wp-content/themes/my-project/css/
+build/wp-content/themes/my-project/js/
+build/wp-content/themes/my-project/style.css
+build/wp-content/themes/my-project/style.css.map
