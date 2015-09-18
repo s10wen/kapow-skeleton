@@ -14,14 +14,14 @@ assets/sass/base/_sprites.scss
 
 # Dependencies
 # -------------------------------------
-/bower_components
-/node_modules
+bower_components
+node_modules
 
 # Documentation & Reports
 # -------------------------------------
 
-documentation/*
-!documentation/.gitkeep
+docs/*
+!docs/.gitkeep
 reports/*
 !reports/.gitkeep
 
