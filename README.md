@@ -37,7 +37,7 @@ You will need the following installed on your system before attempting to set-up
 **2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)) as required to the relevant locations:
 
 - Sass files go in `assets/sass`
-- Grunt files/folder go directly into the project root: *the package.json is identical so you can overwite it!*
+- Grunt files/folder go directly into the project root: *you can overwrite the `package.json`!*
 - Theme files should go into `build/wp-content/themes/your-theme-name`
 
 **3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
