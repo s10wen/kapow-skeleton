@@ -8,7 +8,7 @@ echo "Commencing My Project Setup"
 # Make a database, unless we already
 # have one set-up
 # -------------------------------------
-echo "Creating database (if it's not already there)"
+echo "Creating My Project database (if it's not already there)"
 mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS my_project_db"
 mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project_db.* TO wp@localhost IDENTIFIED BY 'wp';"
 
