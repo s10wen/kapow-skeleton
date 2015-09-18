@@ -12,6 +12,10 @@ assets/css/*
 assets/js/lib/modernizr-custom.js
 assets/sass/base/_sprites.scss
 
+# Composer
+# -------------------------------------
+composer.lock
+
 # Dependencies
 # -------------------------------------
 bower_components
