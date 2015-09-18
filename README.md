@@ -9,10 +9,10 @@ Kapow! empowers you to get up and running with WordPress site development using 
 - A clearly defined folder structure
 - A comprehensive .gitignore file
 - Useful front-end polyfills
-- NPM, Bower and Gem dependency manifests
-- Config files necessary for WordPress
+- NPM, Bower, Composer and Bundler (for Gems) dependency manifests
+- WordPress configuration files
 - Vagrant configuration files
-- A Vagrant database backup script
+- An optional Vagrant database backup script
 
 On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme) components.
 
@@ -32,15 +32,13 @@ You will need the following installed on your system before attempting to set-up
 
 **NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.**
 
-**1)** Create a directory for your project and extract the contents of the the `kapow-skeleton` folder in this repo into it. Alternatively you could do `git clone git@github.com:mkdo/kapow-skeleton.git your-project-folder`, navigate to the project folder and then delete the `.git` directory with `sudo rm -rf .git`
+**1)** Create a directory for your project and copy the `kapow-skeleton` folder from this repo into it.
 
 **2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)) as required to the relevant locations:
 
 - Sass files go in `assets/sass`
 - Grunt files/folder go directly into the project root: *the package.json is identical so you can overwite it!*
 - Theme files should go into `build/wp-content/themes/your-theme-name`
-
-For each of the Kapow! components you can either download and extract the archive or clone the repo straight into the relevant folder, making sure you remove the `.git` folder each time as detailed above.
 
 **3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
 
@@ -51,7 +49,7 @@ For each of the Kapow! components you can either download and extract the archiv
 
 **4)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
-**5)** Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
+**5)** Run `npm install`, `bower install` and `composer install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
@@ -92,10 +90,13 @@ Several Grunt commands are at your disposal:
 - `grunt build` builds and then watches for changes
 - `grunt docs` generates Sass, Javascript and PHP documentation
 - `grunt lint` lint your Sass, Javascript and PHP for errors
+- `grunt analyse` get useful feedback on your code (currently CSS only)
 
 **NB:** The `docs` and `lint` commands assume you have the required dependencies installed as detailed earlier.
 
 ## Changelog
+
+**1.2.0** - *18.09.2015* Updates to structure, minor tweaks and documentation updates.
 
 **1.1.0** - *17.09.2015* Added grunt-parker to NPM manifest.
 
