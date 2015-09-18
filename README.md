@@ -42,10 +42,11 @@ You will need the following installed on your system before attempting to set-up
 
 **3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
 
-- My Project = "proper" name 
-- my-project = "slug" name, theme directory slug and theme textdomain
-- my_project = database name & function name prefix
-- hello@<span></span>my-project.com = your email address
+- **My Project** = "proper" name 
+- **my-project** = "slug" name, theme directory slug and theme textdomain
+- **my_project** = database name & function name prefix
+- **Author Name** = your or your organisation's name
+- **hello@<span></span>my-project.com** = your email address
 
 **4)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
