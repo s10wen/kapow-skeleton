@@ -40,25 +40,25 @@ You will need the following installed on your system before attempting to set-up
 - Grunt files/folder go directly into the project root: you can overwrite the `package.json`!
 - Theme files should go into `build/wp-content/themes/your-theme-name`
 
-**3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives:
+**3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives. Replace them in the order as follows to prevent conflicts:
 
-- **My Project** = "proper" name 
-- **my-project** = "slug" name, theme directory slug and theme textdomain
-- **my_project** = database name & function name prefix
 - **Author Name** = your or your organisation's name
 - **hello@<span></span>my-project.com** = your email address
+- **http://<span></span>my-project.com** = your company website
+- **My Project** = "proper" name
+- **my-project** = "slug" name, theme directory slug and theme textdomain
+- **my_project** = database name & function name prefix
+
 
 **4)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. The `siteInfo` and `wpInfo` settings objects shouldn't need to be altered if you're happy with Kapow!'s default structure.
 
-**5)** Run `npm install`, `bower install` and `composer install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
+**5)** Run `npm install` and `bower install` to get all the required dependencies. If you intend on enabling the Grunt task that lints your Sass, you'll need to run `gem install scss_lint`. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
-**6)** Before you add WordPress as a sub-module, you need to initialize this project as a git repository using `git init`. 
+**6)** Run `composer create-project` to install WordPress along with any plugins or requirements defined in the `composer.json` file. The composer file that comes with this build is pretty stripped back, but for a more comprehensive composer file that includes plugins and mu-plugins take a look at [MKDO Default Composer File](https://github.com/mkdo/mkdo-default-composer-file).
 
-Now you can run `git submodule add -f git://github.com/WordPress/WordPress.git build/wordpress` to add a reference to this sub-module to the repo. With this done, you just need to update your sub-modules in order to clone WordPress into the project using `git submodule update --init --recursive`.
-
-Once WordPress has been cloned, navigate to `build` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
+Once WordPress has been installed, navigate to `build` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
 
 **7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #6 before you provision Vagrant! :)
 

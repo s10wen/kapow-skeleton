@@ -15,6 +15,7 @@ assets/sass/base/_sprites.scss
 # Composer
 # -------------------------------------
 composer.lock
+vendor
 
 # Dependencies
 # -------------------------------------
