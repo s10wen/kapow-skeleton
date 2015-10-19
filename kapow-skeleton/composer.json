@@ -27,14 +27,14 @@
         "wpackagist": {
             "type": "composer",
             "url": "http://wpackagist.org"
-        },
+        }
     },
     "require": {
         "php": ">=5.3",
         "mnsami/composer-custom-directory-installer": "1.0.*",
         "monolog/monolog": "*",
         "johnpbloch/wordpress": "@stable",
-        "composer/installers": "@stable",
+        "composer/installers": "@stable"
     },
     "suggest": {
         "wp-cli/wp-cli": "@stable"
@@ -61,7 +61,7 @@
             "echo '<?php' > build/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> build/salt.php"
         ],
         "post-create-project-cmd": [
-            "composer run generate-salts",
+            "composer run generate-salts"
         ]
     }
 }
