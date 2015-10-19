@@ -56,7 +56,7 @@ You will need the following installed on your system before attempting to set-up
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
-**6)** Run `composer create-project` to install WordPress along with any plugins or requirements defined in the `composer.json` file. The composer file that comes with this build is pretty stripped back, but for a more comprehensive composer file that includes plugins and mu-plugins take a look at [MKDO Default Composer File](https://github.com/mkdo/mkdo-default-composer-file).
+**6)** Run `composer create-project` to install WordPress along with any plugins or requirements defined in the `composer.json` file. The composer file that comes with this build is pretty stripped back, but for a more comprehensive composer file that includes plugins and mu-plugins take a look at [MKDO Common Composer Dependencies](https://github.com/mkdo/mkdo-common-composer-dependencies).
 
 Once WordPress has been installed, navigate to `build` and rename `local-config-sample.php` to `local-config.php`. This contains your local database connection settings for Vagrant and overrides `wp-config.php`.
 
