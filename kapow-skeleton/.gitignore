@@ -14,7 +14,6 @@ kapow.sh
 assets/css/*
 !assets/css/.gitkeep
 assets/js/lib/modernizr-custom.js
-assets/sass/base/_sprites.scss
 
 # Composer
 # -------------------------------------
