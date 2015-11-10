@@ -9,8 +9,8 @@ echo "Commencing My Project Setup"
 # have one set-up
 # -------------------------------------
 echo "Creating My Project database (if it's not already there)"
-mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS my_project_db"
-mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project_db.* TO wp@localhost IDENTIFIED BY 'wp';"
+mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS my_project"
+mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project.* TO wp@localhost IDENTIFIED BY 'wp';"
 
 # Download WordPress
 # -------------------------------------
@@ -20,7 +20,7 @@ then
 	cd build
   mv wp-config.php wp-config-bak.php
   cd wordpress
-  wp core config --dbname="my_project_db" --dbuser=wp --dbpass=wp --allow-root
+  wp core config --dbname="my_project" --dbuser=wp --dbpass=wp --allow-root
 	wp core install --url="my-project.dev" --title="My Project" --admin_user=admin --admin_password=password --admin_email="hello@my-project.com" --allow-root
   rm wp-config.php
   cd ..

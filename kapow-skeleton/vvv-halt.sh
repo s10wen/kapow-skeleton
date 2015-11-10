@@ -4,7 +4,7 @@
 # Perform backup
 # -------------------------------------
 
-dbname="my_project_db"
+dbname="my_project"
 dbfile="$dbname.sql"
 backupsrc="database/backups"
 backuptgt="$(dirname $0)/database"
