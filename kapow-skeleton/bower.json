@@ -23,10 +23,5 @@
     "modernizr": "latest",
     "underscore": "latest",
     "normalize-scss": "latest",
-    "fontawesome": "latest",
-    "jquery-ui": "latest",
-    "masonry": "latest",
-    "imagesloaded": "latest",
-    "matchHeight": "latest"
   }
 }
