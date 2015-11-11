@@ -14,7 +14,7 @@ Kapow! empowers you to get up and running with WordPress site development using 
 - Vagrant configuration files
 - An optional Vagrant database backup script
 
-On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: the [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme) components.
+On it's own, the Skeleton isn't a lot of use unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme).
 
 ## Requirements
 
@@ -30,7 +30,7 @@ You will need the following installed on your system before attempting to set-up
 
 ## Installation
 
-**NB: A Yeoman generator is currently being developed to automate the creation of a new Kapow! based project and take care of much of what is detailed below.**
+**If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running *fast*.**
 
 **1)** Create a directory for your project and copy the `kapow-skeleton` folder from this repo into it.
 
@@ -74,7 +74,7 @@ Once you've completed the installation steps you're ready to login to WordPress 
 
 If you wish to use one of the available front-end frameworks (Foundation / Bootstrap / Bourbon + Neat) or otherwise configure your Sass set-up you should take a look at the following files:
 
-- `assets/sass/config/_settings.scss` to pick a Sass framework
+- `assets/sass/config/_settings.scss` to pick a Front-end framework/library
 - `assets/sass/config/_vars-default.scss` to alter the default variables to suit your needs
 - `assets/sass/config/_vars-custom.scss` to add your own project specific variables
 - `assets/sass/site.scss` to choose your Sass imports
@@ -83,7 +83,7 @@ Out of the box Kapow!'s Grunt set-up has several features commented out such as 
 
 - `gruntfile.js` alter the main configuration
 - `grunt/default.js` choose what runs as part of the main build task
-- `grunt/watch.js` change what happens when certain files change
+- `grunt/watch.js` change what happens when certain files change or are added
 
 Several Grunt commands are at your disposal:
 
