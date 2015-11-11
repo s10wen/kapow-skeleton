@@ -44,7 +44,7 @@ You will need the following installed on your system before attempting to set-up
 
 - **Author Name** = your or your organisation's name
 - **hello@<span></span>my-project.com** = your email address
-- **http://<span></span>my-project.com** = your company website
+- **http://www&#8203;.&#8203;my-project.com** = your company website
 - **My Project** = "proper" name
 - **my-project** = "slug" name, theme directory slug and theme textdomain
 - **my_project** = database name & function name prefix
