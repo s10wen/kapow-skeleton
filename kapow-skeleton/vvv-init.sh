@@ -12,22 +12,6 @@ echo "Creating My Project database (if it's not already there)"
 mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS my_project"
 mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project.* TO wp@localhost IDENTIFIED BY 'wp';"
 
-# Download WordPress
-# -------------------------------------
-if [ ! -d build/wp-admin ]
-then
-	echo "Installing WordPress using WP CLI"
-	cd build
-  mv wp-config.php wp-config-bak.php
-  cd wordpress
-  wp core config --dbname="my_project" --dbuser=wp --dbpass=wp --allow-root
-	wp core install --url="my-project.dev" --title="My Project" --admin_user=admin --admin_password=password --admin_email="hello@my-project.com" --allow-root
-  rm wp-config.php
-  cd ..
-  mv wp-config-bak.php wp-config.php
-	cd ..
-fi
-
 # The Vagrant site setup script will
 # restart Nginx for us
 # -------------------------------------
