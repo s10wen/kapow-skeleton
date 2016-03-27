@@ -22,6 +22,7 @@
     "selectivizr": "latest",
     "modernizr": "latest",
     "underscore": "latest",
-    "normalize-scss": "latest"
+    "normalize-scss": "latest",
+    "picturefill": "latest"
   }
 }
