@@ -5,9 +5,15 @@
 # -------------------------------------
 kapow.sh
 
-# OS Ignores
+# Flotsam & Jetsam
 # -------------------------------------
 .DS_Store
+
+# Nested Git files
+# -------------------------------------
+build/**/.git
+build/**/.gitignore
+build/**/.gitmodules
 
 # Assets
 # -------------------------------------
