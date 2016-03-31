@@ -13,8 +13,9 @@ mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS my_project"
 mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project.* TO wp@localhost IDENTIFIED BY 'wp';"
 
 # Install the WP database tables
+# Requires the latest build of WP-CLI
 # -------------------------------------
-wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root
+wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root --path=build/wordpress
 
 # The Vagrant site setup script will
 # restart Nginx for us
