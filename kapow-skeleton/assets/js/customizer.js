@@ -1,9 +1,11 @@
-// Customizer JS for live-previews
+// Customizer JS to facilitate live previews
 // ----------------------------------------------------------------------------
 
 jQuery(function($) {
 
-    // // Enable live preview for an element
+    // // Add a handler to enable live preview
+    // // for a particular selector or group of
+    // // selectors.
     // // -------------------------------------
     //  wp.customize('your_setting_id', function(value) {
     //    value.bind(function(newval) {
