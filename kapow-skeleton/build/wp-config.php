@@ -47,14 +47,14 @@ defined( 'DB_COLLATE' )  or define( 'DB_COLLATE', '' );
  if ( file_exists( __DIR__ . '/salt.php' ) ) {
  	require __DIR__ . '/salt.php';
  } else {
- 	define( 'AUTH_KEY',         '' );
- 	define( 'SECURE_AUTH_KEY',  '' );
- 	define( 'LOGGED_IN_KEY',    '' );
- 	define( 'NONCE_KEY',        '' );
- 	define( 'AUTH_SALT',        '' );
- 	define( 'SECURE_AUTH_SALT', '' );
- 	define( 'LOGGED_IN_SALT',   '' );
- 	define( 'NONCE_SALT',       '' );
+	define( 'AUTH_KEY',         '' );
+	define( 'SECURE_AUTH_KEY',  '' );
+	define( 'LOGGED_IN_KEY',    '' );
+	define( 'NONCE_KEY',        '' );
+	define( 'AUTH_SALT',        '' );
+	define( 'SECURE_AUTH_SALT', '' );
+	define( 'LOGGED_IN_SALT',   '' );
+	define( 'NONCE_SALT',       '' );
  }
 
 /**
@@ -79,15 +79,15 @@ define( 'WPLANG', '' );
 defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress' );
 defined( 'WP_HOME' ) or define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 
-// Define path & url for Content
+// Define path and url for wp-content
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
-// Set path to MU Plugins.
+// Define path and url for must use plugins.
 define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/mu-plugins' );
 define( 'WPMU_PLUGIN_URL', WP_HOME . '/wp-content/mu-plugins' );
 
-// Set default theme.
+// Define the default theme.
 define( 'WP_DEFAULT_THEME', 'my-project' );
 
 // Prevent editing of files through the admin.

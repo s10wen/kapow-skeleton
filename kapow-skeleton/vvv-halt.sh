@@ -1,7 +1,7 @@
-# Halt script for My Project
+# Vagrant Halt script for My Project
 # -----------------------------------------------------------------------------
 
-# Perform backup
+# Perform a database backup to the repo
 # -------------------------------------
 
 dbname="my_project"
