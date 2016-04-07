@@ -24,7 +24,7 @@ assets/js/lib/modernizr-custom.js
 # Composer
 # -------------------------------------
 composer.lock
-/vendor
+vendor
 
 # Dependencies
 # -------------------------------------
@@ -63,6 +63,7 @@ build/wp-content/uploads/
 build/wp-content/upgrade/
 build/wp-content/wp-cache-config.php
 build/wp-content/plugins/hello.php
+!build/wp-content/**/vendor/
 
 # Themes - Stock
 build/wp-content/themes/twentyten/
