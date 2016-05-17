@@ -5,4 +5,3 @@ define( 'DB_PASSWORD', 'root' );
 define( 'DB_HOST', '127.0.0.1' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'WP_DEBUG', 'true' );
-define( 'SCRIPT_DEBUG', 'true' );
