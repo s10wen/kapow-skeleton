@@ -20,7 +20,7 @@ On it's own, the Skeleton isn't all that useful unless you've already got your o
 
 You will need the following installed on your system before attempting to set-up a Kapow! based project using this guide.
 
-- [VirtualBox](http://www.virtualbox.org/) (or another virtual machine app such as Paralells)
+- [VirtualBox](http://www.virtualbox.org/), [Parallels](http://www.parallels.com) or another virtual machine
 - [Vagrant](https://www.vagrantup.com/)
 - [VVV a.k.a Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
