@@ -1,4 +1,4 @@
-// Customizer JS to facilitate live previews
+// Customizer JS to facilitate live previews.
 // ----------------------------------------------------------------------------
 
 jQuery(function($) {

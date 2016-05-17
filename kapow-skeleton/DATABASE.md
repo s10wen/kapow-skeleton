@@ -1,6 +1,6 @@
 # Database Backups
 
-If you'd like a namespaced database dump adding to the repo each time you run `vagrant halt` you need to add a new trigger to your `Vagrantfile` which can be found in the root of your `/Vagrant` folder. 
+If you would like a namespaced database dump adding to the repo each time you run `vagrant halt` you need to add a new trigger to your `Vagrantfile` which can be found in the root of your `/Vagrant` folder. 
 
 This assumes that you have the [Vagrant Triggers](https://github.com/emyl/vagrant-triggers) plugin installed as per the [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV) documentation.
 

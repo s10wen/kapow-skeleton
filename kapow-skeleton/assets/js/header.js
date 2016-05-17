@@ -1,8 +1,8 @@
-// Custom JS for the Header
+// Custom JS for the Header.
 // ----------------------------------------------------------------------------
 
 // Adds User Agent and Operating System
-// details to the <html> tag
+// details to the <html> tag.
 // -------------------------------------
 var b = document.documentElement;
     b.setAttribute('data-useragent',  navigator.userAgent);

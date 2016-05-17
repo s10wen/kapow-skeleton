@@ -1,37 +1,37 @@
-# Git Ignore for My Project
+# Git Ignore for My Project.
 # -----------------------------------------------------------------------------
 
-# Kapow! setup script
+# Kapow! setup script.
 # -------------------------------------
 kapow.sh
 
-# Flotsam & Jetsam
+# Flotsam & Jetsam.
 # -------------------------------------
 .DS_Store
 
-# Nested Git files
+# Nested Git files.
 # -------------------------------------
 build/**/.git
 build/**/.gitignore
 build/**/.gitmodules
 
-# Assets
+# Assets.
 # -------------------------------------
 assets/css/*
 !assets/css/.gitkeep
 assets/js/lib/modernizr-custom.js
 
-# Composer
+# Composer.
 # -------------------------------------
 composer.lock
 vendor
 
-# Dependencies
+# Dependencies.
 # -------------------------------------
 bower_components
 node_modules
 
-# Documentation & Reports
+# Documentation & Reports.
 # -------------------------------------
 
 docs/*
@@ -39,7 +39,7 @@ docs/*
 reports/*
 !reports/.gitkeep
 
-# WordPress
+# WordPress.
 # -------------------------------------
 
 # Root

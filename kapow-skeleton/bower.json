@@ -21,8 +21,8 @@
     "respondJS": "latest",
     "selectivizr": "latest",
     "modernizr": "latest",
+    "picturefill": "latest",
     "underscore": "latest",
-    "normalize-scss": "latest",
-    "picturefill": "latest"
+    "normalize-scss": "latest"
   }
 }
