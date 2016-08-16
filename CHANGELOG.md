@@ -1,6 +1,14 @@
-6 minutes ago - **Merge branch 'master' of github.com:mkdo/kapow-skeleton** (9254b07)
+15 seconds ago - **Updated navigation JS so that the primary menu nav toggle doesn't have to be nested within the nav itself** (56807bf)
 
-7 minutes ago - **Added empty ico folder for Grunticon** (bee1ebf)
+3 minutes ago - **Updated package.json for Grunticon dependency** (dce418d)
+
+5 minutes ago - **Updated README** (e133f4c)
+
+7 minutes ago - **Updated changelog** (24b47de)
+
+13 minutes ago - **Merge branch 'master' of github.com:mkdo/kapow-skeleton** (9254b07)
+
+13 minutes ago - **Added empty ico folder for Grunticon** (bee1ebf)
 
 3 months ago - **Update README.md** (9dd8923)
 
@@ -296,7 +304,7 @@
 
 12 months ago - **Create DATABASE.md** (e89642e)
 
-12 months ago - **Update README.md** (905a345)
+1 year ago - **Update README.md** (905a345)
 
 1 year ago - **Create .gitkeep** (6eda7b0)
 
