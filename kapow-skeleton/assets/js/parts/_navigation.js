@@ -11,12 +11,12 @@
         return;
     }
 
-    button = container.getElementsByTagName('button')[0];
+    button = document.getElementById('menu-toggle');
     if ('undefined' === typeof button) {
         return;
     }
 
-    menu = container.getElementsByTagName('ul')[0];
+    menu = document.getElementById('primary-menu');
 
     // Hide menu toggle button if menu is empty and return early.
     if ('undefined' === typeof menu) {
