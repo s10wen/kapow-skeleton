@@ -48,9 +48,6 @@
             ],
             "build/wp-content/themes/{$name}": [
                 "type:wordpress-theme"
-            ],
-            "build/wp-content/mu-plugins/humanmade/custom-meta-boxes": [
-                "humanmade/custom-meta-boxes"
             ]
         }
     },
