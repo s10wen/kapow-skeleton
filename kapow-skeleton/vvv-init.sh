@@ -15,7 +15,16 @@ mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project.* TO wp@loc
 # Install the WP database tables.
 # (requires the latest build of WP-CLI)
 # -------------------------------------
-wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root --path=build/wordpress
+if [ ! -d build/wp-admin ]
+then
+	echo "Installing WordPress using WP CLI"
+	cd build
+	wp core download --allow-root
+	wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@makedo.in --allow-root --path=build/wordpress
+	rm -rf wp-content/plugins/akismet
+	echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php
+	cd ..
+fi
 
 # The Vagrant site setup script will
 # restart Nginx for us.
