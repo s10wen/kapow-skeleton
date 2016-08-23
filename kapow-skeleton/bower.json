@@ -12,6 +12,7 @@
     "bower_components"
   ],
   "dependencies": {
+
     "foundation": "5.5.3",
     "bootstrap-sass": "3.3.6",
     "bourbon": "4.2.6",
@@ -23,6 +24,11 @@
     "modernizr": "latest",
     "picturefill": "latest",
     "underscore": "latest",
-    "normalize-scss": "latest"
+    "normalize-scss": "latest",
+    "jquery-ui": "latest",
+    "masonry": "latest",
+    "imagesloaded": "latest",
+    "matchHeight": "latest",
+    "headhesive": "latest"
   }
 }
