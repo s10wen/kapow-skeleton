@@ -22,6 +22,6 @@ jQuery(window).load(function($) {
 
 // Window Resize.
 // -------------------------------------
-jQuery(window).resize(function($) {
-
+window.addEventListener("resize", function() {
+	
 });
