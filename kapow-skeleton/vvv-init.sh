@@ -21,7 +21,7 @@ then
 	# Download the latest stable release of WordPress
 	wp core download --path=build/wordpress --allow-root
 	# Install the database tables and configure WordPress.
-	wp core install --url=the-avengers.dev --title="The Avengers" --admin_user=admin --admin_password=password --admin_email=hello@the-avengers.com --allow-root --path=build/wordpress
+	wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@my-project.com --allow-root --path=build/wordpress
 	# Remove Akismet.
 	rm -rf build/wp-content/plugins/akismet
 	# Generate Salts.
