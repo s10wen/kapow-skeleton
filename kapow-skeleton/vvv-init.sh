@@ -19,8 +19,11 @@ if [ ! -d build/wp-admin ]
 then
 	echo "Installing WordPress using WP CLI"
 	cd build
+	mkdir wordpress
+	cd wordpress
 	wp core download --allow-root
-	wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@my-project.com --allow-root --path=build/wordpress
+	cd ../..
+	wp core install --url=the-avengers.dev --title="The Avengers" --admin_user=admin --admin_password=password --admin_email=hello@the-avengers.com --allow-root --path=build/wordpress
 	rm -rf wp-content/plugins/akismet
 	echo '<?php' > salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> salt.php
 	cd ..
