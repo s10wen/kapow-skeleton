@@ -15,7 +15,7 @@ mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON my_project.* TO wp@loc
 # Install the WP database tables.
 # (requires the latest build of WP-CLI)
 # -------------------------------------
-if [ ! -d build/wp-admin ]
+if [ ! -d build/wp-admin ] || [ ! -d build/wordpress/wp-admin ]
 then
 	echo "Installing WordPress using WP CLI"
 	# Download the latest stable release of WordPress
