@@ -12,23 +12,23 @@
     "bower_components"
   ],
   "dependencies": {
-
-    "foundation": "5.5.3",
-    "bootstrap-sass": "3.3.6",
-    "bourbon": "4.2.6",
-    "neat": "1.7.4",
-    "es5-shim": "latest",
-    "html5shiv": "latest",
-    "respondJS": "latest",
-    "selectivizr": "latest",
-    "modernizr": "latest",
-    "picturefill": "latest",
-    "underscore": "latest",
-    "normalize-scss": "latest",
-    "jquery-ui": "latest",
-    "masonry": "latest",
-    "imagesloaded": "latest",
-    "matchHeight": "latest",
-    "headhesive": "latest"
+    "foundation-sites": "6.3.1",
+    "bootstrap-sass": "3.3.7",
+    "bourbon": "4.3.3",
+    "neat": "2.0.0",
+    "es5-shim": "4.5.9",
+    "html5shiv": "3.7.3",
+    "respondJS": "1.4.2",
+    "selectivizr": "1.0.2",
+    "modernizr": "3.5.0",
+    "picturefill": "3.0.3",
+    "underscore": "1.8.3",
+    "normalize-scss": "3.0.3",
+    "jquery-ui": "1.12.1",
+    "masonry": "4.2.0",
+    "imagesloaded": "4.1.2",
+    "matchHeight": "0.7.2",
+    "select2": "4.0.3",
+    "headroom.js": "0.9.3"
   }
 }
