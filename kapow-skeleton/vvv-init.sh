@@ -22,10 +22,21 @@ then
 	wp core download --path=build/wordpress --allow-root
 	# Install the database tables and configure WordPress.
 	wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@my-project.com --allow-root --path=build/wordpress
-	# Remove Akismet.
+	# Remove Plugins.
 	rm -rf build/wp-content/plugins/akismet
+	# Install/Activate Plugins.
+	wp plugin activate kapow-core
 	# Generate Salts.
 	echo '<?php' > build/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> build/salt.php
+	# Set the permalink structure to 'post name'.
+	wp option update permalink_structure '/%postname%'
+	# Set the default 'Sample Page' as the front page.
+	wp option update show_on_front 'page'
+	wp option update page_on_front 2
+	# Download and Import the WPTest.io data from GitHub, then clean up.
+	curl -O https://raw.githubusercontent.com/poststatus/wptest/master/wptest.xml
+	wp import wptest.xml --authors=skip
+	rm wptest.xml
 fi
 
 # The Vagrant site setup script will
