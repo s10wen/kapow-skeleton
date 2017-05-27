@@ -25,6 +25,7 @@ assets/js/lib/modernizr-custom.js
 # -------------------------------------
 composer.lock
 vendor
+!assets/scss/vendor
 
 # Dependencies.
 # -------------------------------------
