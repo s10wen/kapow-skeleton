@@ -11,14 +11,23 @@
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/tests/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
-	<exclude-pattern>*/languages/*</exclude-pattern>
 
 	<!-- Excludes: Kapow! specific -->
 	<exclude-pattern>static/*</exclude-pattern>
 	<exclude-pattern>reports/*</exclude-pattern>
 	<exclude-pattern>docs/*</exclude-pattern>
 	<exclude-pattern>assets/*</exclude-pattern>
+	<exclude-pattern>build/wordpress/*</exclude-pattern>
+	<exclude-pattern>build/wp-content/plugins/*</exclude-pattern>
+	<exclude-pattern>build/wp-content/mu-plugins/*</exclude-pattern>
+	<exclude-pattern>build/wp-content/themes/index.php</exclude-pattern>
+	<exclude-pattern>build/wp-content/index.php</exclude-pattern>
 	<exclude-pattern>build/polyfills/*</exclude-pattern>
+	<exclude-pattern>vvv-*</exclude-pattern>
+	<exclude-pattern>*.json</exclude-pattern>
+	<exclude-pattern>phpcs.xml</exclude-pattern>
+
+	<!-- Includes -->
 
 	<!--
 		Don't get angry about checking files that don't contain code
@@ -38,6 +47,10 @@
 		<severity>0</severity>
 	</rule>
 
+	<!-- Add in some extra rules from other standards. -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+	<rule ref="Generic.Commenting.Todo"/>
+
 	<!-- Include the WordPress ruleset, with exclusions. -->
 	<rule ref="WordPress">
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
@@ -45,7 +58,21 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 	</rule>
 
-	<!-- Include additional WordPress rules -->
+	<!-- Include the extra WordPress ruleset as well as the Documentation ruleset  -->
 	<rule ref="WordPress-Extra" />
 	<rule ref="WordPress-Docs" />
+
+	<!-- Ensure that any i18n functions have a valid project-specific or Kapow textdomain -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="my-project,kapow" />
+		</properties>
+	</rule>
+
+	<!-- Ensure that all globals have a project specific or Kapow prefix -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array" value="my_project,kapow" />
+		</properties>
+	</rule>
 </ruleset>

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The base configurations of the WordPress.
  *
@@ -44,9 +43,9 @@ defined( 'DB_COLLATE' )  or define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
- if ( file_exists( __DIR__ . '/salt.php' ) ) {
- 	require __DIR__ . '/salt.php';
- } else {
+if ( file_exists( __DIR__ . '/salt.php' ) ) {
+	require __DIR__ . '/salt.php';
+} else {
 	define( 'AUTH_KEY',         '' );
 	define( 'SECURE_AUTH_KEY',  '' );
 	define( 'LOGGED_IN_KEY',    '' );
@@ -55,7 +54,7 @@ defined( 'DB_COLLATE' )  or define( 'DB_COLLATE', '' );
 	define( 'SECURE_AUTH_SALT', '' );
 	define( 'LOGGED_IN_SALT',   '' );
 	define( 'NONCE_SALT',       '' );
- }
+}
 
 /**
  * WordPress Database Table prefix.
@@ -76,10 +75,12 @@ $table_prefix  = 'wp_';
 define( 'WPLANG', '' );
 
 // Define Site URL: WordPress in a subdirectory.
+if ( isset( $_SERVER ) ) {
 defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress' );
 defined( 'WP_HOME' ) or define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
+}
 
-// Define path and url for wp-content
+// Define path and url for wp-content.
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 

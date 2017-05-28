@@ -1,4 +1,10 @@
 <?php
+/**
+ * Local Config.
+ *
+ * @package My Project
+ */
+
 define( 'DB_NAME', 'my_project' );
 define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', 'root' );
