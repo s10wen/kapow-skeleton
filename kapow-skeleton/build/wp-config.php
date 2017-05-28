@@ -75,9 +75,12 @@ $table_prefix  = 'wp_';
 define( 'WPLANG', '' );
 
 // Define Site URL: WordPress in a subdirectory.
-if ( isset( $_SERVER ) ) {
-defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress' );
-defined( 'WP_HOME' ) or define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
+if ( isset( $_SERVER ) && isset( $_SERVER['HTTP_HOST'] ) ) {
+	defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) . '/wordpress' );
+	defined( 'WP_HOME' ) or define( 'WP_HOME', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) );
+} else {
+	defined( 'WP_SITEURL' );
+	defined( 'WP_HOME' );
 }
 
 // Define path and url for wp-content.

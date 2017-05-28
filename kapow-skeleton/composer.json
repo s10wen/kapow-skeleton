@@ -1,7 +1,7 @@
 {
-    "require-dev": {
-        "stevegrunwell/wp-enforcer": "^0.4.2"
-    },
+   	"require-dev": {
+   		"stevegrunwell/wp-enforcer": "dev-develop"
+	},
     "scripts": {
 		"post-install-cmd": [
 			"wp-enforcer"

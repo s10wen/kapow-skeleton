@@ -3,6 +3,7 @@
 	<!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/blob/develop/WordPress-Core/ruleset.xml -->
 	<!-- See https://github.com/10up/10up-code-review -->
+	<!-- See https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#properties-strongly-recommended-to-be-set -->
 
 	<description>Coding standards for Kapow Theme using WP Enforcer.</description>
 
@@ -51,16 +52,22 @@
 	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
 	<rule ref="Generic.Commenting.Todo"/>
 
-	<!-- Include the WordPress ruleset, with exclusions. -->
-	<rule ref="WordPress">
+	<!-- Include the WordPress Extra (Core + Extras) ruleset, with exclusions. -->
+	<rule ref="WordPress-Extra">
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
 		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 	</rule>
 
-	<!-- Include the extra WordPress ruleset as well as the Documentation ruleset  -->
-	<rule ref="WordPress-Extra" />
+	<!-- Include the Documentation ruleset  -->
 	<rule ref="WordPress-Docs" />
+
+	<!-- Allow theme filename exceptions -->
+	<rule ref="WordPress.Files.FileName">
+		<properties>
+			<property name="is_theme" value="true" />
+		</properties>
+	</rule>
 
 	<!-- Ensure that any i18n functions have a valid project-specific or Kapow textdomain -->
 	<rule ref="WordPress.WP.I18n">
@@ -69,10 +76,26 @@
 		</properties>
 	</rule>
 
+	<!-- Ensure that we're not using any functions deprecated three major versions ago -->
+	<rule ref="WordPress.WP.DeprecatedFunctions">
+		<properties>
+			<property name="minimum_supported_version" value="4.5" />
+		</properties>
+	</rule>
+
+	<!-- These two sniffs won't be able until WPCS 0.12.0 -->
+
 	<!-- Ensure that all globals have a project specific or Kapow prefix -->
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+<!-- 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array" value="my_project,kapow" />
 		</properties>
-	</rule>
+	</rule> -->
+
+	<!-- Ensure that we're not using any parameters deprecated three major versions ago -->
+<!-- 	<rule ref="WordPress.WP.DeprecatedParameters">
+		<properties>
+			<property name="minimum_supported_version" value="4.5" />
+		</properties>
+	</rule> -->
 </ruleset>
