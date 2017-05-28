@@ -18,6 +18,9 @@
 	<exclude-pattern>reports/*</exclude-pattern>
 	<exclude-pattern>docs/*</exclude-pattern>
 	<exclude-pattern>assets/*</exclude-pattern>
+	<exclude-pattern>*/*.png</exclude-pattern>
+	<exclude-pattern>*/*.jpg</exclude-pattern>
+	<exclude-pattern>*/*.gif</exclude-pattern>
 	<exclude-pattern>build/wordpress/*</exclude-pattern>
 	<exclude-pattern>build/wp-content/plugins/*</exclude-pattern>
 	<exclude-pattern>build/wp-content/mu-plugins/*</exclude-pattern>
@@ -29,6 +32,7 @@
 	<exclude-pattern>phpcs.xml</exclude-pattern>
 
 	<!-- Includes -->
+	<include-pattern>build/wp-content/plugins/my-project-core/*</include-pattern>
 
 	<!--
 		Don't get angry about checking files that don't contain code
