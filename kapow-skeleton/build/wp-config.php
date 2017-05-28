@@ -25,12 +25,12 @@ if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
 /**
  *	Production settings.
  */
-defined( 'DB_NAME' )     or define( 'DB_NAME', '' );
-defined( 'DB_USER' )     or define( 'DB_USER', '' );
-defined( 'DB_PASSWORD' ) or define( 'DB_PASSWORD', '' );
-defined( 'DB_HOST' )     or define( 'DB_HOST', '' );
-defined( 'DB_CHARSET' )  or define( 'DB_CHARSET', 'utf8' );
-defined( 'DB_COLLATE' )  or define( 'DB_COLLATE', '' );
+defined( 'DB_NAME' )     || define( 'DB_NAME', '' );
+defined( 'DB_USER' )     || define( 'DB_USER', '' );
+defined( 'DB_PASSWORD' ) || define( 'DB_PASSWORD', '' );
+defined( 'DB_HOST' )     || define( 'DB_HOST', '' );
+defined( 'DB_CHARSET' )  || define( 'DB_CHARSET', 'utf8' );
+defined( 'DB_COLLATE' )  || define( 'DB_COLLATE', '' );
 
 /**
  * Authentication Unique Keys and Salts.
@@ -76,8 +76,8 @@ define( 'WPLANG', '' );
 
 // Define Site URL: WordPress in a subdirectory.
 if ( isset( $_SERVER ) && isset( $_SERVER['HTTP_HOST'] ) ) {
-	defined( 'WP_SITEURL' ) or define( 'WP_SITEURL', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) . '/wordpress' );
-	defined( 'WP_HOME' ) or define( 'WP_HOME', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) );
+	defined( 'WP_SITEURL' ) || define( 'WP_SITEURL', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) . '/wordpress' );
+	defined( 'WP_HOME' ) || define( 'WP_HOME', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) );
 } else {
 	defined( 'WP_SITEURL' );
 	defined( 'WP_HOME' );
