@@ -18,6 +18,7 @@ build/**/.gitmodules
 # Assets.
 # -------------------------------------
 assets/css/*
+assets/glob/
 !assets/css/.gitkeep
 assets/js/lib/modernizr-custom.js
 
