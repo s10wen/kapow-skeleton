@@ -3,25 +3,25 @@
 
 // Document Ready.
 // -------------------------------------
-jQuery(function($) {
+jQuery( function( $ ) {
 
     // Initialize Foundation JS if it has
     // been included in the document.
     // -------------------------------------
-    if (window.Foundation !== undefined ) {
-        $(document).foundation();
+    if ( window.Foundation !== undefined ) {
+        $( document ).foundation();
     }
 
-}(jQuery));
+}( jQuery ));
 
 // Window Load.
 // -------------------------------------
-jQuery(window).load(function($) {
+jQuery( window ).load( function( $ ) {
 
 }(jQuery));
 
 // Window Resize.
 // -------------------------------------
-window.addEventListener("resize", function() {
-	
+window.addEventListener( "resize", function() {
+
 });

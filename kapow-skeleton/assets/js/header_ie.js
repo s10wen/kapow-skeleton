@@ -1,2 +1,2 @@
-// Custom Javscript for < IE9.
+// Custom Javscript for legacy Internet Explorer (<9) browsers.
 // ----------------------------------------------------------------------------

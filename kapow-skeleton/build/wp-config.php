@@ -74,7 +74,9 @@ $table_prefix  = 'wp_';
  */
 define( 'WPLANG', '' );
 
-// Define Site URL: WordPress in a subdirectory.
+/**
+ * Define Site URL: WordPress in a subdirectory.
+ */
 if ( isset( $_SERVER ) && isset( $_SERVER['HTTP_HOST'] ) ) {
 	defined( 'WP_SITEURL' ) || define( 'WP_SITEURL', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) . '/wordpress' );
 	defined( 'WP_HOME' ) || define( 'WP_HOME', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) );
@@ -83,18 +85,26 @@ if ( isset( $_SERVER ) && isset( $_SERVER['HTTP_HOST'] ) ) {
 	defined( 'WP_HOME' );
 }
 
-// Define path and url for wp-content.
+/**
+ * Define path and url for wp-content.
+ */
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
-// Define path and url for must use plugins.
+/**
+ * Define path and url for must use plugins.
+ */
 define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/mu-plugins' );
 define( 'WPMU_PLUGIN_URL', WP_HOME . '/wp-content/mu-plugins' );
 
-// Define the default theme.
+/**
+ * Define the default theme.
+ */
 define( 'WP_DEFAULT_THEME', 'my-project' );
 
-// Prevent editing of files through the admin.
+/**
+ * Prevent editing of files through the admin.
+ */
 define( 'DISALLOW_FILE_EDIT', true );
 
 /* That's all, stop editing! Happy blogging. */

@@ -26,6 +26,7 @@ assets/js/lib/modernizr-custom.js
 composer.lock
 vendor
 !assets/scss/vendor
+!build/wp-content/**/vendor/
 
 # Dependencies.
 # -------------------------------------

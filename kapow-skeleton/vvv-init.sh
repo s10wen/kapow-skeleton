@@ -1,4 +1,4 @@
-# Init script for My Project
+# VVV Init script for My Project
 # -----------------------------------------------------------------------------
 
 # Begin set-up.

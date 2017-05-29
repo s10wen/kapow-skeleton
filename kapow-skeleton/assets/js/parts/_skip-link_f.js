@@ -1,4 +1,4 @@
-// Skip Link Focus Fix JS
+// Skip Link Focus Fix.
 // ----------------------------------------------------------------------------
 // Helps with accessibility for keyboard only users.
 // Learn more: https://github.com/Automattic/My Project/pull/136
