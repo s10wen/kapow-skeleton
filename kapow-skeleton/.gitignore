@@ -41,7 +41,6 @@ docs/*
 reports/*
 !reports/.gitkeep
 
-
 # Databases
 # -------------------------------------
 database
