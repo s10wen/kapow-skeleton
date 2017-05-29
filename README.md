@@ -12,7 +12,6 @@ Kapow! empowers you to quickly get up and running with bespoke WordPress site de
 - NPM, Bower and Composer dependency manifests
 - WordPress configuration files
 - Vagrant configuration files
-- An optional Vagrant database backup script
 
 On it's own, the Skeleton isn't all that useful unless you've already got your own Sass, build tool and theme components to drop into the project. Thankfully, the Skeleton is designed to work with the other members of the Kapow! family: [Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt) and [Theme](https://github.com/mkdo/kapow-theme).
 
@@ -36,8 +35,8 @@ You will need the following installed on your system before attempting to set-up
 
 **2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)) as required to the relevant locations:
 
-- Kapow! Sass files go in `assets/sass`
-- Kapow! Grunt files/folder go directly into the project root: you can overwrite the `package.json`!
+- Kapow! Sass files go in `assets/scss`
+- Kapow! Grunt files/folder go directly into the project root: you can overwrite the `package.json` as it maintains parity with the copy found in this repository.
 - Kapow! Theme files go in `build/wp-content/themes/your-theme-name`
 
 **3)** Open the project folder in your code editor and do a ***case sensitive*** find and replace for each of these strings of text, replacing them with project specific alternatives. Replace them in the order as follows to prevent issues with the email and web addresses:
@@ -51,17 +50,17 @@ You will need the following installed on your system before attempting to set-up
 
 **4)** Open `gruntfile.js` and configure your Grunt settings accordingly including adding any additional bower/custom dependencies for concatenation, paths to plugins to be linted etc. You shouldn't need to alter the `siteInfo` and `wpInfo` settings objects if you're happy with Kapow!'s default structure.
 
-**5)** Run `npm install` and `bower install` to get all the required dependencies. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
+**5)** Run `npm install`,  `bower install` and `composer install` to get all the required dependencies. If you're planning on generating PHP documentation you'll need to install [PHPdocumentor](http://www.phpdoc.org/docs/latest/getting-started/installing.html) on your system.
 
 If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
 
-**6)** Run `composer create-project` to install WordPress along with any plugins or requirements defined in the `composer.json` file. The composer file that comes with this build is pretty stripped back, but for a more comprehensive composer file that includes useful plugins and mu-plugins take a look at [MKDO Common Composer Dependencies](https://github.com/mkdo/mkdo-common-composer-dependencies).
+**6)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #5 **before** you provision Vagrant! :)
 
-**7)** Run `vagrant root` followed by `vagrant up --provision`. It is important that you complete step #6 **before** you provision Vagrant! :)
+**7)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start development.
 
-**8)** Run `grunt` to generate your front-end assets, or `grunt build` to generate the assets and watch for changes should you be ready to start development.
+**8)** When you're ready, you'll need to configure the repo so that you can push these local files up to your remote repo once you've added and committed them. That's beyond the scope of this guide so I'll leave that up to you. :)
 
-**9)** When you're ready, you'll need to configure the repo so that you can push these local files up to your remote repo once you've added and committed them. That's beyond the scope of this guide so I'll leave that up to you. :)
+**9)** Check out `assets/scss/style.scss` to pick your front-end framework of choice and get started with front-end development.
 
 **10)** Make a nice hot cup of tea/coffee and bask in your magnificence!
 
@@ -69,29 +68,6 @@ If you run into trouble with permissions, you may need to prefix the above with 
 
 Once you've completed the installation steps you're ready to login to WordPress (user: *admin* / password: *password*) to start developing the site locally!
 
-If you wish to use one of the available front-end frameworks/libraries (Foundation / Bootstrap / Bourbon + Neat) or otherwise configure your Sass set-up you should take a look at the following files:
-
-- `assets/sass/config/_settings.scss` to pick a Front-end framework/library
-- `assets/sass/config/_vars-default.scss` to alter the default variables to suit your needs
-- `assets/sass/config/_vars-custom.scss` to add your own project specific variables
-- `assets/sass/style.scss` to choose your Sass imports
-
-Out of the box Kapow!'s Grunt set-up has several features commented out such as code linting and documentation generation. Take a look at the following files to:
-
-- `gruntfile.js` alter the main configuration
-- `grunt/default.js` choose what runs as part of the main build task
-- `grunt/watch.js` change what happens when certain files change or are added
-
-Several Grunt commands are at your disposal:
-
-- `grunt` builds the project
-- `grunt build` builds and then watches for changes
-- `grunt document` generates Sass, Javascript and PHP documentation
-- `grunt images` minifies JPG, PNG and SVG images
-- `grunt lint` lint your Sass, Javascript and PHP for errors
-- `grunt analyse` get useful feedback on your code (currently CSS only)
-
-**NB:** The `docs` and `lint` commands assume you have the required dependencies installed as detailed earlier.
 
 ## Release Notes
 
