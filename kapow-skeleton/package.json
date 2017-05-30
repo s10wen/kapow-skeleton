@@ -26,6 +26,7 @@
         "grunt-postcss": "0.8.0",
         "grunt-sass": "2.0.0",
         "grunt-sassdoc": "2.0.2",
+        "grunt-sass-globbing": "1.5.1",
         "grunt-sass-lint": "0.2.2",
         "grunt-selector4096": "0.1.4",
         "grunt-spritesmith": "6.4.0",
