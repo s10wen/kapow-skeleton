@@ -19,8 +19,9 @@ build/**/.gitmodules
 # -------------------------------------
 assets/css/*
 assets/glob/
-!assets/css/.gitkeep
+assets/scss/base/_sprites.scss
 assets/js/lib/modernizr-custom.js
+!assets/css/.gitkeep
 
 # Composer.
 # -------------------------------------
