@@ -33,7 +33,7 @@
 
 	<!-- Includes -->
 	<include-pattern>build/wp-content/plugins/kapow-core/*</include-pattern>
-	<include-pattern>build/wp-content/plugins/my-project-core/*</include-pattern>
+	<include-pattern>build/wp-content/plugins/project-core/*</include-pattern>
 
 	<!--
 		Don't get angry about checking files that don't contain code
