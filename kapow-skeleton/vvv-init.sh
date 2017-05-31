@@ -26,6 +26,7 @@ then
 	rm -rf build/wp-content/plugins/akismet
 	# Install/Activate Plugins.
 	wp plugin activate kapow-core
+	wp plugin activate project-core
 	# Generate Salts.
 	echo '<?php' > build/salt.php && curl -L https://api.wordpress.org/secret-key/1.1/salt/ >> build/salt.php
 	# Set the permalink structure to 'post name'.
