@@ -77,13 +77,8 @@ define( 'WPLANG', '' );
 /**
  * Define Site URL: WordPress in a subdirectory.
  */
-if ( isset( $_SERVER ) && isset( $_SERVER['HTTP_HOST'] ) ) {
-	defined( 'WP_SITEURL' ) || define( 'WP_SITEURL', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) . '/wordpress' );
-	defined( 'WP_HOME' ) || define( 'WP_HOME', 'http://' . sanitize_text_field( wp_unslash( $_SERVER['HTTP_HOST'] ) ) );
-} else {
-	defined( 'WP_SITEURL' );
-	defined( 'WP_HOME' );
-}
+defined( 'WP_SITEURL' ) || define( 'WP_SITEURL', 'http://my-project.dev/wordpress' );
+defined( 'WP_HOME' ) || define( 'WP_HOME', 'http://my-project.dev' );
 
 /**
  * Define path and url for wp-content.

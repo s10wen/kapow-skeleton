@@ -21,6 +21,7 @@
 	<exclude-pattern>reports/*</exclude-pattern>
 	<exclude-pattern>docs/*</exclude-pattern>
 	<exclude-pattern>assets/*</exclude-pattern>
+	<exclude-pattern>provision/*</exclude-pattern>
 	<exclude-pattern>*.png</exclude-pattern>
 	<exclude-pattern>*.jpg</exclude-pattern>
 	<exclude-pattern>*.gif</exclude-pattern>
