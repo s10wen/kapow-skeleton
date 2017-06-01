@@ -12,23 +12,25 @@
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/tests/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*.json</exclude-pattern>
+	<exclude-pattern>*.js</exclude-pattern>
+	<exclude-pattern>*.min.js</exclude-pattern>
 
 	<!-- Excludes: Kapow! specific -->
 	<exclude-pattern>static/*</exclude-pattern>
 	<exclude-pattern>reports/*</exclude-pattern>
 	<exclude-pattern>docs/*</exclude-pattern>
 	<exclude-pattern>assets/*</exclude-pattern>
-	<exclude-pattern>*/*.png</exclude-pattern>
-	<exclude-pattern>*/*.jpg</exclude-pattern>
-	<exclude-pattern>*/*.gif</exclude-pattern>
+	<exclude-pattern>*.png</exclude-pattern>
+	<exclude-pattern>*.jpg</exclude-pattern>
+	<exclude-pattern>*.gif</exclude-pattern>
 	<exclude-pattern>build/wordpress/*</exclude-pattern>
-	<exclude-pattern>build/wp-content/plugins/*</exclude-pattern>
+	<exclude-pattern>build/wp-content/plugins/index.php</exclude-pattern>
 	<exclude-pattern>build/wp-content/mu-plugins/*</exclude-pattern>
 	<exclude-pattern>build/wp-content/themes/index.php</exclude-pattern>
 	<exclude-pattern>build/wp-content/index.php</exclude-pattern>
 	<exclude-pattern>build/polyfills/*</exclude-pattern>
 	<exclude-pattern>vvv-*</exclude-pattern>
-	<exclude-pattern>*.json</exclude-pattern>
 	<exclude-pattern>phpcs.xml</exclude-pattern>
 
 	<!-- Includes -->
@@ -54,8 +56,8 @@
 	</rule>
 
 	<!-- Add in some extra rules from other standards. -->
-	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
-	<rule ref="Generic.Commenting.Todo"/>
+	<!-- 	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/> -->
+	<!-- 	<rule ref="Generic.Commenting.Todo"/> -->
 
 	<!-- Include the WordPress Extra (Core + Extras) ruleset, with exclusions. -->
 	<rule ref="WordPress-Extra">
@@ -64,8 +66,21 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 	</rule>
 
-	<!-- Include the Documentation ruleset  -->
+	<!-- Include the WordPress Documentation ruleset  -->
 	<rule ref="WordPress-Docs" />
+
+	<!-- VIP: Check that input is validated and sanitize -->
+	<rule ref="WordPress.VIP.ValidatedSanitizedInput">
+		<properties>
+			<property name="check_validation_in_scope_only" value="true" />
+		</properties>
+	</rule>
+
+	<!-- VIP: Ensure that output is escaped -->
+	<rule ref="WordPress.XSS.EscapeOutput"/>
+
+	<!-- VIP: Ensure that nonce verification is in place where relevant -->
+	<rule ref="WordPress.CSRF.NonceVerification"/>
 
 	<!-- Allow theme filename exceptions -->
 	<rule ref="WordPress.Files.FileName">
@@ -77,7 +92,7 @@
 	<!-- Ensure that any i18n functions have a valid project-specific or Kapow textdomain -->
 	<rule ref="WordPress.WP.I18n">
 		<properties>
-			<property name="text_domain" type="array" value="my-project,kapow" />
+			<property name="text_domain" type="array" value="stark-industries,kapow,kapow-core,project-core" />
 		</properties>
 	</rule>
 
@@ -93,7 +108,7 @@
 	<!-- Ensure that all globals have a project specific or Kapow prefix -->
 <!-- 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
-			<property name="prefixes" type="array" value="my_project,kapow" />
+			<property name="prefixes" type="array" value="stark_industries,kapow" />
 		</properties>
 	</rule> -->
 
