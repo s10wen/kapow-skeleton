@@ -98,6 +98,16 @@ if [ $precommit ] && [ ! -d vendor/stevegrunwell/wp-enforcer ]
 then
 	echo "Copying Git hooks from WP Enforcer"
 	./vendor/bin/wp-enforcer
+
+	# Modify the Git pre-commit hook to write PHPCS output to file.
+	precommitfile=".git/hooks/pre-commit"
+	precommittarget="--standard=./phpcs.xml"
+	precommitextra=" --report-full=./reports/wpcs.md"
+	if [ -f "$precommitfile" ]
+		then
+
+		sed -i "" "s/$precommittarget/$precommittarget$precommitextra/g" "$precommitfile"
+	fi
 fi
 
 # The Vagrant site setup script will
