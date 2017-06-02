@@ -1,469 +1,301 @@
-# Changelog 
-
-2016-08-16 - **Updated changelog** (ff156f9)
-
-2016-08-16 - **Updated navigation JS so that the primary menu nav toggle doesn't have to be nested within the nav itself** (56807bf)
-
-2016-08-16 - **Updated package.json for Grunticon dependency** (dce418d)
-
-2016-08-16 - **Updated README** (e133f4c)
-
-2016-08-16 - **Updated changelog** (24b47de)
-
-2016-08-16 - **Merge branch 'master' of github.com:mkdo/kapow-skeleton** (9254b07)
-
-2016-08-16 - **Added empty ico folder for Grunticon** (bee1ebf)
-
-2016-05-17 - **Update README.md** (9dd8923)
-
-2016-05-17 - **Bumped versions in package.json** (1a5b637)
-
-2016-05-17 - **Merge branch 'master' of github.com:mkdo/kapow-skeleton** (2ce96ef)
-
-2016-05-17 - **Documentation tweaks** (8e40a8f)
-
-2016-05-17 - **Removed script debug constant** (cc83849)
-
-2016-05-17 - **Removed legacy Gemfile** (1025597)
-
-2016-05-17 - **Slight refactor of assets/js structure** (8f83eed)
-
-2016-05-17 - **Update README.md** (2421150)
-
-2016-05-17 - **Update README.md** (1960ece)
-
-2016-05-17 - **Removed SQL files** (5f8ac11)
-
-2016-04-22 - **Updated NPM manifest to reflect switch from grunt-scss-lint to grunt-sass-lint** (aa0d7a3)
-
-2016-04-22 - **Added editorconfig** (7173bb1)
-
-2016-04-22 - **Added fonts directory** (8b2e383)
-
-2016-04-19 - **Auto init JS for Foundation if included for dev.** (15cd7e8)
-
-2016-04-14 - **Create .gitkeep** (e1558df)
-
-2016-04-07 - **Merge branch 'master' of github.com:mkdo/kapow-skeleton** (9115582)
-
-2016-04-07 - **Updates grunt, grunt-parker and autoprefixer versions. Grunt Parker now silences console output if options.file is set. Winner.** (74732fd)
-
-2016-04-05 - **Update .gitignore** (16c4e3b)
-
-2016-04-05 - **Update .gitignore** (7e89659)
-
-2016-04-02 - **Removed svg2png from NPM manifest** (97cc1d3)
-
-2016-04-02 - **Comments update** (bf070f7)
-
-2016-04-02 - **Comments update** (173ab2e)
-
-2016-04-02 - **Comments update** (a7c2483)
-
-2016-03-31 - **Added path parameter to `wp core install`** (a108f4b)
-
-2016-03-29 - **Ignoring nested git files** (405703c)
-
-2016-03-29 - **Added WP core install back into init script** (936c6ba)
-
-2016-03-27 - **Added picturefill to Bower manifest** (786afe0)
-
-2016-03-27 - **Added grunt-svgmin to NPM manifest** (11aac17)
-
-2016-03-26 - **Added admin js** (e5409b9)
-
-2016-03-25 - **Bumped NPM package versions** (467e7fe)
-
-2016-03-25 - **Bumped versions for Foundation, Bootstrap, Bourbon and Neat** (64d9b35)
-
-2016-03-25 - **Formatting** (0fc21e9)
-
-2016-03-25 - **Added live preview JS handler for logo in customizer** (a44c9c9)
-
-2016-03-25 - **Added SCRIPT_DEBUG to local config** (c7ef976)
-
-2016-03-07 - **Updated grunt-modernizr version** (f9ff22c)
-
-2015-12-17 - **Tweaked ignore rules** (ae4de16)
-
-2015-11-13 - **Removed redundant WP install lines** (755ab53)
-
-2015-11-13 - **Update bower.json** (0e17436)
-
-2015-11-11 - **Update README.md** (0195b56)
-
-2015-11-11 - **Update README.md** (2af5b98)
-
-2015-11-11 - **Update README.md** (ac37bb9)
-
-2015-11-10 - **Tweaked text** (a12b159)
-
-2015-11-10 - **Changed database name to exclude _db** (4d2f380)
-
-2015-11-10 - **Renamed local config to ensure it is used right out of the box.** (aebd50d)
-
-2015-11-10 - **Trimmed bower deps down to the essentials** (e734c03)
-
-2015-11-10 - **Added www to author homepage data** (176459b)
-
-2015-11-10 - **Prevented compiled assets from being commited** (3791481)
-
-2015-11-10 - **Tweaked ignores** (e411f8c)
-
-2015-11-03 - **Removing.** (3e5067d)
-
-2015-10-26 - **Update .gitignore** (b3a7cda)
-
-2015-10-23 - **Update .gitignore** (5133e19)
-
-2015-10-23 - **Removed responsive images, added max-filesize** (0273d7c)
-
-2015-10-19 - **Removed erroneous trailing commas** (82b0231)
-
-2015-10-19 - **Missing comma** (2d4255b)
-
-2015-10-19 - **Update README.md** (8f4ea7f)
-
-2015-10-19 - **Added WordPress Composer Installer** (129035e)
-
-2015-09-18 - **Put back Modernizr hotfix** (12efdf0)
-
-2015-09-18 - **Added composer.lock to ignores** (ec27f6e)
-
-2015-09-18 - **Update README.md** (6983dcc)
-
-2015-09-18 - **Update README.md** (cf728ed)
-
-2015-09-18 - **Merge branch 'master' of https://github.com/mkdo/kapow-skeleton** (d13792f)
-
-2015-09-18 - **Updated NPM manifest** (543baa8)
-
-2015-09-18 - **Update README.md** (18eb7c0)
-
-2015-09-18 - **Tweaked comment** (8c3d353)
-
-2015-09-18 - **Updated .gitignore** (f1595d4)
-
-2015-09-18 - **Update README.md** (a26cdfa)
-
-2015-09-18 - **Update README.md** (24637ab)
-
-2015-09-18 - **Update README.md** (9c4917b)
-
-2015-09-18 - **Create .gitkeep** (423fc26)
-
-2015-09-18 - **Update .gitignore** (71f5ccb)
-
-2015-09-18 - **Create .gitkeep** (88d5bfa)
-
-2015-09-18 - **Create .gitkeep** (11936b3)
-
-2015-09-18 - **Update loader.php** (eda2407)
-
-2015-09-18 - **Added plugin autoloader** (909cd12)
-
-2015-09-18 - **Delete .gitkeep** (f21eb08)
-
-2015-09-18 - **Delete my_project_db-davetgreen.sql** (32dc3ed)
-
-2015-09-18 - **Create index.php** (281a027)
-
-2015-09-18 - **Delete .gitkeep** (8108add)
-
-2015-09-18 - **Create index.php** (06bcf90)
-
-2015-09-18 - **Delete .gitkeep** (b8e2878)
-
-2015-09-17 - **Update README.md** (ab72480)
-
-2015-09-17 - **Added grunt-parker to manifest** (42af435)
-
-2015-09-17 - **Changed htdocs to build** (f7913cf)
-
-2015-09-17 - **Update README.md** (12db213)
-
-2015-09-17 - **Added navigation JS partial** (2aa5338)
-
-2015-09-17 - **Update composer.json** (8aa66df)
-
-2015-09-17 - **Added composer manifest** (8c2c456)
-
-2015-09-16 - **Update README.md** (19008fb)
-
-2015-09-16 - **Update README.md** (a86de1f)
-
-2015-09-16 - **Changed repo structure.** (6bc4920)
-
-2015-09-07 - **Update footer.js** (2538ce8)
-
-2015-09-07 - **Added grunt sync** (aeae2f0)
-
-2015-09-07 - **Create pie.htc** (af7540d)
-
-2015-09-07 - **Added ES5 Shim to deps** (16eddc1)
-
-2015-09-07 - **Updated deps** (8cc829e)
-
-2015-08-30 - **Added skip link focus fix to footer.js** (1c47e5a)
-
-2015-08-28 - **Update README.md** (872503f)
-
-2015-08-27 - **Merge branch 'master' of https://github.com/mkdo/kapow-skeleton** (2bda97c)
-
-2015-08-27 - **Ignored sprites partial and adjusted CSS ignore** (8cc56fb)
-
-2015-08-27 - **Update README.md** (837b4cc)
-
-2015-08-27 - **Update README.md** (212d538)
-
-2015-08-27 - **Update README.md** (9c95fc8)
-
-2015-08-27 - **Update README.md** (2347137)
-
-2015-08-27 - **Update README.md** (b1df109)
-
-2015-08-27 - **Update README.md** (5361bd6)
-
-2015-08-27 - **Update README.md** (ec3ba00)
-
-2015-08-27 - **Update README.md** (0c6f213)
-
-2015-08-27 - **Update README.md** (30e9173)
-
-2015-08-27 - **Update README.md** (3b4ef2c)
-
-2015-08-27 - **Update README.md** (d0959e2)
-
-2015-08-27 - **Update README.md** (b620bdb)
-
-2015-08-27 - **Update README.md** (1e488c6)
-
-2015-08-27 - **Update README.md** (426fbd6)
-
-2015-08-27 - **Update README.md** (da8edb5)
-
-2015-08-27 - **Update README.md** (07b5d25)
-
-2015-08-27 - **Update README.md** (36f132d)
-
-2015-08-27 - **Update README.md** (5085a51)
-
-2015-08-27 - **Update README.md** (c5657e2)
-
-2015-08-27 - **Update README.md** (16d7b5d)
-
-2015-08-27 - **Update README.md** (aa54fbb)
-
-2015-08-27 - **Update README.md** (df27ae7)
-
-2015-08-27 - **Update README.md** (c495cd0)
-
-2015-08-27 - **Update README.md** (60f29d6)
-
-2015-08-27 - **Update README.md** (ab5a8bb)
-
-2015-08-27 - **Update README.md** (a54b958)
-
-2015-08-27 - **Update README.md** (5cad8ee)
-
-2015-08-27 - **Update README.md** (c06d8b2)
-
-2015-08-27 - **Comments** (72ea3a5)
-
-2015-08-27 - **Updated NPM packages** (3b007e3)
-
-2015-08-27 - **Code refactor to WP standards** (a48fe76)
-
-2015-08-27 - **Added customizer.js** (9d3b2fc)
-
-2015-08-26 - **Merge branch 'master' of https://github.com/mkdo/kapow-skeleton** (5f8cf0f)
-
-2015-08-26 - **Added grunt-sync to deps** (2d99301)
-
-2015-08-18 - **Update wp-config.php** (75314f2)
-
-2015-08-18 - **Update wp-config.php** (609b073)
-
-2015-08-18 - **Update local-config-sample.php** (48cee91)
-
-2015-08-18 - **Create local-config-sample.php** (f33e5ae)
-
-2015-08-18 - **Create wp-config.php** (71a6fe7)
-
-2015-08-18 - **Create index.php** (621867c)
-
-2015-08-18 - **Update .gitignore** (d2b7396)
-
-2015-08-18 - **Corrected errors** (a1281fc)
-
-2015-08-18 - **Update DATABASE.md** (c828a9d)
-
-2015-08-18 - **Update DATABASE.md** (7cbff06)
-
-2015-08-18 - **Update DATABASE.md** (5b79178)
-
-2015-08-18 - **Update DATABASE.md** (6b07b3e)
-
-2015-08-18 - **Update DATABASE.md** (abaf17c)
-
-2015-08-18 - **Create DATABASE.md** (e89642e)
-
-2015-08-18 - **Update README.md** (905a345)
-
-2015-08-18 - **Create .gitkeep** (6eda7b0)
-
-2015-08-18 - **Delete my_project_db-davetgreen.sql** (e798cb3)
-
-2015-08-18 - **Removed erroneous trailing comma** (f250651)
-
-2015-08-12 - **Rearranged bower deps** (881b7f2)
-
-2015-08-12 - **Added vvv halt** (1e9b408)
-
-2015-08-11 - **Added an initial FRONTEND.md file - will need review of inline Sass docs to tidy up** (8b212ce)
-
-2015-08-11 - **Added script to copy DB dump into the repo on vagrant halt** (d59726f)
-
-2015-08-11 - **Removed licence** (396960a)
-
-2015-08-11 - **Merge branch 'master' of https://github.com/mkdo/kapow-skeleton** (ef9cbe6)
-
-2015-08-11 - **Adding empty sass folder** (39bf2c7)
-
-2015-08-11 - **Create CONTRIBUTING.md** (4a6716e)
-
-2015-08-11 - **Update package.json** (7cce051)
-
-2015-08-11 - **Create package.json** (066720f)
-
-2015-08-10 - **Dependency updates** (52ca541)
-
-2015-08-10 - **Added new JS file for legacy IE** (70c35bb)
-
-2015-08-10 - **Added html5shiv and selectivizr deps** (74ed53a)
-
-2015-08-09 - **Init now allows for WP DB installation, without the need to download WP core** (702403a)
-
-2015-08-09 - **Manually added** (63a56c7)
-
-2015-08-09 - **Added WP as a submodule** (0795015)
-
-2015-08-09 - **Refactored and tidied** (1e9bd3f)
-
-2015-06-05 - **Whoops, removing repo directories.** (24ee07e)
-
-2015-06-05 - **More generator updates.** (5b4718e)
-
-2015-06-05 - **Updated question wording & formatting, added string replacement for site.scss** (05d657c)
-
-2015-06-04 - **Tweak** (c8bf248)
-
-2015-06-04 - **Quick refactor of Yeoman generator.** (328f57f)
-
-2015-06-04 - **Forget to add gitignore updates.** (62c3aea)
-
-2015-06-04 - **More Yeoman updates.** (85794f1)
-
-2015-06-04 - **Tweak.** (f768d9e)
-
-2015-06-04 - **VVV file tweaks.** (07074f9)
-
-2015-06-04 - **Tweak.** (cb2b370)
-
-2015-06-04 - **Tweaked vvv-init** (eb528c5)
-
-2015-06-04 - **Tweaked vvv-init** (7c17c29)
-
-2015-06-04 - **Whoops, added gruntfile back in.** (2fdf635)
-
-2015-06-04 - **bower.json tweaks** (799a825)
-
-2015-06-04 - **Some housekeeping.** (fb86d17)
-
-2015-06-04 - **More Yeoman generator progress.** (5263d2f)
-
-2015-06-04 - **Changed placeholder names in vagrant config files** (59fff11)
-
-2015-06-04 - **Merge branch 'master' of github.com:davetgreen/kapow-skeleton** (55b53c1)
-
-2015-06-04 - **Started work on Yeoman generator, tweaked bower manifest.** (7a051a2)
-
-2015-06-04 - **Update bower.json** (55f9f8a)
-
-2015-06-04 - **Update .gitignore** (c9d3f49)
-
-2015-06-04 - **Create Gemfile** (d2c3a99)
-
-2015-06-03 - **Update .gitignore** (27a65a1)
-
-2015-06-03 - **Delete licence** (83dc056)
-
-2015-06-03 - **Create LICENCE** (2261b15)
-
-2015-06-03 - **Create licence** (28d9da0)
-
-2015-06-03 - **Update .gitignore** (f4ed3f6)
-
-2015-06-03 - **Create vvv-nginx.conf** (fb460e4)
-
-2015-06-03 - **Create vvv-init.sh** (368a725)
-
-2015-06-03 - **Create vvv-hosts** (3fbbe59)
-
-2015-06-03 - **Create .gitkeep** (c6ce43c)
-
-2015-06-03 - **Delete .gitkeep** (b0961bd)
-
-2015-06-03 - **Update bower.json** (e43b067)
-
-2015-06-03 - **Update bower.json** (2f04162)
-
-2015-06-03 - **Create bower.json** (141f17f)
-
-2015-06-03 - **Create .gitignore** (d24321c)
-
-2015-06-03 - **Update .htaccess** (db5af61)
-
-2015-06-03 - **Update .htaccess** (78abe93)
-
-2015-06-03 - **Create .gitkeep** (33cf99f)
-
-2015-06-03 - **Delete .gitkeep** (9836497)
-
-2015-06-03 - **Create .gitkeep** (ecca658)
-
-2015-06-03 - **Create .gitkeep** (3a41fca)
-
-2015-06-03 - **Create robots.txt** (7d1ca20)
-
-2015-06-03 - **Update .htaccess** (07189c7)
-
-2015-06-03 - **Update README.md** (a02e8e5)
-
-2015-06-03 - **Create boxsizing.htc** (44722d5)
-
-2015-06-03 - **Create backgroundsize.htc** (4777e30)
-
-2015-06-03 - **Create .htaccess** (590ecc2)
-
-2015-06-03 - **Update README.md** (e40fc2c)
-
-2015-06-03 - **Create .gitkeep** (81c55d5)
-
-2015-06-03 - **Create .gitkeep** (fa9ae41)
-
-2015-06-03 - **Create footer.js** (769b637)
-
-2015-06-03 - **Create header.js** (cf42af2)
-
-2015-06-03 - **Create .gitkeep** (c618450)
-
-2015-06-03 - **Create .gitkeep** (0fff035)
-
-2015-06-03 - **Create .gitkeep** (415fe7d)
-
-2015-06-03 - **Update README.md** (f2b6a46)
-
-2015-05-25 - **Update README.md** (204d9a0)
-
-2015-05-24 - **Initial commit** (0fab0b4)
+## Change Log
+
+### v2.0.0 02/06/2017
+- [4354f0a](https://github.com/mkdo/kapow-skeleton/commit/4354f0aab1bbe0a266f6cc372057dc824dce3246) Updated README (@davetgreen)
+- [e367565](https://github.com/mkdo/kapow-skeleton/commit/e367565043b6b8eaf6748737cdae5720d4ac2ded) PHPCS config now ignores all plugins except kapow-core and project-core. (@davetgreen)
+- [8b6d086](https://github.com/mkdo/kapow-skeleton/commit/8b6d0862fd5bfa364881a5d3ba8f536c5cc17a30) Updates to get provisioning working. (@davetgreen)
+- [2001d7b](https://github.com/mkdo/kapow-skeleton/commit/2001d7b8872982e4eb16ee38fbef68b4fe221855) PHPCS config updates. (@davetgreen)
+- [d868955](https://github.com/mkdo/kapow-skeleton/commit/d868955faa40f9cff007ed51289be95522e990a7) Bug fix to sed string replacement. (@davetgreen)
+- [d2c037d](https://github.com/mkdo/kapow-skeleton/commit/d2c037d409150a9dde10219f2ac14ff15ccb56fb) Added in modification of the pre-commit hook to pipe PHPCS report output to file. (@davetgreen)
+- [ce3c8b2](https://github.com/mkdo/kapow-skeleton/commit/ce3c8b2b5fbc75e42dc344eada6e2d9b21be9201) Corrected include path (@davetgreen)
+- [bfbec96](https://github.com/mkdo/kapow-skeleton/commit/bfbec964857e66fff7c583ab34a509ff275a65b0) Updates to integrate kapow.config options (@davetgreen)
+- [4de6b31](https://github.com/mkdo/kapow-skeleton/commit/4de6b3111eb5c917a429c9b1fe5a665bb9b6904f) Updates to out-of-the-box JS to comply with WPCS via ESLint. Closes #26 (@davetgreen)
+- [ebe95fb](https://github.com/mkdo/kapow-skeleton/commit/ebe95fbed6d6f28fd6b5d7ef5c63d3adfdae2f5d) Updated NPM manifest to maintain parity with Kapow! Grunt. (@davetgreen)
+- [5468134](https://github.com/mkdo/kapow-skeleton/commit/54681347859121fa9cbe1bbb76cab2944a566c31) Fixed indentation. (@davetgreen)
+- [c5719cd](https://github.com/mkdo/kapow-skeleton/commit/c5719cde7f6a1ec7bc43b1758acb43dbbffe7b85) Updated NPM manifest to reflect changes in Kapow! Grunt. (@davetgreen)
+- [ca8b9c9](https://github.com/mkdo/kapow-skeleton/commit/ca8b9c96a06b2555224951473478df230e05365d) Added activation of 'project-core' plugin to provisioning script. (@davetgreen)
+- [af5dfc3](https://github.com/mkdo/kapow-skeleton/commit/af5dfc348859c560da20331aaf07b9db5ed05683) Added _sprites.scss to .gitignore (@davetgreen)
+- [8d6a5d0](https://github.com/mkdo/kapow-skeleton/commit/8d6a5d094766d2bb67d00e1be969bfcfe2128fe7) Added grunt-sass-globbing 1.5.1 dep. (@davetgreen)
+- [67efcd9](https://github.com/mkdo/kapow-skeleton/commit/67efcd9ea418222088f825dad7496eda4a73ce07) Git ignore update (@davetgreen)
+- [5ad1b83](https://github.com/mkdo/kapow-skeleton/commit/5ad1b83e4d12495c8dc1583ca60d12ae695073da) Renaming library files to comply with new JS includes technique in Grunt. (@davetgreen)
+- [ee9ecb2](https://github.com/mkdo/kapow-skeleton/commit/ee9ecb2e6dd54fe9234badaed905250ad1075a37) Added blank files for auto-generated library includes. Resolves Grunt missing file errors. (@davetgreen)
+- [c800434](https://github.com/mkdo/kapow-skeleton/commit/c80043435f41b7efcdda0c46116968da05bfd684) Readme updated. Closes #14 (@davetgreen)
+- [5e80346](https://github.com/mkdo/kapow-skeleton/commit/5e80346a5b9f83a5bc0007567113cf35e853e14d) Minor refactors, updates to inline docs. Relates to #14 (@davetgreen)
+- [3693145](https://github.com/mkdo/kapow-skeleton/commit/3693145972b97a4fc6b729cc52c46051a4e3ab06) Added support for setting upstream, meaning that PHP versions can be set on a per-site basis. (@davetgreen)
+- [47cfb06](https://github.com/mkdo/kapow-skeleton/commit/47cfb06d9fdb47dadecb9309d3aceed65cc2c06a) Removed vvv-hosts as no longer required in VVV 2.X. Closes #12 (@davetgreen)
+- [ca4f764](https://github.com/mkdo/kapow-skeleton/commit/ca4f76440d3055293db605fe77136c30939b645e) Tweak to Git ignore. (@davetgreen)
+- [5c81eb9](https://github.com/mkdo/kapow-skeleton/commit/5c81eb94b23da1062f2c2d90c8efe243eee37db4) Tweak to Git ignore. (@davetgreen)
+- [b9d48cc](https://github.com/mkdo/kapow-skeleton/commit/b9d48cc492e708e2302e0f14be42a6dfe8c4a8c6) Tweak to Git ignore. (@davetgreen)
+- [58a599f](https://github.com/mkdo/kapow-skeleton/commit/58a599f35b88e1ef4969ad0c31fca5adbf81a15f) Tweak to Git ignore. (@davetgreen)
+- [13b2fd8](https://github.com/mkdo/kapow-skeleton/commit/13b2fd8e591fa5a5c9877eaf94cd93a07f37f284) Added missing include pattern for kapow core (@davetgreen)
+- [a3a66c0](https://github.com/mkdo/kapow-skeleton/commit/a3a66c032c06d7cc21754b2e56abcde2182bc82a) Added include for project specific core plugin. Closes #15 (@davetgreen)
+- [46b6112](https://github.com/mkdo/kapow-skeleton/commit/46b61126db147b568ee0420c031c0dba6e6a8a11) PHPCS related updates (@davetgreen)
+- [98ef2a8](https://github.com/mkdo/kapow-skeleton/commit/98ef2a8d6a955b887a4caa084325ac1dbfdff74e) PHPCS related updates (@davetgreen)
+- [b74b965](https://github.com/mkdo/kapow-skeleton/commit/b74b965abccb474cd4a5490f8785e07a17ddb97a) PHPCS related updates. (@davetgreen)
+- [d4520b5](https://github.com/mkdo/kapow-skeleton/commit/d4520b5b10f0f113755beba9317491629218684d) Added WP Enforcer and associated config to introduce Git pre-commit hook checking. (@davetgreen)
+- [e55685c](https://github.com/mkdo/kapow-skeleton/commit/e55685c83c65414c547378bbd4200d844ae2a782) JS partial renaming. (@davetgreen)
+- [94f7c6d](https://github.com/mkdo/kapow-skeleton/commit/94f7c6de4e5218788005960ab5f163d630ce933e) Introduced some additional WP CLI commands to VVV set-up script to automate menial tasks. Closes #21 (@davetgreen)
+- [911a93c](https://github.com/mkdo/kapow-skeleton/commit/911a93c4abf13cb83c7fba092664462ea87c4a32) Editorconfig updates. Closes #16 (@davetgreen)
+- [e795a01](https://github.com/mkdo/kapow-skeleton/commit/e795a0193e0dda6c7ba81a9434a0fa3a8317d5a0) Removed database folder and renamed assets/sass to assets/scss (@davetgreen)
+- [a63c5b9](https://github.com/mkdo/kapow-skeleton/commit/a63c5b9b5e06a1aa3185acf811bdc277edcfcf42) Updated Bower dependencies and set to specific version - latest at the time of writing. Added select2 and headroom, removed headHesive. Closes #10 Closes #22 (@davetgreen)
+- [91990f7](https://github.com/mkdo/kapow-skeleton/commit/91990f70176f73ee439367bd17ee4b643fd57d9b) Provided vendor folder in scss assets from being gitignored. Closes #17 (@davetgreen)
+- [6c0445a](https://github.com/mkdo/kapow-skeleton/commit/6c0445a90bbc881c09541d52ed23d8dc0ad3b34c) Removed vvh-halt.sh. Closes #20 (@davetgreen)
+- [a8feee2](https://github.com/mkdo/kapow-skeleton/commit/a8feee2d9e5c3de61432b175c2962726a76a4363) Removed DATABASE.md. Closes #18 (@davetgreen)
+- [011de9b](https://github.com/mkdo/kapow-skeleton/commit/011de9ba1cb1b6bfc658556844490611d7e95ecb) Updated package.json. Closes #19 (@davetgreen)
+- [e1fc029](https://github.com/mkdo/kapow-skeleton/commit/e1fc0290ff68a97ff82d17d84f7b7c66f253755c) Renamed icons folder. (@davetgreen)
+- [1bb5951](https://github.com/mkdo/kapow-skeleton/commit/1bb595144a3d48271a995edf3f329a8342490a33) Customizer and skip-link JS updates to absorb changes from _S theme. (@davetgreen)
+- [c29a8dd](https://github.com/mkdo/kapow-skeleton/commit/c29a8ddc3bd33451b5181704350846944b9c2e49) Create LICENSE (@davetgreen)
+- [191439e](https://github.com/mkdo/kapow-skeleton/commit/191439ee0b714b784889697140ae2aca4679d650) Create PULL_REQUEST_TEMPLATE.md (@davetgreen)
+- [d29f580](https://github.com/mkdo/kapow-skeleton/commit/d29f580928209cff5b0ab4638c4830479e5a5960) Create ISSUE_TEMPLATE.md (@davetgreen)
+- [fc087d9](https://github.com/mkdo/kapow-skeleton/commit/fc087d99bbfd8c0bb889ac62ca0302ce46685875) Rename CONTRIBUTING.md to .github/CONTRIBUTING.md (@davetgreen)
+- [#9](https://github.com/mkdo/kapow-skeleton/pull/9) Merge pull request #9 from mwtsn/gitignore-databases (@mwtsn)
+- [e17d2a6](https://github.com/mkdo/kapow-skeleton/commit/e17d2a6507ffecd1fc4b0472d729293fc26d2601) Gitignore databases (@mwtsn)
+- [cc5a524](https://github.com/mkdo/kapow-skeleton/commit/cc5a52477e4d6397c34ea86bfda36790fc1efa6d) Update vvv-init.sh (@davetgreen)
+- [ea85918](https://github.com/mkdo/kapow-skeleton/commit/ea859185365e43601b2bff2bc7fd2758f13c48d9) Fixed typos. (@davetgreen)
+- [5180ed7](https://github.com/mkdo/kapow-skeleton/commit/5180ed71add4c338cc16e64cd715da53f4d47042) Update vvv-init.sh (@davetgreen)
+- [86a91ff](https://github.com/mkdo/kapow-skeleton/commit/86a91ffa8665ee082aa65e8ec2e28341cca34f83) Update index.php (@davetgreen)
+- [f3b7d25](https://github.com/mkdo/kapow-skeleton/commit/f3b7d259a4260f81d31ac651339a650eeefb8942) Fixed issue where WordPress install fails. (@davetgreen)
+- [347b7b0](https://github.com/mkdo/kapow-skeleton/commit/347b7b031278f34c7cddee7bbea6321f447ea0d9) Windoe resize should be an event listener. (@davetgreen)
+- [2488fb5](https://github.com/mkdo/kapow-skeleton/commit/2488fb53025b1634b7bf48c0cc5d64ab7aaa7d0c) Added correct replaceable email address (@mwtsn)
+- [#4](https://github.com/mkdo/kapow-skeleton/pull/4) Merge pull request #4 from mkdo/add-contributing-md-to-future-projects (@mkdo)
+- [ee41bd5](https://github.com/mkdo/kapow-skeleton/commit/ee41bd51c66c710b697c57d75f12c8cb265ea171) Create CONTRIBUTING.md (@mwtsn)
+- [#3](https://github.com/mkdo/kapow-skeleton/pull/3) Merge pull request #3 from mkdo/refactor-remove-composor (@mkdo)
+- [78c513c](https://github.com/mkdo/kapow-skeleton/commit/78c513c470357b511879162d000a2a65c1d78986) Updated bower manifest to include Extras (@davetgreen)
+- [3b1f037](https://github.com/mkdo/kapow-skeleton/commit/3b1f037c8a8542b6ad0f57937291096f4592aec3) Refactored to remove composor, also removed robots.txt (@mwtsn)
+- [#1](https://github.com/mkdo/kapow-skeleton/pull/1) Merge pull request #1 from mkdo/remove-reference-hm-cmb (@mkdo)
+- [434891d](https://github.com/mkdo/kapow-skeleton/commit/434891de3335f8c268a43ab18cc4650e89073962) Updated changelog (@davetgreen)
+- [0808b94](https://github.com/mkdo/kapow-skeleton/commit/0808b94c31ec6924e3d0f5309eb7f1cd9bbb68a0) Remove references to HM CMB (@mwtsn)
+- [ff156f9](https://github.com/mkdo/kapow-skeleton/commit/ff156f91991ce45f4314c432cd5c3616750d3a50) Updated changelog (@davetgreen)
+- [56807bf](https://github.com/mkdo/kapow-skeleton/commit/56807bf3a65f76f26ce56a3192132d3d2b2a9290) Updated navigation JS so that the primary menu nav toggle doesn't have to be nested within the nav itself (@davetgreen)
+- [dce418d](https://github.com/mkdo/kapow-skeleton/commit/dce418d4b81ab4d97953a0cef8ac798bb2687be1) Updated package.json for Grunticon dependency (@davetgreen)
+- [e133f4c](https://github.com/mkdo/kapow-skeleton/commit/e133f4c22fc9fc7bcfc4ca3709a8ce73d5f0c550) Updated README (@davetgreen)
+- [24b47de](https://github.com/mkdo/kapow-skeleton/commit/24b47de1a35e5707c3fca0342048d64b40fb0a68) Updated changelog (@davetgreen)
+- [9254b07](https://github.com/mkdo/kapow-skeleton/commit/9254b0732fea6ed1c40a8a4cdc894247ae0b7bdc) Merge branch 'master' of github.com:mkdo/kapow-skeleton (@davetgreen)
+- [bee1ebf](https://github.com/mkdo/kapow-skeleton/commit/bee1ebf1dd62aef35a2008e642d1bc2b6816ef48) Added empty ico folder for Grunticon (@davetgreen)
+- [9dd8923](https://github.com/mkdo/kapow-skeleton/commit/9dd892314a73c4a86eab57cf44553c8de8d36972) Update README.md (@davetgreen)
+- [1a5b637](https://github.com/mkdo/kapow-skeleton/commit/1a5b6372e7e758c3897177ea6039f88d11e5b3c5) Bumped versions in package.json (@davetgreen)
+- [2ce96ef](https://github.com/mkdo/kapow-skeleton/commit/2ce96ef3d5a7a91c5f6b4bd926cec09c2d42ea13) Merge branch 'master' of github.com:mkdo/kapow-skeleton (@davetgreen)
+- [8e40a8f](https://github.com/mkdo/kapow-skeleton/commit/8e40a8fd07ea8b4dfe79843c7360d7c4c3476d06) Documentation tweaks (@davetgreen)
+- [cc83849](https://github.com/mkdo/kapow-skeleton/commit/cc83849f398eee82aea6182a3b1559f4ffaca799) Removed script debug constant (@davetgreen)
+- [1025597](https://github.com/mkdo/kapow-skeleton/commit/102559769f50079977f5d981fc7b3f5011f50442) Removed legacy Gemfile (@davetgreen)
+- [8f83eed](https://github.com/mkdo/kapow-skeleton/commit/8f83eedb4e75ffcd7e87842c361ef1034c1181ab) Slight refactor of assets/js structure (@davetgreen)
+- [2421150](https://github.com/mkdo/kapow-skeleton/commit/24211504754e324008fa2ce2b490138fdc835fe9) Update README.md (@davetgreen)
+- [1960ece](https://github.com/mkdo/kapow-skeleton/commit/1960ece0c5df38fc63ff40d348a9b49eae236664) Update README.md (@davetgreen)
+- [5f8ac11](https://github.com/mkdo/kapow-skeleton/commit/5f8ac11b390a507ec98764b88a30fefb7b357da5) Removed SQL files (@davetgreen)
+- [aa0d7a3](https://github.com/mkdo/kapow-skeleton/commit/aa0d7a3b842833eb221da76dbd10c8bf393dd135) Updated NPM manifest to reflect switch from grunt-scss-lint to grunt-sass-lint (@davetgreen)
+- [7173bb1](https://github.com/mkdo/kapow-skeleton/commit/7173bb13d6d862b8cd7c63dad8c6455019ced657) Added editorconfig (@davetgreen)
+- [8b2e383](https://github.com/mkdo/kapow-skeleton/commit/8b2e3833924da0d296dd144aa5fc02f12861c2ae) Added fonts directory (@davetgreen)
+- [15cd7e8](https://github.com/mkdo/kapow-skeleton/commit/15cd7e85d7bbc0583e9ffccec87133c68d292b0a) Auto init JS for Foundation if included for dev. (@davetgreen)
+- [e1558df](https://github.com/mkdo/kapow-skeleton/commit/e1558df3014ef4be6e9fcc554d29259eb31c006c) Create .gitkeep (@davetgreen)
+- [9115582](https://github.com/mkdo/kapow-skeleton/commit/9115582e932182be03f93e1729c901f71b16d2d6) Merge branch 'master' of github.com:mkdo/kapow-skeleton (@davetgreen)
+- [74732fd](https://github.com/mkdo/kapow-skeleton/commit/74732fd88306cb64528ee30c7d1782cb6380eb14) Updates grunt, grunt-parker and autoprefixer versions. Grunt Parker now silences console output if options.file is set. Winner. (@davetgreen)
+- [16c4e3b](https://github.com/mkdo/kapow-skeleton/commit/16c4e3b224ab64993cd3b4c2aaf5c19c59900a80) Update .gitignore (@mwtsn)
+- [7e89659](https://github.com/mkdo/kapow-skeleton/commit/7e896592f9166fc3290f7239419a55300b85b056) Update .gitignore (@mwtsn)
+- [97cc1d3](https://github.com/mkdo/kapow-skeleton/commit/97cc1d38e0a9f83fc452caf39091e36b99cf38b2) Removed svg2png from NPM manifest (@davetgreen)
+- [bf070f7](https://github.com/mkdo/kapow-skeleton/commit/bf070f7fad751d0bde14a3dc86eb1f0a73ee8ce4) Comments update (@davetgreen)
+- [173ab2e](https://github.com/mkdo/kapow-skeleton/commit/173ab2ecb4596a716d61109496552e48133d2b74) Comments update (@davetgreen)
+- [a7c2483](https://github.com/mkdo/kapow-skeleton/commit/a7c248357f57698c2132c36afa28cb74ed37b718) Comments update (@davetgreen)
+- [a108f4b](https://github.com/mkdo/kapow-skeleton/commit/a108f4b9214144c6466175f82f8a3b937a86321b) Added path parameter to `wp core install` (@davetgreen)
+- [405703c](https://github.com/mkdo/kapow-skeleton/commit/405703c20151b91672b789c21b3d32205e88fc96) Ignoring nested git files (@davetgreen)
+- [936c6ba](https://github.com/mkdo/kapow-skeleton/commit/936c6ba7e5a35ae698d7d004e168fcb9037f1667) Added WP core install back into init script (@davetgreen)
+- [786afe0](https://github.com/mkdo/kapow-skeleton/commit/786afe0c0c9874486122704ac5f10a7a3b67dc8c) Added picturefill to Bower manifest (@davetgreen)
+- [11aac17](https://github.com/mkdo/kapow-skeleton/commit/11aac172d31e7592702145eda361f56d495f9b64) Added grunt-svgmin to NPM manifest (@davetgreen)
+- [e5409b9](https://github.com/mkdo/kapow-skeleton/commit/e5409b9545fa4a2d81e00aa44fa5b51beca7b3fe) Added admin js (@davetgreen)
+- [467e7fe](https://github.com/mkdo/kapow-skeleton/commit/467e7fe52caac0209f56c27e24fca5f71a15fd15) Bumped NPM package versions (@davetgreen)
+- [64d9b35](https://github.com/mkdo/kapow-skeleton/commit/64d9b35aa2255df01dc38c6566b8b20538ba7ecd) Bumped versions for Foundation, Bootstrap, Bourbon and Neat (@davetgreen)
+- [0fc21e9](https://github.com/mkdo/kapow-skeleton/commit/0fc21e95ff7a5eec46e7444cee96b22366b2769e) Formatting (@davetgreen)
+- [a44c9c9](https://github.com/mkdo/kapow-skeleton/commit/a44c9c91ae51e939136ea02f1e840864bedcb76a) Added live preview JS handler for logo in customizer (@davetgreen)
+- [c7ef976](https://github.com/mkdo/kapow-skeleton/commit/c7ef976ccbb90eaa621b66982c22ba04ba9fa07e) Added SCRIPT_DEBUG to local config (@davetgreen)
+- [f9ff22c](https://github.com/mkdo/kapow-skeleton/commit/f9ff22c7e3da1a538245d7b6e4b8c824747d3010) Updated grunt-modernizr version (@davetgreen)
+- [ae4de16](https://github.com/mkdo/kapow-skeleton/commit/ae4de1668ccd8c18a5c3dccece706a1caddbcfc1) Tweaked ignore rules (@davetgreen)
+- [755ab53](https://github.com/mkdo/kapow-skeleton/commit/755ab53fe02cf94a40bbdb8a2fa546a61704c02b) Removed redundant WP install lines (@davetgreen)
+- [0e17436](https://github.com/mkdo/kapow-skeleton/commit/0e174365feee41a56192f6ff6d721b3e87909fc4) Update bower.json (@davetgreen)
+- [0195b56](https://github.com/mkdo/kapow-skeleton/commit/0195b568eb3e7ed96d2e98349741557456a7ec78) Update README.md (@davetgreen)
+- [2af5b98](https://github.com/mkdo/kapow-skeleton/commit/2af5b98af53993b190edd15e8532676a17a18d2d) Update README.md (@davetgreen)
+- [ac37bb9](https://github.com/mkdo/kapow-skeleton/commit/ac37bb9e42936a3e59634f68f1d8d549f39cbde2) Update README.md (@davetgreen)
+- [a12b159](https://github.com/mkdo/kapow-skeleton/commit/a12b159b79e0c1b00d461b016e0361934b1a03b3) Tweaked text (@davetgreen)
+- [4d2f380](https://github.com/mkdo/kapow-skeleton/commit/4d2f380458cccad10f5208faf14d415dd131fac2) Changed database name to exclude _db (@davetgreen)
+- [aebd50d](https://github.com/mkdo/kapow-skeleton/commit/aebd50d5cb4e0d94e4663263c32e4ff3660ce77b) Renamed local config to ensure it is used right out of the box. (@davetgreen)
+- [e734c03](https://github.com/mkdo/kapow-skeleton/commit/e734c035dac3543b1f4b8b9fd07f61cafe5179ad) Trimmed bower deps down to the essentials (@davetgreen)
+- [176459b](https://github.com/mkdo/kapow-skeleton/commit/176459be35633cb35817013a6bf06ce0487fa002) Added www to author homepage data (@davetgreen)
+- [3791481](https://github.com/mkdo/kapow-skeleton/commit/3791481765a5e79d6391cf392414a55b693daa24) Prevented compiled assets from being commited (@davetgreen)
+- [e411f8c](https://github.com/mkdo/kapow-skeleton/commit/e411f8c9c462ee46019004dafb4e2e4265b89be0) Tweaked ignores (@davetgreen)
+- [3e5067d](https://github.com/mkdo/kapow-skeleton/commit/3e5067d1468abbe64d476f19b356cef5a957d565) Removing. (@davetgreen)
+- [b3a7cda](https://github.com/mkdo/kapow-skeleton/commit/b3a7cda5c9d1a9f34d5b8dc2418474a25b0a5c9b) Update .gitignore (@davetgreen)
+- [5133e19](https://github.com/mkdo/kapow-skeleton/commit/5133e19c0a3db75194dbd86e68484e0b09917d5a) Update .gitignore (@davetgreen)
+- [0273d7c](https://github.com/mkdo/kapow-skeleton/commit/0273d7ce4776a65f38b8a5aedbd2efbb2258eeb6) Removed responsive images, added max-filesize (@davetgreen)
+- [82b0231](https://github.com/mkdo/kapow-skeleton/commit/82b02316f0bd8a7244d4f1177f4479c63ab3a28c) Removed erroneous trailing commas (@davetgreen)
+- [2d4255b](https://github.com/mkdo/kapow-skeleton/commit/2d4255b56cd30b2ca5081498b6ee756b8f70a09f) Missing comma (@davetgreen)
+- [8f4ea7f](https://github.com/mkdo/kapow-skeleton/commit/8f4ea7f9c64369ca8f873176a7190dd148d8eebc) Update README.md (@mwtsn)
+- [129035e](https://github.com/mkdo/kapow-skeleton/commit/129035eee2511c0caf677395871cb410c2f6e735) Added WordPress Composer Installer (@mwtsn)
+- [12efdf0](https://github.com/mkdo/kapow-skeleton/commit/12efdf0d42f0f0bacd6a163d07f854e9b3c82a8c) Put back Modernizr hotfix (@davetgreen)
+- [ec27f6e](https://github.com/mkdo/kapow-skeleton/commit/ec27f6e3c73c6cf814d188ce9664706712070b28) Added composer.lock to ignores (@davetgreen)
+- [6983dcc](https://github.com/mkdo/kapow-skeleton/commit/6983dcc240fdb384fe8a36cd380d44bf7f609e44) Update README.md (@davetgreen)
+- [cf728ed](https://github.com/mkdo/kapow-skeleton/commit/cf728ed2b8c35adda0d01b8d393f485b6ef3b7aa) Update README.md (@davetgreen)
+- [d13792f](https://github.com/mkdo/kapow-skeleton/commit/d13792fa7b27849640a98e53aa956e49b7c266aa) Merge branch 'master' of https://github.com/mkdo/kapow-skeleton (@davetgreen)
+- [543baa8](https://github.com/mkdo/kapow-skeleton/commit/543baa8a785712e665dc1d57d35a0dbb17232c04) Updated NPM manifest (@davetgreen)
+- [18eb7c0](https://github.com/mkdo/kapow-skeleton/commit/18eb7c0514a99fd012f3b7c32735cbf2a41ece62) Update README.md (@davetgreen)
+- [8c3d353](https://github.com/mkdo/kapow-skeleton/commit/8c3d35369e9a75bd56b759f38c236b770b635fec) Tweaked comment (@davetgreen)
+- [f1595d4](https://github.com/mkdo/kapow-skeleton/commit/f1595d492ea20f235265ef6d894ecf3b4e32abb0) Updated .gitignore (@davetgreen)
+- [a26cdfa](https://github.com/mkdo/kapow-skeleton/commit/a26cdfab9e2bf5b1a1f9a9fb873a7a62f6819a11) Update README.md (@davetgreen)
+- [24637ab](https://github.com/mkdo/kapow-skeleton/commit/24637ab6085f2c35be5c2c3ae341af47fb894d91) Update README.md (@davetgreen)
+- [9c4917b](https://github.com/mkdo/kapow-skeleton/commit/9c4917b7dadc056852a0c92e400798810714239f) Update README.md (@davetgreen)
+- [423fc26](https://github.com/mkdo/kapow-skeleton/commit/423fc26f46d3e2e3d85b2f4f2f042741a9559413) Create .gitkeep (@davetgreen)
+- [71f5ccb](https://github.com/mkdo/kapow-skeleton/commit/71f5ccb0ac5ff8cf4b93394850d67472a11e9eb2) Update .gitignore (@davetgreen)
+- [88d5bfa](https://github.com/mkdo/kapow-skeleton/commit/88d5bfa01e533e2c695e69698d350937d2d690cd) Create .gitkeep (@davetgreen)
+- [11936b3](https://github.com/mkdo/kapow-skeleton/commit/11936b3a24ba36353bcc049340c3af055f3f05c4) Create .gitkeep (@davetgreen)
+- [eda2407](https://github.com/mkdo/kapow-skeleton/commit/eda240790ba4e8e7e4d4b2d6cb01344be26616ba) Update loader.php (@davetgreen)
+- [909cd12](https://github.com/mkdo/kapow-skeleton/commit/909cd1204572d5d1064822fe5b2266a8ac5b76f3) Added plugin autoloader (@davetgreen)
+- [f21eb08](https://github.com/mkdo/kapow-skeleton/commit/f21eb0833cb676de2d44ff7ea15a439a444d7144) Delete .gitkeep (@davetgreen)
+- [32dc3ed](https://github.com/mkdo/kapow-skeleton/commit/32dc3ed7324f5f18056f4fa68c21808e3f229358) Delete my_project_db-davetgreen.sql (@davetgreen)
+- [281a027](https://github.com/mkdo/kapow-skeleton/commit/281a027737624866b2f6e620e6626f52fcc5e70c) Create index.php (@davetgreen)
+- [8108add](https://github.com/mkdo/kapow-skeleton/commit/8108adde2dfd56f515251cc1444cd6b8d29fdd93) Delete .gitkeep (@davetgreen)
+- [06bcf90](https://github.com/mkdo/kapow-skeleton/commit/06bcf90b66cbb6a8eb514aba001699449ba2056d) Create index.php (@davetgreen)
+- [b8e2878](https://github.com/mkdo/kapow-skeleton/commit/b8e2878a6b4c97cf9cb0717a13c33c3fff716323) Delete .gitkeep (@davetgreen)
+- [ab72480](https://github.com/mkdo/kapow-skeleton/commit/ab72480ae24c2ecbf4573eb1bd87d877a08f7356) Update README.md (@davetgreen)
+- [42af435](https://github.com/mkdo/kapow-skeleton/commit/42af4353f9cd1ce08f1d2f1c3051e84437b6f805) Added grunt-parker to manifest (@davetgreen)
+- [f7913cf](https://github.com/mkdo/kapow-skeleton/commit/f7913cff1e0321d168a553ac5fd32d7d110767f6) Changed htdocs to build (@davetgreen)
+- [12db213](https://github.com/mkdo/kapow-skeleton/commit/12db213ef2b64338b0bda43b97685064dc6f9366) Update README.md (@davetgreen)
+- [2aa5338](https://github.com/mkdo/kapow-skeleton/commit/2aa53387e780ab4c0c99a22122ff399b16a66862) Added navigation JS partial (@davetgreen)
+- [8aa66df](https://github.com/mkdo/kapow-skeleton/commit/8aa66dfa6b1428a9e92d65ef1b6f2e4eafbc8507) Update composer.json (@davetgreen)
+- [8c2c456](https://github.com/mkdo/kapow-skeleton/commit/8c2c456871c8165907bf02b1701e1d3ddfe8c837) Added composer manifest (@davetgreen)
+- [19008fb](https://github.com/mkdo/kapow-skeleton/commit/19008fba9f7639d1efcc1eae6c1e808827b4f314) Update README.md (@davetgreen)
+- [a86de1f](https://github.com/mkdo/kapow-skeleton/commit/a86de1fc654c53b6aa41a16e48c6d4a13071bef1) Update README.md (@davetgreen)
+- [6bc4920](https://github.com/mkdo/kapow-skeleton/commit/6bc49206508d754fd7a867e4be335da23e483f90) Changed repo structure. (@davetgreen)
+- [2538ce8](https://github.com/mkdo/kapow-skeleton/commit/2538ce85ce60cc4dc17f40d178b8a3e91a1b9237) Update footer.js (@davetgreen)
+- [aeae2f0](https://github.com/mkdo/kapow-skeleton/commit/aeae2f01fdd272b68ecff98a2cbd1d3ad71ca065) Added grunt sync (@davetgreen)
+- [af7540d](https://github.com/mkdo/kapow-skeleton/commit/af7540d45da6ebbb000c216c0906ca7f918bdfe2) Create pie.htc (@davetgreen)
+- [16eddc1](https://github.com/mkdo/kapow-skeleton/commit/16eddc13594cf3a72faf3c4264b9e3e08c5079c5) Added ES5 Shim to deps (@davetgreen)
+- [8cc829e](https://github.com/mkdo/kapow-skeleton/commit/8cc829e273c9d258d07a3c853b3fce4dc60f3541) Updated deps (@davetgreen)
+- [1c47e5a](https://github.com/mkdo/kapow-skeleton/commit/1c47e5a08f5437ad28f05131d9ce765f5b167843) Added skip link focus fix to footer.js (@davetgreen)
+- [872503f](https://github.com/mkdo/kapow-skeleton/commit/872503f4da43bab7e5233ceb4074c5593001b854) Update README.md (@davetgreen)
+- [2bda97c](https://github.com/mkdo/kapow-skeleton/commit/2bda97c891d9e63bbcc11744bdf0fcf257d3e67d) Merge branch 'master' of https://github.com/mkdo/kapow-skeleton (@davetgreen)
+- [8cc56fb](https://github.com/mkdo/kapow-skeleton/commit/8cc56fbb64681036bdc97f26a94b6157a3a531a7) Ignored sprites partial and adjusted CSS ignore (@davetgreen)
+- [837b4cc](https://github.com/mkdo/kapow-skeleton/commit/837b4ccfb1d34798da4a7b8a5e07e2b2a3d6f3ec) Update README.md (@davetgreen)
+- [212d538](https://github.com/mkdo/kapow-skeleton/commit/212d5382cc58b73bccf309cf8d179b7dfff75258) Update README.md (@davetgreen)
+- [9c95fc8](https://github.com/mkdo/kapow-skeleton/commit/9c95fc888457025c2070caec4fb6763ebe471bb8) Update README.md (@davetgreen)
+- [2347137](https://github.com/mkdo/kapow-skeleton/commit/2347137986c636c5f938f2fcdccb376ad65c889c) Update README.md (@davetgreen)
+- [b1df109](https://github.com/mkdo/kapow-skeleton/commit/b1df109ce0c59e5409d7e771e5c22bbf632d58e6) Update README.md (@davetgreen)
+- [5361bd6](https://github.com/mkdo/kapow-skeleton/commit/5361bd666cb21875725b83c8a38eb5e813e15870) Update README.md (@davetgreen)
+- [ec3ba00](https://github.com/mkdo/kapow-skeleton/commit/ec3ba00f55566ed8ef69a13df54bbddaf398c3f2) Update README.md (@davetgreen)
+- [0c6f213](https://github.com/mkdo/kapow-skeleton/commit/0c6f21382117b604db7e9dae355e549508efc146) Update README.md (@davetgreen)
+- [30e9173](https://github.com/mkdo/kapow-skeleton/commit/30e91734d94713684451959bb3a6ab53a616d01c) Update README.md (@davetgreen)
+- [3b4ef2c](https://github.com/mkdo/kapow-skeleton/commit/3b4ef2c6b04021bdef73c621d2cb85b78450c992) Update README.md (@davetgreen)
+- [d0959e2](https://github.com/mkdo/kapow-skeleton/commit/d0959e230d3c9a3f55f27ad398b3bef8551722fa) Update README.md (@davetgreen)
+- [b620bdb](https://github.com/mkdo/kapow-skeleton/commit/b620bdbe5f7dcb8f8f04b21e6fa9e5c3d4826171) Update README.md (@davetgreen)
+- [1e488c6](https://github.com/mkdo/kapow-skeleton/commit/1e488c66e9cfcb86013c9aabccd67142f3185204) Update README.md (@davetgreen)
+- [426fbd6](https://github.com/mkdo/kapow-skeleton/commit/426fbd6bd898fbd61fa014003ed86677cf2c705b) Update README.md (@davetgreen)
+- [da8edb5](https://github.com/mkdo/kapow-skeleton/commit/da8edb5952f9843d5a3b7b29143f1844674d45a2) Update README.md (@davetgreen)
+- [07b5d25](https://github.com/mkdo/kapow-skeleton/commit/07b5d25faa69a0b0682df41797a3e980c9da762a) Update README.md (@davetgreen)
+- [36f132d](https://github.com/mkdo/kapow-skeleton/commit/36f132dd546421b2ce8cb796f814565f277f1337) Update README.md (@davetgreen)
+- [5085a51](https://github.com/mkdo/kapow-skeleton/commit/5085a515733a68be64f5819622d6942596c77baf) Update README.md (@davetgreen)
+- [c5657e2](https://github.com/mkdo/kapow-skeleton/commit/c5657e2d40c20756126e79e99d5195f229db9a23) Update README.md (@davetgreen)
+- [16d7b5d](https://github.com/mkdo/kapow-skeleton/commit/16d7b5dd54fc035619b4a23d2b29bb956cab5bf8) Update README.md (@davetgreen)
+- [aa54fbb](https://github.com/mkdo/kapow-skeleton/commit/aa54fbbcb700367dfea951a9e52f953ec81b99aa) Update README.md (@davetgreen)
+- [df27ae7](https://github.com/mkdo/kapow-skeleton/commit/df27ae7b0d8fa75b1912c4af9a1c35218ff07f2f) Update README.md (@davetgreen)
+- [c495cd0](https://github.com/mkdo/kapow-skeleton/commit/c495cd090d57f9079d2b1ba539d47f72e088739b) Update README.md (@davetgreen)
+- [60f29d6](https://github.com/mkdo/kapow-skeleton/commit/60f29d67ccf1ee2f7cd902994bdd4122f7cb6ff3) Update README.md (@davetgreen)
+- [ab5a8bb](https://github.com/mkdo/kapow-skeleton/commit/ab5a8bba1ef34443d284a812aaa5a877ef38d320) Update README.md (@davetgreen)
+- [a54b958](https://github.com/mkdo/kapow-skeleton/commit/a54b958a80c29b2e4277afdad674b95f66513372) Update README.md (@davetgreen)
+- [5cad8ee](https://github.com/mkdo/kapow-skeleton/commit/5cad8eeb4c1a98e4585d6bcac4f90249f96350ea) Update README.md (@davetgreen)
+- [c06d8b2](https://github.com/mkdo/kapow-skeleton/commit/c06d8b29fe89409c42ceb16e17e581e89dd77f64) Update README.md (@davetgreen)
+- [72ea3a5](https://github.com/mkdo/kapow-skeleton/commit/72ea3a5119896bbb278b999ba9f663a1e73ae104) Comments (@davetgreen)
+- [3b007e3](https://github.com/mkdo/kapow-skeleton/commit/3b007e30d13f76a3a655dbc6fe094fe24a849897) Updated NPM packages (@davetgreen)
+- [a48fe76](https://github.com/mkdo/kapow-skeleton/commit/a48fe7682ec221abf91dc3dd239fe23c373c68f9) Code refactor to WP standards (@davetgreen)
+- [9d3b2fc](https://github.com/mkdo/kapow-skeleton/commit/9d3b2fcd4de55f4ab993c5f2dad577cf8d20320e) Added customizer.js (@davetgreen)
+- [5f8cf0f](https://github.com/mkdo/kapow-skeleton/commit/5f8cf0fcde9fa76de3e614b0bb30c05973c3eace) Merge branch 'master' of https://github.com/mkdo/kapow-skeleton (@davetgreen)
+- [2d99301](https://github.com/mkdo/kapow-skeleton/commit/2d993012216e86fbaef9904aadf694f383507a3c) Added grunt-sync to deps (@davetgreen)
+- [75314f2](https://github.com/mkdo/kapow-skeleton/commit/75314f2ad253b9258a1d9634a53a470092d2403e) Update wp-config.php (@davetgreen)
+- [609b073](https://github.com/mkdo/kapow-skeleton/commit/609b0738967971d3658c216dc064aa19bae4f2cc) Update wp-config.php (@davetgreen)
+- [48cee91](https://github.com/mkdo/kapow-skeleton/commit/48cee912e1a34595193585e2142f83e122762193) Update local-config-sample.php (@davetgreen)
+- [f33e5ae](https://github.com/mkdo/kapow-skeleton/commit/f33e5ae4baf5637764b3a46316c40d11be08ad60) Create local-config-sample.php (@davetgreen)
+- [71a6fe7](https://github.com/mkdo/kapow-skeleton/commit/71a6fe73a56c64c500feca4f4027fdca2d823d67) Create wp-config.php (@davetgreen)
+- [621867c](https://github.com/mkdo/kapow-skeleton/commit/621867c4dd11d4315f54129553fa21ecfe218450) Create index.php (@davetgreen)
+- [d2b7396](https://github.com/mkdo/kapow-skeleton/commit/d2b73963ab519783014407939914e77d09013463) Update .gitignore (@davetgreen)
+- [a1281fc](https://github.com/mkdo/kapow-skeleton/commit/a1281fca9288555ea7b119b2f51ca186b29556b7) Corrected errors (@davetgreen)
+- [c828a9d](https://github.com/mkdo/kapow-skeleton/commit/c828a9d41b98781df067b5202088d9e15903f69e) Update DATABASE.md (@davetgreen)
+- [7cbff06](https://github.com/mkdo/kapow-skeleton/commit/7cbff0650a5cb6506e61734c6168e34516bf0291) Update DATABASE.md (@davetgreen)
+- [5b79178](https://github.com/mkdo/kapow-skeleton/commit/5b791786bf6a4dd076a023869c59e71c7eda14d1) Update DATABASE.md (@davetgreen)
+- [6b07b3e](https://github.com/mkdo/kapow-skeleton/commit/6b07b3e95d4e1cc3457911b4ace01dac6a8a1127) Update DATABASE.md (@davetgreen)
+- [abaf17c](https://github.com/mkdo/kapow-skeleton/commit/abaf17c2a68647ba03ffd6fb482dc2a924504424) Update DATABASE.md (@davetgreen)
+- [e89642e](https://github.com/mkdo/kapow-skeleton/commit/e89642ee9320d054021bb130c8a70b37acdd420b) Create DATABASE.md (@davetgreen)
+- [905a345](https://github.com/mkdo/kapow-skeleton/commit/905a345196f8db6dc8f0e109aee3383e046e9e40) Update README.md (@davetgreen)
+- [6eda7b0](https://github.com/mkdo/kapow-skeleton/commit/6eda7b0ac7901887e0bc02e4af037b6a845d25e9) Create .gitkeep (@davetgreen)
+- [e798cb3](https://github.com/mkdo/kapow-skeleton/commit/e798cb3d8e070a3ff8bd32319b44501d816bf397) Delete my_project_db-davetgreen.sql (@davetgreen)
+- [f250651](https://github.com/mkdo/kapow-skeleton/commit/f25065174925f618b80e780fe78a3ff0c1df8b8e) Removed erroneous trailing comma (@davetgreen)
+- [881b7f2](https://github.com/mkdo/kapow-skeleton/commit/881b7f2994b0314840202c3032f8186738b96b7d) Rearranged bower deps (@davetgreen)
+- [1e9b408](https://github.com/mkdo/kapow-skeleton/commit/1e9b408618a72f944067a67b64f6726ab0c4fa79) Added vvv halt (@davetgreen)
+- [8b212ce](https://github.com/mkdo/kapow-skeleton/commit/8b212cec720f59310a6666da1f7f30dce349bf0d) Added an initial FRONTEND.md file - will need review of inline Sass docs to tidy up (@davetgreen)
+- [d59726f](https://github.com/mkdo/kapow-skeleton/commit/d59726f9c0e29903b96db61544ba664761f07d7c) Added script to copy DB dump into the repo on vagrant halt (@davetgreen)
+- [396960a](https://github.com/mkdo/kapow-skeleton/commit/396960a80a81c301a4380e53151da4631394e1b0) Removed licence (@davetgreen)
+- [ef9cbe6](https://github.com/mkdo/kapow-skeleton/commit/ef9cbe63d13d49707cc3988f3ab8645d2133e861) Merge branch 'master' of https://github.com/mkdo/kapow-skeleton (@davetgreen)
+- [39bf2c7](https://github.com/mkdo/kapow-skeleton/commit/39bf2c7ff0a90fcab9a1aa0ceadd84f6349f7d0a) Adding empty sass folder (@davetgreen)
+- [4a6716e](https://github.com/mkdo/kapow-skeleton/commit/4a6716ed5fb10dbb585f4afff8791bd17a7b3541) Create CONTRIBUTING.md (@davetgreen)
+- [7cce051](https://github.com/mkdo/kapow-skeleton/commit/7cce051d7c29aa3621cf929ad0d12ddc41abeebe) Update package.json (@davetgreen)
+- [066720f](https://github.com/mkdo/kapow-skeleton/commit/066720f2e1fc24add1a1a3ca4705de486f2d1d64) Create package.json (@davetgreen)
+- [52ca541](https://github.com/mkdo/kapow-skeleton/commit/52ca54110b09ef9cdb9437e893a95700f5ef7dc6) Dependency updates (@davetgreen)
+- [70c35bb](https://github.com/mkdo/kapow-skeleton/commit/70c35bb90743d51c2e4befa20330e0f67caf3cce) Added new JS file for legacy IE (@davetgreen)
+- [74ed53a](https://github.com/mkdo/kapow-skeleton/commit/74ed53a3905f9a67d92509c27c8aff88d3ee1527) Added html5shiv and selectivizr deps (@davetgreen)
+- [702403a](https://github.com/mkdo/kapow-skeleton/commit/702403a3b6c0db93efe26fce24eace8063fd49e6) Init now allows for WP DB installation, without the need to download WP core (@davetgreen)
+- [63a56c7](https://github.com/mkdo/kapow-skeleton/commit/63a56c7057292f7b5bc7b7fa29dbdbd98c614d6d) Manually added (@davetgreen)
+- [0795015](https://github.com/mkdo/kapow-skeleton/commit/07950157c88172b03119e32807802592f6889076) Added WP as a submodule (@davetgreen)
+- [1e9bd3f](https://github.com/mkdo/kapow-skeleton/commit/1e9bd3f38dbafed211300102ac42bfab15dd7e3b) Refactored and tidied (@davetgreen)
+- [24ee07e](https://github.com/mkdo/kapow-skeleton/commit/24ee07ea7bcc57c79900a8e66fa7d5d4db5721bb) Whoops, removing repo directories.
+- [5b4718e](https://github.com/mkdo/kapow-skeleton/commit/5b4718ed4f9ef52a0df8fad7187a86371ae500e9) More generator updates.
+- [05d657c](https://github.com/mkdo/kapow-skeleton/commit/05d657c35bfb39c47244eb99142c7417439f9df8) Updated question wording & formatting, added string replacement for site.scss
+- [c8bf248](https://github.com/mkdo/kapow-skeleton/commit/c8bf248a8fc24eee7ce0db3e3eda1ae3d9d8cbd4) Tweak
+- [328f57f](https://github.com/mkdo/kapow-skeleton/commit/328f57f905cba3108f7163e9d79154eb40dc5322) Quick refactor of Yeoman generator.
+- [62c3aea](https://github.com/mkdo/kapow-skeleton/commit/62c3aea356d9e717f809d119da28a73cec487849) Forget to add gitignore updates.
+- [85794f1](https://github.com/mkdo/kapow-skeleton/commit/85794f1dad046be641eab49af282027fcd086d4e) More Yeoman updates.
+- [f768d9e](https://github.com/mkdo/kapow-skeleton/commit/f768d9e55bdb5e9306f3b1b98523f20fdc085d31) Tweak.
+- [07074f9](https://github.com/mkdo/kapow-skeleton/commit/07074f9b5957b7080fe358b1f624e967f56566e4) VVV file tweaks.
+- [cb2b370](https://github.com/mkdo/kapow-skeleton/commit/cb2b370a7af54f90c51f82ed3fc65f013926d981) Tweak.
+- [eb528c5](https://github.com/mkdo/kapow-skeleton/commit/eb528c566fc196326a8075745d4375e74f738390) Tweaked vvv-init
+- [7c17c29](https://github.com/mkdo/kapow-skeleton/commit/7c17c293f5ea279e0aebbaf8d714bb62e834e535) Tweaked vvv-init
+- [2fdf635](https://github.com/mkdo/kapow-skeleton/commit/2fdf6355c906229ef8db2baa4734c8feeb8d1721) Whoops, added gruntfile back in.
+- [799a825](https://github.com/mkdo/kapow-skeleton/commit/799a825630939e0359ebbfd7d7f589481ddf92c1) bower.json tweaks
+- [fb86d17](https://github.com/mkdo/kapow-skeleton/commit/fb86d177233dd56b3ec432f02309419b6f574e03) Some housekeeping.
+- [5263d2f](https://github.com/mkdo/kapow-skeleton/commit/5263d2feff8151b8161ba3672e154279c2c7b37d) More Yeoman generator progress.
+- [59fff11](https://github.com/mkdo/kapow-skeleton/commit/59fff11e7533d9e945fdb3eb99412a57d12ce144) Changed placeholder names in vagrant config files
+- [55b53c1](https://github.com/mkdo/kapow-skeleton/commit/55b53c11b3973037ded15050a71849a1a0cf56ee) Merge branch 'master' of github.com:davetgreen/kapow-skeleton
+- [7a051a2](https://github.com/mkdo/kapow-skeleton/commit/7a051a2169bacfe9b723c84aed5d2fecd291fa6a) Started work on Yeoman generator, tweaked bower manifest.
+- [55f9f8a](https://github.com/mkdo/kapow-skeleton/commit/55f9f8a236852617b6a3139ed754568491cb438a) Update bower.json (@davetgreen)
+- [c9d3f49](https://github.com/mkdo/kapow-skeleton/commit/c9d3f49b3c9f3d2a37312515bd5f5cfe560ec363) Update .gitignore (@davetgreen)
+- [d2c3a99](https://github.com/mkdo/kapow-skeleton/commit/d2c3a9923bdf65526c625969cf6d558ff4beda7f) Create Gemfile (@davetgreen)
+- [27a65a1](https://github.com/mkdo/kapow-skeleton/commit/27a65a1f5625738b0947bd1311084a910dbfc0c3) Update .gitignore (@davetgreen)
+- [83dc056](https://github.com/mkdo/kapow-skeleton/commit/83dc056449b41a6f3cc973d75d41e4413aee5773) Delete licence (@davetgreen)
+- [2261b15](https://github.com/mkdo/kapow-skeleton/commit/2261b1551ce74ea06facd567364477673ae1e79a) Create LICENCE (@davetgreen)
+- [28d9da0](https://github.com/mkdo/kapow-skeleton/commit/28d9da035248451262618e8cc32d6602b38d2b0a) Create licence (@davetgreen)
+- [f4ed3f6](https://github.com/mkdo/kapow-skeleton/commit/f4ed3f6d1132cbdd1216b09e20ad77c08106a4c3) Update .gitignore (@davetgreen)
+- [fb460e4](https://github.com/mkdo/kapow-skeleton/commit/fb460e41b341a49c01a646eaf85e18099fa86f13) Create vvv-nginx.conf (@davetgreen)
+- [368a725](https://github.com/mkdo/kapow-skeleton/commit/368a7252cb031be5c8f09a357bc59345e03f088d) Create vvv-init.sh (@davetgreen)
+- [3fbbe59](https://github.com/mkdo/kapow-skeleton/commit/3fbbe598b2e005568f17914f81bab579e00278f7) Create vvv-hosts (@davetgreen)
+- [c6ce43c](https://github.com/mkdo/kapow-skeleton/commit/c6ce43c250f57247f333466982d1331e9936878d) Create .gitkeep (@davetgreen)
+- [b0961bd](https://github.com/mkdo/kapow-skeleton/commit/b0961bd2c9dba3936e7c527fe694edfe1dd743b8) Delete .gitkeep (@davetgreen)
+- [e43b067](https://github.com/mkdo/kapow-skeleton/commit/e43b06758e47c76894044a76b9545763b51fb975) Update bower.json (@davetgreen)
+- [2f04162](https://github.com/mkdo/kapow-skeleton/commit/2f0416295103deaa964588b6c0b10a0fbe591175) Update bower.json (@davetgreen)
+- [141f17f](https://github.com/mkdo/kapow-skeleton/commit/141f17f3043c808db37edd1e623beb7f64ffe03f) Create bower.json (@davetgreen)
+- [d24321c](https://github.com/mkdo/kapow-skeleton/commit/d24321cdd55c52c4a17abf4125cac6949dcb50bf) Create .gitignore (@davetgreen)
+- [db5af61](https://github.com/mkdo/kapow-skeleton/commit/db5af6168d6bc9cb3dd2792236abe7d00ae988fa) Update .htaccess (@davetgreen)
+- [78abe93](https://github.com/mkdo/kapow-skeleton/commit/78abe93b0d706e73660fdfb16b51ab206510ce5a) Update .htaccess (@davetgreen)
+- [33cf99f](https://github.com/mkdo/kapow-skeleton/commit/33cf99f1d2e61e0ba5479f22d2d2b8e3f84bd7c3) Create .gitkeep (@davetgreen)
+- [9836497](https://github.com/mkdo/kapow-skeleton/commit/9836497495c5f9e0a26facbf526a1a4495469671) Delete .gitkeep (@davetgreen)
+- [ecca658](https://github.com/mkdo/kapow-skeleton/commit/ecca658ce9160ce2689b196e6929432e9e7b5e22) Create .gitkeep (@davetgreen)
+- [3a41fca](https://github.com/mkdo/kapow-skeleton/commit/3a41fcab10d18c1b951ffe2ff578d85c332f3ba4) Create .gitkeep (@davetgreen)
+- [7d1ca20](https://github.com/mkdo/kapow-skeleton/commit/7d1ca208c4cbbd349d8e7583774a6b9888c7c2e9) Create robots.txt (@davetgreen)
+- [07189c7](https://github.com/mkdo/kapow-skeleton/commit/07189c73eb8723afd9c072a59339316cd44f6fc0) Update .htaccess (@davetgreen)
+- [a02e8e5](https://github.com/mkdo/kapow-skeleton/commit/a02e8e5e1a108de490fe5c55ad3443a77c835f73) Update README.md (@davetgreen)
+- [44722d5](https://github.com/mkdo/kapow-skeleton/commit/44722d5b52701068aa947067325565302a079a59) Create boxsizing.htc (@davetgreen)
+- [4777e30](https://github.com/mkdo/kapow-skeleton/commit/4777e3050173e9d8566e960473adad9e58bad81c) Create backgroundsize.htc (@davetgreen)
+- [590ecc2](https://github.com/mkdo/kapow-skeleton/commit/590ecc2ed4a24cede6a9c7c0329016bfc82b2617) Create .htaccess (@davetgreen)
+- [e40fc2c](https://github.com/mkdo/kapow-skeleton/commit/e40fc2cbe926d30b484e1e2e73ae6a8238f41f43) Update README.md (@davetgreen)
+- [81c55d5](https://github.com/mkdo/kapow-skeleton/commit/81c55d5b0afa5588474441f4f4dc2b9efbdb0579) Create .gitkeep (@davetgreen)
+- [fa9ae41](https://github.com/mkdo/kapow-skeleton/commit/fa9ae41577c24c3ce10032c2ed101726f93f1aba) Create .gitkeep (@davetgreen)
+- [769b637](https://github.com/mkdo/kapow-skeleton/commit/769b63724b3e775257a3122193c1eae3587cf344) Create footer.js (@davetgreen)
+- [cf42af2](https://github.com/mkdo/kapow-skeleton/commit/cf42af259973fe446d3c9909954c70284e1cc022) Create header.js (@davetgreen)
+- [c618450](https://github.com/mkdo/kapow-skeleton/commit/c6184502b4f3f6f914f0114e08efb7fd02b8ddb2) Create .gitkeep (@davetgreen)
+- [0fff035](https://github.com/mkdo/kapow-skeleton/commit/0fff035f7d6cc739ae32a60379261c3056aff80c) Create .gitkeep (@davetgreen)
+- [415fe7d](https://github.com/mkdo/kapow-skeleton/commit/415fe7d77d64774c8e4a9b1f2ddea888a2b5e6c8) Create .gitkeep (@davetgreen)
+- [f2b6a46](https://github.com/mkdo/kapow-skeleton/commit/f2b6a4610dfd9f8ed71bf2dec844ddeed70d8050) Update README.md (@davetgreen)
+- [204d9a0](https://github.com/mkdo/kapow-skeleton/commit/204d9a020c583cc61ea8d01016853a6d88843a4b) Update README.md (@davetgreen)
+- [0fab0b4](https://github.com/mkdo/kapow-skeleton/commit/0fab0b437ee117fe82f58523111371813429ee4a) Initial commit (@davetgreen)
