@@ -39,7 +39,7 @@ then
 	wp core install --url=my-project.dev --title="My Project" --admin_user=admin --admin_password=password --admin_email=hello@my-project.com --allow-root --path=build/wordpress
 
 	# Remove/Install/Activate Plugins.
-	if [ $plugins ]
+	if [ "$plugins" = true ]
 		then
 
 		echo "Tinkering with plugins..."
@@ -58,7 +58,7 @@ then
 		kapowcoredir="build/wp-content/plugins/kapow-core"
 		themeincludesdir="build/wp-content/themes/my-project/inc"
 
-		if [ -d $themeincludesdir ]
+		if [ -d "$themeincludesdir" ]
 			then
 
 			cp $kapowcoredir/kapow-core-config-template.php $themeincludesdir
@@ -66,7 +66,7 @@ then
 	fi
 
 	# Generate Salts.
-	if [ $salts ]
+	if [ "$salts" = true ]
 		then
 
 		echo "Generating salts..."
@@ -75,7 +75,7 @@ then
 	fi
 
 	# Update WP Options.
-	if [ $options ]
+	if [ "$options" = true ]
 		then
 
 		echo "Updating WordPress options..."
@@ -89,7 +89,7 @@ then
 	fi
 
 	# Import WP Test data.
-	if [ $testdata ]
+	if [ "$testdata" = true ]
 		then
 
 		echo "Importing WP test data..."
@@ -115,7 +115,7 @@ fi
 # copy git hooks across if it has not
 # already been installed.
 # -------------------------------------
-if [ $precommit ] && [ ! -d vendor/stevegrunwell/wp-enforcer ]
+if [ "$precommit" = true ] && [ ! -d vendor/stevegrunwell/wp-enforcer ]
 then
 	echo "Copying Git hooks from WP Enforcer"
 	./vendor/bin/wp-enforcer
