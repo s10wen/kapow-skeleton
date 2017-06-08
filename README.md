@@ -1,3 +1,5 @@
+![Kapow! Logo Banner](https://raw.githubusercontent.com/kapow-wp/kapow-skeleton/master/kapow-full-logo-x2.png)
+
 # Kapow! Skeleton
 
 The Skeleton component of the Kapow! boilerplate for bespoke WordPress site development.
