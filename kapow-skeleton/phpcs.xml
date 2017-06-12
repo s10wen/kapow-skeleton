@@ -27,6 +27,7 @@
 	<exclude-pattern>*.gif</exclude-pattern>
 	<exclude-pattern>build/wordpress/*</exclude-pattern>
 	<exclude-pattern>build/wp-content/plugins/(?!kapow-core/|project-core/)*/*</exclude-pattern>
+	<exclude-pattern>build/wp-content/plugins/index.php</exclude-pattern>
 	<exclude-pattern>build/wp-content/mu-plugins/*</exclude-pattern>
 	<exclude-pattern>build/wp-content/themes/index.php</exclude-pattern>
 	<exclude-pattern>build/wp-content/index.php</exclude-pattern>
