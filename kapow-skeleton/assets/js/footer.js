@@ -12,16 +12,26 @@ jQuery( function( $ ) {
         $( document ).foundation();
     }
 
+	// Responsive Background Images.
+	// -------------------------------------
+	// responsiveBackgroundImages( '.js-bg-img' );
+
+	// Window Resize & Orientation Change.
+	// -------------------------------------
+	$( window ).on( "resize orientationchange", function( event ) {
+
+	clearTimeout( resizeTimer );
+
+	resizeTimer = setTimeout( function() {
+
+		// responsiveBackgroundImages( '.js-bg-img' );
+	}, 100 );
+
 }( jQuery ));
 
 // Window Load.
 // -------------------------------------
 jQuery( window ).load( function( $ ) {
 
-}(jQuery));
 
-// Window Resize.
-// -------------------------------------
-window.addEventListener( "resize", function() {
-
-});
+}( jQuery ));
