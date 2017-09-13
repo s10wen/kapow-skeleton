@@ -20,12 +20,13 @@ jQuery( function( $ ) {
 	// -------------------------------------
 	$( window ).on( "resize orientationchange", function( event ) {
 
-	clearTimeout( resizeTimer );
+		clearTimeout( resizeTimer );
 
-	resizeTimer = setTimeout( function() {
+		resizeTimer = setTimeout( function() {
 
-		// responsiveBackgroundImages( '.js-bg-img' );
-	}, 100 );
+			// responsiveBackgroundImages( '.js-bg-img' );
+		}, 100 );
+	});
 
 }( jQuery ));
 
