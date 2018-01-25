@@ -18,8 +18,9 @@ jQuery( function( $ ) {
 
 	// Window Resize & Orientation Change.
 	// -------------------------------------
+	var resizeTimer;
 	$( window ).on( "resize orientationchange", function( event ) {
-
+	
 		clearTimeout( resizeTimer );
 
 		resizeTimer = setTimeout( function() {
