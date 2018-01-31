@@ -37,11 +37,11 @@ You will need the following installed on your system before attempting to set-up
 
 ## [Installation](#installation)
 
-**If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running *fast*. Seriously, don't even bother with the instructions below unless you a sadist.**
+**If you are planning on using the full Kapow! boilerplate for your next project, we have a [setup script](https://github.com/mkdo/kapow-setup) to help you get up and running *fast*. Seriously, don't even bother with the instructions below unless you are a sadist.**
 
 **1)** Create a directory for your project and copy the contents of the `kapow-skeleton` folder from this repo into it.
 
-**2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)), [Core](https://github.com/mkdo/kapow-core) and [Project Core](https://github.com/mkdo/kapow-project-core)as required to the relevant locations:
+**2)** Add the other Kapow! components ([Sass](https://github.com/mkdo/kapow-sass), [Grunt](https://github.com/mkdo/kapow-grunt), [Theme](https://github.com/mkdo/kapow-theme)), [Core](https://github.com/mkdo/kapow-core) and [Project Core](https://github.com/mkdo/kapow-project-core) as required to the relevant locations:
 
 - Kapow! Sass files go in `assets/scss`
 - Kapow! Grunt files/folder go directly into the project root: you can overwrite the `package.json` as it maintains parity with the copy found in this repository.
@@ -62,7 +62,7 @@ You will need the following installed on your system before attempting to set-up
 
 **5)** Run `npm install`,  `bower install` and `composer install` to get all the required dependencies. If you're planning on generating PHP and Sass documentation you'll need to install [phpDoc](http://www.phpdoc.org/docs/latest/getting-started/installing.html) and [sassDoc](http://www.sassdoc.com) on your system.
 
-If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`
+If you run into trouble with permissions, you may need to prefix the above with `sudo` e.g. `sudo npm install`.
 
 **6)** Run `vagrant root` followed by `vagrant provision --provision-with=site-your-site`. It is important that you complete step #5 **before** you provision Vagrant! :)
 
